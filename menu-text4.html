@@ -1,0 +1,378 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文章页</title>
+
+<!-- 滚动插件 -->
+<link href="custom-scrollbar-plugin/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+<script>
+	/* 滚动条插件 */
+    (function($){
+        $(window).load(function(){
+            $("#text-content").mCustomScrollbar({
+				autoHideScrollbar:true,
+                scrollButtons:{
+					theme:"light-thin"
+                }
+            });
+        });
+    })(jQuery);
+
+</script>
+     
+<!-- 返回首页 -->
+<script type="text/javascript">
+	$(function(){
+		//var $parent = $(window.parent);	
+		$("#backToIndex").children().click(function(){
+			//$parent[0].backToIndex();
+			parent.location.reload();
+		});
+	})
+	
+	/* Animation */	
+	$(function(){
+		$("#backToIndex").hover(function(){
+			$(this).find("span").css({
+				"animation-play-state":"running",
+				"-moz-animation-play-state":"running",
+				"-webkit-animation-play-state":"running",
+				"-o-animation-play-state":"running"
+			});   
+			//alert("in");
+		 },function(){
+			$(this).find("span").css({
+				"animation-play-state":"paused",
+				"-moz-animation-play-state":"paused",
+				"-webkit-animation-play-state":"paused",
+				"-o-animation-play-state":"paused"
+			});   
+			//alert("out");
+		 });
+	});
+
+	
+</script>
+    
+<style type="text/css">
+body {color:white;font-size:13px;background-color:transparent}
+#title {width:auto;height:40px;}
+#title span{font-size: 15pt;position: relative;left: 25px;top: 20px;font-weight:bold}
+#backToIndex {width:90px;height:30px;position:absolute;top:30px;right:20px}
+#backToIndex strong {position: relative;top: 3px;cursor:pointer}
+#backToIndex span{background:url(images/back.png) no-repeat;width:23px;height:23px;display:block;cursor:pointer;float:right}
+#text-content {padding: 20px 20px;height: 420px;;width: 97%;}
+hr {width:95%;}
+#share {height:20px;width:70%;float:right;padding:11px 0;margin-right:25px}
+#share span {width:17px;height:17px;display:block;cursor:pointer;float:right;margin:0px 3px}
+#twitter {background:url(images/twitter.png) no-repeat}
+
+/* 返回首页旋转动画CSS3 */
+#backToIndex span{
+	position:relative;
+	animation-name:myfirst;
+	animation-duration:3s;
+	animation-timing-function:linear;       /* 动画从头到尾的速度是相同的。*/
+	animation-delay:0s;
+	animation-iteration-count:infinite;		/* 规定动画应该无限次播放。*/
+	animation-direction:normal;
+	animation-play-state:paused;
+	/* Firefox: */
+	-moz-animation-name:myfirst;
+	-moz-animation-duration:3s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-delay:0s;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:normal;
+	-moz-animation-play-state:paused;
+	/* Safari and Chrome: */
+	-webkit-animation-name:myfirst;
+	-webkit-animation-duration:3s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-delay:0s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:normal;
+	-webkit-animation-play-state:paused;
+	/* Opera: */
+	-o-animation-name:myfirst;
+	-o-animation-duration:3s;
+	-o-animation-timing-function:linear;
+	-o-animation-delay:0s;
+	-o-animation-iteration-count:infinite;
+	-o-animation-direction:normal;
+	-o-animation-play-state:paused;
+}
+@keyframes myfirst
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+</style>
+
+
+</head>
+
+<body>
+	<div id="title">
+    	<span>不夜城澳门</span>
+    </div>
+    <div id="backToIndex">
+    	<strong>返回首页</strong>
+        <span></span>
+    </div>
+    <div id="text-content" class="content">
+        <p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 1.5em;">
+	<span style="font-size: 14px; font-family: 黑体, SimHei;"></span>
+</p>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; margin-bottom: 50px;">
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/123d0481-b12e-4a45-9496-6748d36857f5.jpg" src="text_img/123d0481-b12e-4a45-9496-6748d36857f5.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">盛事</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="overflow: hidden; word-wrap: break-word; font-size: 12px; font-family: 黑体, SimHei;">地址:</span><span style="overflow: hidden;">半岛<span style="overflow: hidden;">孙逸仙大马路美高梅金殿酒店内：88023888&nbsp;</span></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei; font-size: 12px; line-height: 1.5em;">标签</span><span style="font-family: 黑体, SimHei; font-size: 12px; line-height: 1.5em;">:</span><span style="font-family:黑体, SimHei;"><span style="overflow: hidden; font-size: 12px; line-height: 1.5em;">酒吧</span></span>&nbsp;<span style="font-family:黑体, SimHei;"><span style="overflow: hidden; font-size: 12px; line-height: 1.5em;">宋玉生广场</span></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/76face3e-abf8-4345-b962-b7d1e8400653.jpg" src="text_img/76face3e-abf8-4345-b962-b7d1e8400653.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">Cubic club</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<span style="overflow: hidden; word-wrap: break-word; font-family: 黑体, SimHei; font-size: 12px;">地址:</span><span style="font-family: 黑体, SimHei; font-size: 12px; overflow: hidden;"></span><span style="overflow: hidden; font-size: 12px;">离岛</span><span style="overflow: hidden; word-wrap: break-word; font-family: 黑体, SimHei; font-size: 12px;">新濠天地新濠大道2樓 &nbsp;&nbsp;</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<span style="font-family: 黑体, SimHei; font-size: 12px;">电话：28286696&nbsp;</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<span style="font-family: 黑体, SimHei; font-size: 12px;">标签:</span><span style="font-family: 黑体, SimHei; font-size: 12px;"><span style="overflow: hidden;">酒吧</span>&nbsp;<span style="overflow: hidden;">氹仔</span></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					<br />
+					
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/b0cbf42f-c554-4f16-9d24-98fabc55eb9f.JPG" src="text_img/b0cbf42f-c554-4f16-9d24-98fabc55eb9f.JPG" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">仙乐都酒廊</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span class="s1" style="overflow: hidden;"></span><span style="overflow: hidden; word-wrap: break-word; font-size: 12px; font-family: 黑体, SimHei;">地址:</span><span style="overflow: hidden;">半岛<span style="overflow: hidden;">蒙地卡罗前地203号金沙娱乐场1楼</span></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">电话：9838222&nbsp;</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei; font-size: 12px; line-height: 1.5em;">标签</span><span style="font-family: 黑体, SimHei; font-size: 12px; line-height: 1.5em;">:</span><span style="font-family:黑体, SimHei;"><span style="overflow: hidden; font-size: 12px; line-height: 1.5em;">酒吧</span></span><span style="font-family: 黑体, SimHei; font-size: 12px; line-height: 1.5em;">&nbsp;</span><span style="font-family:黑体, SimHei;"><span style="overflow: hidden; font-size: 12px; line-height: 1.5em;">宋玉生广场</span></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/da23e424-0b71-4b41-93af-bf9578f52c14.jpg" src="text_img/da23e424-0b71-4b41-93af-bf9578f52c14.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">洛欣吧</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="overflow: hidden; word-wrap: break-word; font-size: 12px; font-family: 黑体, SimHei;">地址:</span><span style="overflow: hidden;">离岛<span style="overflow: hidden;">威尼斯人度假村1043号 &nbsp; 电话：81189960&nbsp;</span></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">标签:</span><span style="font-size: 12px; font-family: 黑体, SimHei;"><span style="overflow: hidden;">酒吧</span></span><span style="font-size: 12px; font-family: 黑体, SimHei;">&nbsp;</span><span style="font-size: 12px; font-family: 黑体, SimHei;"><span style="overflow: hidden;">路氹</span></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/e0e0a853-c2c8-4d09-846c-ef9927253f0b.jpg" src="text_img/e0e0a853-c2c8-4d09-846c-ef9927253f0b.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">雪茄吧</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p class="p1" style="margin-top: 0px; margin-bottom: 0px;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">地址:离岛黑沙马路澳门威斯汀度假酒店</span>
+				</p>
+				<p class="p1" style="margin-top: 0px; margin-bottom: 0px;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">28871111&nbsp;</span>
+				</p>
+				<p class="p1" style="margin-top: 0px; margin-bottom: 0px;">
+					<span style="overflow: hidden; word-wrap: break-word; font-size: 12px; font-family: 黑体, SimHei;">标签:</span><span style="font-size: 12px; font-family: 黑体, SimHei; overflow: hidden;"></span><span style="overflow: hidden;">酒吧<span style="overflow: hidden;">&nbsp;</span>路环</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/4ea202a4-489f-4768-b663-6162bc19665e.jpg" src="text_img/4ea202a4-489f-4768-b663-6162bc19665e.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">品味吧</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="overflow: hidden; word-wrap: break-word; font-size: 12px; font-family: 黑体, SimHei;">地址:</span><span style="font-size: 12px; font-family: 黑体, SimHei; overflow: hidden;"></span><span style="overflow: hidden;">半岛</span><span style="overflow: hidden; word-wrap: break-word; font-size: 12px; font-family: 黑体, SimHei;">新口岸友谊大马路18号星际酒店16楼</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">82908698&nbsp;</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">标签:<span style="overflow: hidden;">酒吧</span>&nbsp;<span style="overflow: hidden;">新口岸</span></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+					</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/44428d41-ce42-497b-9934-d94a065a8a34.jpg" src="text_img/44428d41-ce42-497b-9934-d94a065a8a34.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">澳门文华东方酒店大堂酒廊</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="overflow: hidden; word-wrap: break-word; font-size: 12px; font-family: 黑体, SimHei;">地址:</span><span style="overflow: hidden;">半岛<span style="overflow: hidden;">外港新填海区孙逸仙大马路 &nbsp;&nbsp;88058938&nbsp;</span></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">标签:<span style="overflow: hidden;">酒吧</span>&nbsp;<span style="overflow: hidden;">宋玉生广场</span></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/a2434776-4edd-498f-8a9b-6b925ed8ac3d.jpg" src="text_img/a2434776-4edd-498f-8a9b-6b925ed8ac3d.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">骏德酒庄</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="overflow: hidden; word-wrap: break-word; font-size: 12px; font-family: 黑体, SimHei;">地址:</span><span style="overflow: hidden;">半岛<span style="overflow: hidden;">宋玉生广场罗马街26号东南亚花园底商Z铺</span></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">28755514&nbsp;</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">标签:<span style="overflow: hidden;">酒吧</span>&nbsp;&nbsp;&nbsp;<span style="overflow: hidden;">宋玉生广场</span></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="page" style="color: white; font-family: Simsun; font-size: 13px; line-height: 20px; margin-bottom: 30px; height: 20px;">
+</div>
+<div>
+	<span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';"><br />
+	</span>
+</div>
+    </div>
+    
+</body>
+</html>

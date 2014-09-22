@@ -1,0 +1,149 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文章页</title>
+
+<!-- 滚动插件 -->
+<link href="custom-scrollbar-plugin/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+<script>
+	/* 滚动条插件 */
+    (function($){
+        $(window).load(function(){
+            $("#text-content").mCustomScrollbar({
+				autoHideScrollbar:true,
+                scrollButtons:{
+					theme:"light-thin"
+                }
+            });
+        });
+    })(jQuery);
+
+</script>
+     
+<!-- 返回首页 -->
+<script type="text/javascript">
+	$(function(){
+		//var $parent = $(window.parent);	
+		$("#backToIndex").children().click(function(){
+			//$parent[0].backToIndex();
+			parent.location.reload();
+		});
+	})
+	
+	/* Animation */	
+	$(function(){
+		$("#backToIndex").hover(function(){
+			$(this).find("span").css({
+				"animation-play-state":"running",
+				"-moz-animation-play-state":"running",
+				"-webkit-animation-play-state":"running",
+				"-o-animation-play-state":"running"
+			});   
+			//alert("in");
+		 },function(){
+			$(this).find("span").css({
+				"animation-play-state":"paused",
+				"-moz-animation-play-state":"paused",
+				"-webkit-animation-play-state":"paused",
+				"-o-animation-play-state":"paused"
+			});   
+			//alert("out");
+		 });
+	});
+
+	
+</script>
+    
+<style type="text/css">
+body {color:white;font-size:13px;background-color:transparent}
+#title {width:auto;height:40px;}
+#title span{font-size: 15pt;position: relative;left: 25px;top: 20px;font-weight:bold}
+#backToIndex {width:90px;height:30px;position:absolute;top:30px;right:20px}
+#backToIndex strong {position: relative;top: 3px;cursor:pointer}
+#backToIndex span{background:url(images/back.png) no-repeat;width:23px;height:23px;display:block;cursor:pointer;float:right}
+#text-content {padding: 20px 20px;height: 420px;;width: 97%;}
+hr {width:95%;}
+#share {height:20px;width:70%;float:right;padding:11px 0;margin-right:25px}
+#share span {width:17px;height:17px;display:block;cursor:pointer;float:right;margin:0px 3px}
+#twitter {background:url(images/twitter.png) no-repeat}
+
+/* 返回首页旋转动画CSS3 */
+#backToIndex span{
+	position:relative;
+	animation-name:myfirst;
+	animation-duration:3s;
+	animation-timing-function:linear;       /* 动画从头到尾的速度是相同的。*/
+	animation-delay:0s;
+	animation-iteration-count:infinite;		/* 规定动画应该无限次播放。*/
+	animation-direction:normal;
+	animation-play-state:paused;
+	/* Firefox: */
+	-moz-animation-name:myfirst;
+	-moz-animation-duration:3s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-delay:0s;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:normal;
+	-moz-animation-play-state:paused;
+	/* Safari and Chrome: */
+	-webkit-animation-name:myfirst;
+	-webkit-animation-duration:3s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-delay:0s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:normal;
+	-webkit-animation-play-state:paused;
+	/* Opera: */
+	-o-animation-name:myfirst;
+	-o-animation-duration:3s;
+	-o-animation-timing-function:linear;
+	-o-animation-delay:0s;
+	-o-animation-iteration-count:infinite;
+	-o-animation-direction:normal;
+	-o-animation-play-state:paused;
+}
+@keyframes myfirst
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+</style>
+
+
+</head>
+
+<body>
+	<div id="title">
+    	<span>暂无内容</span>
+    </div>
+    <div id="backToIndex">
+    	<strong>返回首页</strong>
+        <span></span>
+    </div>
+    <div id="text-content" class="content">
+        &nbsp; &nbsp;Sorry！本文章暂无内容
+    </div>
+    
+</body>
+</html>

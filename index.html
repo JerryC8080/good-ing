@@ -1,0 +1,392 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>Macau Guide</title>
+
+<script type="text/javascript" src="js/jquery-1.8.0.min.js"></script>
+<!-- loading animate Script -->
+<script type="text/javascript">
+
+window.onload = function(){
+	$("#loading").fadeOut();
+	$("#bg").delay(500).fadeIn();
+	$("#main").delay(500).fadeIn();
+}
+
+$(function() {
+	$("#bg").hide();
+	$("#main").hide();
+	var wwidth = $(window).width();
+	var bluewidth = $("#shapeblue").width();
+
+	$("#shapeblue").css("left", (wwidth/2) - bluewidth);
+
+	var bluepos = $("#shapeblue").position();
+	var movex = $("#shapeblue").width() + 4;
+	$("#shapepink").css("left", bluepos.left + movex);
+	
+	containerLeft = bluepos.left - (movex/1.6);
+	$("#container").css("left", containerLeft);
+	$("#container").css("top", 350);
+
+	var playAnimate;
+
+	function moveleft(el) {
+		$(el).animate({
+			left: '+='+movex
+		}, 800, function() {
+			$(el).css("z-index", "-100");
+		});
+	}
+
+	function moveright(el) {
+		$(el).animate({
+			left: '-='+movex
+		}, 800, function() {
+			$(el).css("z-index", "100");
+		});
+	}
+
+	function playAnimation() {
+		moveleft("#shapeblue");
+		moveright("#shapeblue");
+		moveright("#shapepink");
+		moveleft("#shapepink");
+	}
+	
+	playAnimate = setInterval(playAnimation, 800);
+	
+});
+</script>
+<!-- loading animate CSS -->
+<style type="text/css">
+	* {
+		font-family: Arial, "Free Sans";
+	}
+	#loading{
+		position:absolute;
+	}
+	#container {
+		text-align: center;
+		width: 500px;
+		padding: 100px 0;
+		margin: 0 auto;
+		position:relative;
+	}
+	#container a {
+		background: #0063dc;
+		color: #ffffff;
+		text-decoration: none;
+		padding: 5px 8px;
+		font-size: 35px;
+		-webkit-border-radius: 0.5em;
+		-moz-border-radius: 0.5em;
+		border-radius: 0.5em;
+	}
+	#container a:hover {
+		background: #ff0084;
+	}
+	#text {
+		color: #0063dc;
+		margin-top: 30px;
+		font-size: 12px;
+		font-weight: bold;
+	}
+	.bar {
+		width: 150px;
+		height: 150px;
+		-webkit-border-radius: 7.5em;
+		-moz-border-radius: 7.5em;
+		border-radius: 7.5em;
+		margin-right: 2px;
+		position: absolute;
+	}
+	#shapeblue {
+		background: #0063dc;
+		z-index: 1;
+	}
+	#shapepink {
+		background: #ff0084;
+		z-index: 0;
+	}
+</style>
+
+
+<script type="text/javascript" src="js/yuanxudo.js"></script>
+<script src="js/adSlide.js"></script>
+<link href="css/yuanxustyle.css" rel="stylesheet" media="screen">
+
+<!-- Add fancyBox main JS and CSS files -->
+<script type="text/javascript" src="js/jquery.fancybox.js?v=2.1.5"></script>
+<link rel="stylesheet" type="text/css" href="css/jquery.fancybox.css?v=2.1.5" media="screen" />
+<script type="text/javascript">
+	$(document).ready(function() {
+		$("#nav-list-maps .nav-list-text").click(function() {
+			$.fancybox.open({
+				href : 'map-iframe.html',
+				type : 'iframe',
+				padding : 5
+			});
+		});
+	});
+</script>
+	
+	
+<style type="text/css">
+.grid-menu ul {}
+#bgics .hidden {display:none}
+#bgics .show {display:block}
+.li-br {height:1px;width:auto;margin:4px 7px;background:white;filter:alpha(opacity=40);opacity:0.40;box-shadow:5px 2px 6px #000;}
+.baricon-up {width:100%;height:15px;margin-bottom:8px}
+.baricon-up a {background:url(images/baricon-up.png) no-repeat;display:block;width:11px;height:11px;cursor:pointer;margin:0 45%;}
+.baricon-down {width:100%;height:15px;margin-top:8px}
+.baricon-down a {background:url(images/baricon-down.png) no-repeat;display:block;width:11px;height:11px;cursor:pointer;margin:0 45%;}	
+</style>
+
+<!-- 滚动条插件 -->
+<link href="custom-scrollbar-plugin/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<script src="custom-scrollbar-plugin/jquery.mCustomScrollbar.concat.min.js"></script>
+<script>
+    (function($){
+        $(window).load(function(){
+            $(".grid-menu ul").mCustomScrollbar({
+				autoHideScrollbar:true,
+				autoDraggerLength:true,
+				scrollButtons:{
+					enable:false
+				}
+			});
+        });
+    })(jQuery);
+</script>
+ 
+<!-- 动画初始化 -->
+<script type="text/javascript">
+	$(function(){
+
+		/* 效果初始化 */
+		showGridMenuInit(); //格子菜单动画初始化
+		showNavMenuInit(); //导航菜单动画初始化
+		navTextClickInit(); //导航条标题点击效果 
+		navMenuSlider(); //导航条菜单滑动条动画
+		navOtherAnimateInit(); //导航条菜单其他效果
+		gridTextClickInit(); //格子进入文章页动画初始化
+		bgChange();  //背景更新动画初始化
+		gridMenuSlider(); //格子菜单滑动条动画
+		navbarInit();  //导航条动画初始化
+		navRedSliderInit(); //导航条红色滑动条效果
+		adInit(); //广告动画初始化
+		changeFront(); //中英文切换初始化
+		
+	});
+</script>
+
+</head>
+
+<body >
+		<!-- 进度动画 -->
+		<div id="loading">
+			<div id="container">
+				<div id="control">
+					<a href="javascript:void(0)" id="playbtn">loading......</a>
+				</div>
+			</div>
+			<div id="shapeblue" class="bar"></div>
+			<div id="shapepink" class="bar"></div>
+		</div>
+		<!-- 背景 -->
+        <div id="bg">
+            <div id="bgics">           
+                <img id="bg-clearness" class="show" src="images/background-clearness.jpg" />
+                <img id="bg-fuzzy" class="hidden" src="images/background-fuzzy.jpg" />
+                <img id="bg-scene" class="hidden" src="images/bg-scene.jpg" />
+                <img id="bg-shop" class="hidden" src="images/bg-shop.jpg" />
+                <img id="bg-holiday" class="hidden" src="images/bg-holiday.jpg" />
+                <img id="bg-magazine" class="hidden" src="images/bg-magazine.jpg" />
+                <img id="bg-fun" class="hidden" src="images/bg-fun.jpg" />
+                <img id="bg-food" class="hidden" src="images/bg-food.jpg" />
+                <img id="bg-aboutMacau" class="hidden" src="images/bg-aboutMacau.jpg" />
+				<img id="bg-aoMenTravel" class="hidden" src="images/bg-aoMenTreavl.jpg" />
+            </div>
+        </div>      
+
+        <div id="main">
+            <!-- logo导航栏 -->
+            <div id="navbar"> 
+                <div id="nav">
+                	<div id="logo">
+                		<img src="images/logo.png">
+                	</div>
+					<div class="nav-list">
+                    	<li id="nav-list-info"><span class="nav-list-icon"></span><span class="nav-list-text">实用资讯</span></li>
+						<li id="nav-list-friendlink"><span class="nav-list-icon"></span><span class="nav-list-text">友情链接</span></li> 
+						<li id="nav-list-vip"><span class="nav-list-icon"></span><span class="nav-list-text">会员专享</span></li>
+						<li id="nav-list-maps"><span class="nav-list-icon"></span><span class="nav-list-text">地图地图</span></li>
+						<li id="nav-list-callus"><span class="nav-list-icon"></span><span class="nav-list-text">联系我们</span></li>
+					</div>
+					<div id="nav-list-slider"></div>
+                    <div id="language">
+                    	<span id="language-chinese" class="lg-active">中文</span>
+                        <span id="language-english">ENGLISH</span>
+                    </div>
+                    <div class="block-bg"></div>
+                </div>
+				<!-- 导航列表菜单 -->
+				<div id="nav-list-menu">
+					<div id="nav-list-info-menu" class="nav-menu meunclick">
+						<ul class="content">
+							<li id="" class="grid-text-title" ><a>澳门紧急电话</a></li>
+							<li id="" class="grid-text-title"><a>澳门巴士资讯</a></li>
+						</ul>
+						<div class="navmenu-bg"></div>
+					</div>
+					<div id="nav-list-vip-menu" class="nav-menu meunclick">
+						<ul class="content">
+							<li id="" class="grid-text-title" ><a>会员注册</a></li>
+							<li id="" class="grid-text-title"><a>会员专享</a></li>
+							<li id="" class="grid-text-title"><a>互动专区</a></li>
+						</ul>
+						<div class="navmenu-bg"></div>
+					</div>
+				</div>
+            </div>
+            
+            <!-- 格子 -->
+            <div class="grids">
+            	<div id="grid-holiday" class="grid" >
+                	<div class="block-bg"></div>
+                	<div class="grid-menu meunclick">
+                        <ul class="content">
+                            <li id="holiday-text1" class="grid-text-title"><a>盛事推介</a></li>
+                            <li id="holiday-text2" class="grid-text-title"><a>旅游快讯</a></li>
+                        </ul>
+                        <div class="gridmenu-bg"></div>
+                    </div>
+                </div> 
+                <div id="grid-aoMenTravel" class="grid" >
+                	<div class="block-bg"></div>
+                    <div class="block-bg block-bg-min"></div>
+                	<div class="grid-menu meunclick">
+                        <ul class="content">
+                            <li id="text-nocontent" class="grid-text-title" ><a>选取路线</a></li>
+                            <li id="text-nocontent" class="grid-text-title"><a>规划路线</a></li>
+                        </ul>
+                        <div class="gridmenu-bg"></div>
+                    </div>
+                </div>
+                <div id="grid-shop" class="grid" >
+                	<div class="block-bg"></div>
+                	<div class="grid-menu meunclick">
+                        <ul class="content">
+                            <li id="shop-text1" class="grid-text-title" ><a>大型购物商场</a></li>
+                            <li id="shop-text2" class="grid-text-title"><a>分区购物</a></li>
+                            <li id="shop-text3" class="grid-text-title"><a>分类购物</a></li>
+                        </ul>
+                        <div class="gridmenu-bg"></div>
+                    </div>
+                </div>
+				<div id="grid-scene" class="grid" >
+                	<div class="block-bg"></div>
+                	<div class="grid-menu meunclick">
+                        <ul class="content">
+                            <li id="scene-text1" class="grid-text-title" ><a>澳门世界遗产</a></li>
+                            <li id="scene-text2" class="grid-text-title"><a>博物馆及展览厅</a></li>
+                            <li id="scene-text3" class="grid-text-title"><a>世遗景色</a></li>
+                        </ul>
+                        <div class="gridmenu-bg"></div>
+                    </div>
+                </div>
+                <div id="grid-aboutMacau" class="grid" >
+                	<div class="block-bg"></div>
+                    <div class="grid-menu meunclick">
+                        <ul class="content">
+                            <li id="aboutMacau-text1" class="grid-text-title" ><a>澳门历史</a></li>
+                            <li id="aboutMacau-text2" class="grid-text-title"><a>澳门有趣故事</a></li>
+                        </ul>
+                        <div class="gridmenu-bg"></div>
+                    </div>
+                </div>
+                <div id="grid-food" class="grid" >
+                	<div class="block-bg"></div>
+                    <div class="grid-menu meunclick">
+                        <ul class="content">
+                            <li id="food-text1" class="grid-text-title"><a>澳门小食手信</a></li>
+                            <li id="food-text2" class="grid-text-title"><a>澳门餐厅食肆介绍</a></li>
+                        </ul>
+                        <div class="gridmenu-bg"></div>
+                    </div>
+                </div>
+                <div id="grid-fun" class="grid" >
+                	<div class="block-bg"></div>
+                    <div class="block-bg block-bg-min"></div>
+                    <div class="grid-menu meunclick">
+                        <ul class="content">
+                            <li id="menu-text1" class="grid-text-title" ><a>文娱宴会</a></li>
+                            <li id="menu-text2" class="grid-text-title"><a>家庭乐缤纷</a></li>
+                            <li id="menu-text3" class="grid-text-title"><a>酒店度假村</a></li>
+                            <li id="menu-text4" class="grid-text-title"><a>不夜城澳门</a></li>
+							<li id="menu-text5" class="grid-text-title"><a>文创产业区</a></li>
+							
+                        </ul>
+                        <div class="gridmenu-bg"></div>
+                    </div>
+                </div>
+				<div id="grid-magazine" class="grid" >
+                	<div class="block-bg"></div>
+                    <div class="grid-menu meunclick">
+                    	
+                        <ul class="content">
+                            <li id="text-nocontent" class="grid-text-title" ><a>2013年7月</a></li>
+                            <li id="text-nocontent" class="grid-text-title"><a>2013年8月</a></li>
+                            <li id="text-nocontent" class="grid-text-title"><a>2013年9月</a></li>
+                            <li id="text-nocontent" class="grid-text-title"><a>2013年10月</a></li>
+                           	<li id="text-nocontent" class="grid-text-title"><a>2013年11月</a></li>
+                            <li id="text-nocontent" class="grid-text-title"><a>2013年12月</a></li>
+                            <li id="text-nocontent" class="grid-text-title"><a>2013年13月</a></li>
+                            <li id="text-nocontent" class="grid-text-title"><a>2013年14月</a></li>
+                            <li id="text-nocontent" class="grid-text-title"><a>2013年15月</a></li>
+                            <li id="text-nocontent" class="grid-text-title"><a>2013年16月</a></li>
+                            <li id="text-nocontent" class="grid-text-title"><a>2013年17月</a></li>
+                            <li id="text-nocontent" class="grid-text-title"><a>2013年18月</a></li>
+                        </ul>
+                        
+                        <div class="baricon-down"></div>
+                        <div class="gridmenu-bg"></div>
+                    </div>
+                </div>
+            </div>
+            
+            <!-- 文章iframe -->
+            <div id="text-main">
+				<iframe id="textframe" iframename="textframe"  frameborder="no" allowtransparency="true" scrolling="no" src="text-template.html"></iframe>  
+                <div class="block-bg"></div>     
+            </div>
+            
+			<!-- 广告 -->
+            <div id="top-ad">
+				<!--<span class="adclose1">关闭</span>-->
+				<div id="jnImageroll" class="Carousel">
+                <a href="#nogo" id="JS_imgWrap">
+                    <img src="images/ads/top-ad-01.jpg" alt=""/>
+                    <img src="images/ads/top-ad-02.jpg" alt=""/>
+                    <img src="images/ads/top-ad-03.jpg" alt=""/>
+                </a>
+                <div>
+                    <a href="###1"></a>
+                    <a href="###2"></a>
+                    <a href="###3"></a>
+                </div>
+            </div>
+			</div>
+			<div class="text-page-ads">
+				<div id="ad3"><img style="height:207px;width:150px" src="text_img/dee6ad73-6b03-4dfd-abab-e4c997f9f73f.jpg"><span class="adclose2" >关闭</span></div>
+				<div id="ad4"><img style="height:207px;width:150px" src="text_img/bb6155d5-b81f-41d1-b5bf-3f5aeaf951cc.jpg"><span class="adclose2" >关闭</span></div>
+			</div>
+			
+			<!-- 天气预报 -->
+			<div id="weather"></div>
+        </div>
+	
+</body>
+</html>

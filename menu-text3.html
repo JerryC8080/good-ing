@@ -1,0 +1,484 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文章页</title>
+
+<!-- 滚动插件 -->
+<link href="custom-scrollbar-plugin/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+<script>
+	/* 滚动条插件 */
+    (function($){
+        $(window).load(function(){
+            $("#text-content").mCustomScrollbar({
+				autoHideScrollbar:true,
+                scrollButtons:{
+					theme:"light-thin"
+                }
+            });
+        });
+    })(jQuery);
+
+</script>
+     
+<!-- 返回首页 -->
+<script type="text/javascript">
+	$(function(){
+		//var $parent = $(window.parent);	
+		$("#backToIndex").children().click(function(){
+			//$parent[0].backToIndex();
+			parent.location.reload();
+		});
+	})
+	
+	/* Animation */	
+	$(function(){
+		$("#backToIndex").hover(function(){
+			$(this).find("span").css({
+				"animation-play-state":"running",
+				"-moz-animation-play-state":"running",
+				"-webkit-animation-play-state":"running",
+				"-o-animation-play-state":"running"
+			});   
+			//alert("in");
+		 },function(){
+			$(this).find("span").css({
+				"animation-play-state":"paused",
+				"-moz-animation-play-state":"paused",
+				"-webkit-animation-play-state":"paused",
+				"-o-animation-play-state":"paused"
+			});   
+			//alert("out");
+		 });
+	});
+
+	
+</script>
+    
+<style type="text/css">
+body {color:white;font-size:13px;background-color:transparent}
+#title {width:auto;height:40px;}
+#title span{font-size: 15pt;position: relative;left: 25px;top: 20px;font-weight:bold}
+#backToIndex {width:90px;height:30px;position:absolute;top:30px;right:20px}
+#backToIndex strong {position: relative;top: 3px;cursor:pointer}
+#backToIndex span{background:url(images/back.png) no-repeat;width:23px;height:23px;display:block;cursor:pointer;float:right}
+#text-content {padding: 20px 20px;height: 420px;;width: 97%;}
+hr {width:95%;}
+#share {height:20px;width:70%;float:right;padding:11px 0;margin-right:25px}
+#share span {width:17px;height:17px;display:block;cursor:pointer;float:right;margin:0px 3px}
+#twitter {background:url(images/twitter.png) no-repeat}
+
+/* 返回首页旋转动画CSS3 */
+#backToIndex span{
+	position:relative;
+	animation-name:myfirst;
+	animation-duration:3s;
+	animation-timing-function:linear;       /* 动画从头到尾的速度是相同的。*/
+	animation-delay:0s;
+	animation-iteration-count:infinite;		/* 规定动画应该无限次播放。*/
+	animation-direction:normal;
+	animation-play-state:paused;
+	/* Firefox: */
+	-moz-animation-name:myfirst;
+	-moz-animation-duration:3s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-delay:0s;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:normal;
+	-moz-animation-play-state:paused;
+	/* Safari and Chrome: */
+	-webkit-animation-name:myfirst;
+	-webkit-animation-duration:3s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-delay:0s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:normal;
+	-webkit-animation-play-state:paused;
+	/* Opera: */
+	-o-animation-name:myfirst;
+	-o-animation-duration:3s;
+	-o-animation-timing-function:linear;
+	-o-animation-delay:0s;
+	-o-animation-iteration-count:infinite;
+	-o-animation-direction:normal;
+	-o-animation-play-state:paused;
+}
+@keyframes myfirst
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+</style>
+
+
+</head>
+
+<body>
+	<div id="title">
+    	<span>酒店度假村</span>
+    </div>
+    <div id="backToIndex">
+    	<strong>返回首页</strong>
+        <span></span>
+    </div>
+    <div id="text-content" class="content">
+        <p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 1.5em;">
+	<span style="font-size: 14px; font-family: 黑体, SimHei;"></span>
+</p>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; margin-bottom: 50px;">
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/ba8fd462-3080-4631-80a5-9881f5a25ad4.jpg" src="text_img/ba8fd462-3080-4631-80a5-9881f5a25ad4.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">澳門悅榕莊</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family:黑体, SimHei;"><span style="overflow: hidden; font-size: 12px;">澳門路氹</span></span><span style="font-size: 12px; font-family: 黑体, SimHei;">路氹城,路氹城大馬路</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">電話：853-88836688</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+					</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳門悅榕莊是一家擁有全豪華套房和渡假別墅的酒店，而同時在每間套房設有私人浴池，以及在個人別墅設有私人泳池花園，愛好SPA的旅客可在21間水療房或套房內享受水療服務。另外在酒店的悅榕閣藝術店內，可觀覽或選購世界各國不同文化的藝術品，酒店還設有一間1,330平方米的宴會廳，可供客人舉辦各種宴會會展活動。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">為了令客人味覺上的滿足，悅榕莊有24小時服務的餐廳,供應各國不同風味佳餚，還可選擇到的燒烤餐廳，品嘗烤肉，海鮮配上紅酒。酒店大堂另設大堂酒廊，是交際聚會的最佳地點，此外也可以到我們室內泳池，在池畔酒吧或8個涼亭中享受休閒時光。澳門悅榕莊，作為感官休憩聖地，將會是閣下追求浪漫，舒適享受的最佳選擇。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/5f37802b-f413-4271-878b-dfb8720a524e.jpg" src="text_img/5f37802b-f413-4271-878b-dfb8720a524e.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">澳門威尼斯人-度假村-酒店</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳门路氹氹仔金光大道望德聖母灣大馬路</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">電話：<em>853-28828888</em></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+					</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳門威尼斯人-度假村-酒店擁有頂級豪華套房，把時尚標準推向更高境界。寬敞的套房面積超過70平方米(750平方尺)，華麗浴室更以義大利大理石裝飾。我們更為您提供一系列的套房選擇，讓您倍感賓至如歸。酒店備有多家優質食府、麵食館和全日供應的客房用餐服務，讓您隨時滿足您的美食需要。此外，您亦可來到親切輕鬆的酒吧及酒廊，隨時品嘗各式精美飲品和雞尾酒。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">入住威尼斯人-度假村-酒店，您可以體驗各種不同的悠閒活動。主要消閒區位于酒店五樓，當中設有多個游泳池和水力按摩浴池，以及豪華舒適的V&nbsp;水療中心。而設備齊全的V&nbsp;健身中心則位於酒店七樓。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳門威尼斯人-度假村提供100,000平方米(1,000,000平方呎)靈活的會議及展覽設施，能輕易作出調整設置，充份配合不同規模活動的需要，確保澳門成為各大小企業舉行各種會議及展覽活動的最佳選擇。澳門威尼斯人-度假村-酒店已開設提供澳門國際機場部分航空公司之即日航班預辦登機服務。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/9d53de3d-c25c-4b8c-9bf8-ee32e9075827.JPG" src="text_img/9d53de3d-c25c-4b8c-9bf8-ee32e9075827.JPG" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">澳門四季酒店</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳門氹仔望德聖母灣大馬路&nbsp; &nbsp; &nbsp;&nbsp;</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">電話：<em>853-28818888</em></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+					</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">矗立於連接氹仔島及路環島的金光大道上，澳門四季酒店將會帶您探索一個完全屬於您的澳門。在充滿活力及動感的都市里，享受四季酒店貼心的服務，為您帶來剌激的娛樂專案、高級的購物樂趣、和世界一流餐飲服務。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳門四季酒店位置優越、四通八達：連接大運河購物中心。鄰近多用途會議宴會場地及設備完善的室外設施。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳門四季酒店將會成為遠離煩囂的一片靜謐的綠洲。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/e7b0e782-150b-4e0c-ad2c-995dd4761244.jpg" src="text_img/e7b0e782-150b-4e0c-ad2c-995dd4761244.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">澳門大倉酒店</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳门路氹路氹城大馬路&nbsp; &nbsp; &nbsp; &nbsp;</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei; font-size: 12px; line-height: 1.5em;">電話：</span><span style="font-family: 黑体, SimHei; font-size: 12px; line-height: 1.5em;">853-88838883</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+					</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">日本大倉飯店集團為澳門銀河渡假城締造糅合現代及傳統舒適寫意的旅居環境，將“傲視世界情系亞洲”的品牌理念注入獨特的東瀛元素，雙得益彰。光臨澳門大倉酒店的商務和渡假遊客，不論選擇豪華套房抑或奢華客房，都可體驗最優質服務，享受一個悠然寧靜的假期。澳門大倉酒店的宗旨是一如既往地為賓客提供最佳住宿、餐飲及服務體驗。現在，澳門大倉酒店也在「澳門銀河」提供這種頂級的旅遊享受。一絲不苟的日式服務予人親切之感，令人難以忘懷。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/fd5d63a0-e824-4e84-8309-494134e7d1ea.JPG" src="text_img/fd5d63a0-e824-4e84-8309-494134e7d1ea.JPG" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">澳門十六浦索菲特大酒店</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳门 Rua do Visconde Paco de Arcos &nbsp; &nbsp;&nbsp;</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">電話：853-88610016</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+					</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳門十六浦索菲特大酒店為法國著名品牌酒店－雅高酒店集團旗下最頂尖的酒店系列。位元處內港歷史地區，坐擁堤畔山峰水色，毗鄰市中心，與澳門十六鋪綜合娛樂休閒項目為伴，澳門世遺景點亦近在咫尺。整座建築物洋溢濃郁的南歐風情，與索菲特特質“生活的藝術”結合。演繹時尚與高雅，為旅客締造“家”以外極致的休閒文化。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">由文華東方酒店集團管理的澳門金麗華酒店座落于澳門繁華市中心，鄰接金沙娛樂場、澳門漁人碼頭、旅遊地標景點、購物及娛樂中心等等，為休閒及商務旅客的不二之選。酒店地利優良且交通方便，可步行至港澳碼頭，由酒店直達澳門國際機場只需十分鐘車程，另至連接中國大陸的澳門關閘只需十五分鐘車程</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/ab65b28a-cfe0-4e6d-8f24-9b3f509ee8f9.jpg" src="text_img/ab65b28a-cfe0-4e6d-8f24-9b3f509ee8f9.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">澳門金麗華酒店</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳门西部友誼大馬路956-1110號（956-1110 Avenida da Amizade, Macau）</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">電話：853-28567888</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+					</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳門金麗華酒店的客房雅致寬敞，以葡式布藝及柚木傢俱佈置，匠心獨運的中式工藝與浪漫迷人的葡式風格彙聚，包括特式客房及豪華套房。另外，餐飲設施彰顯了各地不同的飲食文化和精髓，榮獲米芝蓮一星獎東怡軒中餐廳呈獻頂級粵式珍饈；薈景閣咖啡室提供新鮮美味的豐富海鮮自助餐；正宗泰式風味的灆泰國餐廳及池畔聚暻園享受葡式燒烤，國際美味薈萃，無限精彩。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">大堂時尚購物廊彙聚國際著名品牌，占地一萬五千平方米的度假村設備完善，除設有室外恒溫游泳池、室外按摩池、健身室及健康舞室外，香熏療理中心更提供一系列按摩及熏療護理服務，同時備有桑拿及室內按摩池，讓您完全沐浴身心。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳門金麗華酒店必定為您的澳門旅程添上無限色彩，締造回味無窮的旅。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/91bda177-0355-49d5-a035-1a2a8183b070.jpg" src="text_img/91bda177-0355-49d5-a035-1a2a8183b070.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">澳門新麗華酒店</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳门中部約翰四世大馬路(Cavenida De D Joao Iv,Macau)&nbsp; &nbsp;&nbsp;</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">電話：853-28710111</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+					</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳門新麗華酒店座落澳門市中心南灣湖畔，鄰近葡京娛樂場及購物中心，距港澳碼頭只需五分鐘；往澳門國際機場只需十五分鐘，交通方便。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳門新麗華酒店設有全新裝修的舒適別致的客房及豪華套房，設備現代化，所有客房均裝配電子輪匙系統，確保住客享有高度之安全及私隱。位於一樓的新麗華餐廳，提供葡國餐酒及各種中西式環球美食，24小時房膳服務，時刻為賓客服務。酒店還設有多功能會議室及宴會廳，商務中心提供各項文書、電腦網路及資訊服務，一應俱全。為配合旅客商務或通訊所需，部分客房特設互聯網資料線。此外，酒店備有穿梭巴士來往港澳碼頭、新八佰伴百貨公司，每15分鐘一班，專為酒店住客而設。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/0ffe7803-a22f-4451-b922-98eedbeb8075.jpg" src="text_img/0ffe7803-a22f-4451-b922-98eedbeb8075.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">澳門聖地牙哥古堡酒店</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳门西灣民國大馬路</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">電話：853-28378111</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+					</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳門聖地牙哥古堡酒店位於澳門島，座落於澳門西灣的高尚任宅區。酒店是由371年前澳門第一座古堡改造的葡萄牙傳統建築樣式的飯店，毗鄰澳門市中心，是一家有著歐陸浪漫氣氛的堡壘式酒店。華麗舒適的客房、富有特色的古堡裝飾、舒適愜意的環境，這在澳門是非常稀少的。酒店服務及設施齊備，酒吧、會議室、高格調的餐廳、泳池、露天茶座等一應俱全。置身于古樸優雅的餐廳內享用葡式及西班牙美食，或露臺上靜享葡國佳釀，欣賞澳門的內港景色，又或細嘗傳統風味的下午茶，實屬一個忙裡偷閒的好去處。從客房的露臺，可眺望澳門內港的醉人景色。客房擁有富有特色的古堡裝飾、舒適優雅的環境，再加上誠摯的服務，您必會有賓至如歸的感覺。正宗西班牙餐廳，馳名27年的葡國餐廳、典雅極致的大堂吧、海景戶外泳池、大海景套房露臺，見證過無數對新人的聖雅各伯小教堂、大炮臺純天然的露天茶座。奢華套房的設計由迪拜7星級帆船酒店設計師Ms.Khan&nbsp;Chew一手包辦，其中自然脫離不了關鍵字“奢華”與“時尚”，例如超過800尺的房間地板均採用真皮做鋪墊，房間2部來自丹麥單價超過12萬港幣的B&amp;O超大液晶電視，全國最大的帶蒸汽浴熱帶雨林花灑。日本進口按摩浴缸，浴室鏡中隱藏電視，巴黎愛瑪氏牌沐浴用品。一系列的澳門旅遊行程安排會讓您目不暇接，可為您預約包車服務(英文司機)，預約上門香熏按摩服務(專業持牌按摩師)，腳踏車或小吉普車租憑服務，免費借取DVD影碟服務，專業攝影師服務及免費享用無線上網。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/2ab2d16f-d883-413c-8a7b-348d32746255.jpg" src="text_img/2ab2d16f-d883-413c-8a7b-348d32746255.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">澳門威斯汀度假酒店</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳门西部澳門路環黑沙馬路1918號</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">電話：853-28871111</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+					</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳門威斯汀度假酒店位於風光明媚的澳門路環島，樓高八層，外觀呈梯形，頂樓建有一個十八洞錦標賽高爾夫球場，連綿起伏，四周景色如詩如畫。在這世界級的國際豪華度假酒店裡，您可享受高尚的住宿設施。澳門威斯汀度假酒店設有寬敞舒適的客房及套房、行政套房（各設1間睡房）、主席套房及總統套房。每間客房的面積是45平方公米，加上一個22平方公米的私人陽臺，所有房間都可享受到一望無際的黑沙海灘及南中國海的醉人景色。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/a9a634f5-39c6-4c3e-94e6-58e044c4bfac.jpg" src="text_img/a9a634f5-39c6-4c3e-94e6-58e044c4bfac.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">澳門新濠鋒酒店</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳门廣東大馬路</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">電話：853-28868888</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+					</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳門新濠鋒酒店是設計豪華現代化的娛樂場酒店，提供高級娛樂、高雅設施、優秀服務和華麗裝潢，力求為澳門的高級博彩市場帶來真正獨一無二的體驗。定於2007年5月9日隆重開幕，樓高36層，廣大的娛樂場面積約為183,000平方尺，備有約220張高級賭桌和超過500部角子機。此外，酒店設有一座高級豪華酒店，提供豪華客房，當中包括24間高級套房和8間私人別墅</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="page" style="color: white; font-family: Simsun; font-size: 13px; line-height: 20px; margin-bottom: 30px; height: 20px;">
+</div>
+<div>
+	<span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';"><br />
+	</span>
+</div>
+    </div>
+    
+</body>
+</html>

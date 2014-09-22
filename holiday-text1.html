@@ -1,0 +1,395 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文章页</title>
+
+<!-- 滚动插件 -->
+<link href="custom-scrollbar-plugin/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+<script>
+	/* 滚动条插件 */
+    (function($){
+        $(window).load(function(){
+            $("#text-content").mCustomScrollbar({
+				autoHideScrollbar:true,
+                scrollButtons:{
+					theme:"light-thin"
+                }
+            });
+        });
+    })(jQuery);
+
+</script>
+     
+<!-- 返回首页 -->
+<script type="text/javascript">
+	$(function(){
+		//var $parent = $(window.parent);	
+		$("#backToIndex").children().click(function(){
+			//$parent[0].backToIndex();
+			parent.location.reload();
+		});
+	})
+	
+	/* Animation */	
+	$(function(){
+		$("#backToIndex").hover(function(){
+			$(this).find("span").css({
+				"animation-play-state":"running",
+				"-moz-animation-play-state":"running",
+				"-webkit-animation-play-state":"running",
+				"-o-animation-play-state":"running"
+			});   
+			//alert("in");
+		 },function(){
+			$(this).find("span").css({
+				"animation-play-state":"paused",
+				"-moz-animation-play-state":"paused",
+				"-webkit-animation-play-state":"paused",
+				"-o-animation-play-state":"paused"
+			});   
+			//alert("out");
+		 });
+	});
+
+	
+</script>
+    
+<style type="text/css">
+body {color:white;font-size:13px;background-color:transparent}
+#title {width:auto;height:40px;}
+#title span{font-size: 15pt;position: relative;left: 25px;top: 20px;font-weight:bold}
+#backToIndex {width:90px;height:30px;position:absolute;top:30px;right:20px}
+#backToIndex strong {position: relative;top: 3px;cursor:pointer}
+#backToIndex span{background:url(images/back.png) no-repeat;width:23px;height:23px;display:block;cursor:pointer;float:right}
+#text-content {padding: 20px 20px;height: 420px;;width: 97%;}
+hr {width:95%;}
+#share {height:20px;width:70%;float:right;padding:11px 0;margin-right:25px}
+#share span {width:17px;height:17px;display:block;cursor:pointer;float:right;margin:0px 3px}
+#twitter {background:url(images/twitter.png) no-repeat}
+/* 返回首页旋转动画CSS3 */
+#backToIndex span{
+	position:relative;
+	animation-name:myfirst;
+	animation-duration:3s;
+	animation-timing-function:linear;       /* 动画从头到尾的速度是相同的。*/
+	animation-delay:0s;
+	animation-iteration-count:infinite;		/* 规定动画应该无限次播放。*/
+	animation-direction:normal;
+	animation-play-state:paused;
+	/* Firefox: */
+	-moz-animation-name:myfirst;
+	-moz-animation-duration:3s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-delay:0s;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:normal;
+	-moz-animation-play-state:paused;
+	/* Safari and Chrome: */
+	-webkit-animation-name:myfirst;
+	-webkit-animation-duration:3s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-delay:0s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:normal;
+	-webkit-animation-play-state:paused;
+	/* Opera: */
+	-o-animation-name:myfirst;
+	-o-animation-duration:3s;
+	-o-animation-timing-function:linear;
+	-o-animation-delay:0s;
+	-o-animation-iteration-count:infinite;
+	-o-animation-direction:normal;
+	-o-animation-play-state:paused;
+}
+@keyframes myfirst
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+</style>
+
+
+</head>
+
+<body>
+	<div id="title">
+    	<span>盛事推介</span>
+    </div>
+    <div id="backToIndex">
+    	<strong>返回首页</strong>
+        <span></span>
+    </div>
+    <div id="text-content" class="content">
+        <p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 1.5em;">
+	<span style="font-size: 14px; font-family: 黑体, SimHei;"></span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	路易威登「旅行的藝術」展覽 (Exhibition)
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	展覽繼南京、廣州、無錫及瀋陽之後來到澳門，以摩登遊牧生活為概念，引領參觀者來到遠離塵囂的旅行世界。二十多件充滿靈魂與回憶的展品，讓設計獨特的路易威登旅行箱展現在您面前。此外，您還可欣賞路易威登硬箱個性化繪製工藝，而攝影大師Jean Lariviere的旅行概念影片也在展場播映。
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	時間：每日上午10時30分至晚上10時30分
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	地點：澳門壹號廣塲地下中庭 / 外港新填海區沙格斯大馬路
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	免費入場
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	查詢：(853) 2822 8800
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	主辦：路易威登（中國）商業銷售有限公司
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	http://www.onecentral.com.mo
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	<br />
+	
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	<br />
+	
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	路環廣場文化活動.
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	澳門隨處可見大小不一的廣場前地，地上鋪砌著葡萄牙式波浪型黑白碎石，仿如滔滔的海洋；遊人相遇傾談，或是在咖啡座閒適地品味人生。這個暑假，不妨從路環聖方濟各聖堂前地開始，感受澳門的廣場文化。該處逢週六下午設有以「快閃藝團」為主題的街頭表演，包括原創音樂（10, 24/8）、魔術（17/8）及弦樂表演（31/8）。大家可吹著海風、看著街頭表演，順道遊覽路環，享受一個輕鬆寫意的下午。
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	時間：下午3時30分至5時
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	地點：路環馬忌士前地 (路環聖方濟各聖堂前地)
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	免費入場
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	查詢：(853) 2825 9897
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	主辦：旅遊局、澳門離島工商業聯合會
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	http://www.funnyisland.net
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	<br />
+	
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	<br />
+	
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	民政總署大樓小型音樂演出
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	若您經過民政總署大樓，悠揚樂聲將吸引您的注意。今年，逢週六、日及公眾假期的下午時段，當您進入大樓，即可欣賞弦樂及爵士樂演奏。這項小型音樂會每日表演4場，每場約20分鐘。您更可順道參觀這座具有超過400年歷史的世界遺產「澳門歷史城區」景點。
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	時間：下午3時15分至5時
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	地點：民政總署大樓 / 新馬路163號
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	免費入場
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	查詢：(853) 2833 7676 / 8988 4000
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	主辦：民政總署
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	http://www.iacm.gov.mo
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	<br />
+	
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	<br />
+	
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	傳統廟宇節慶展現地道文化
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	農曆七月初七（13/8）的康公誕，將在康公廟前地休憩區舉行「三坊同賀康公寶誕」（下午5時45分開始），包括懷舊金曲和粵曲表演，以及特色盆菜宴（下午6時15分至晚上7時30分，$120，請向主辦單位電話預訂），旅客可順道參觀這座逾200年歷史的康公廟。相傳現時康公廟前地有一個木製康王神像浮至，居民於是建廟奉祀，而澳門神像木雕被列入《國家級非物質文化遺產名錄》。
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	農曆七月初七（13/8）的七姐誕與「七」字特別有緣。在中國神話，據說玉皇大帝的第七位女兒巧手織布，人稱織女，因與牛郎天天玩樂疏於織布，被父親懲罰只准每年農曆七月初七見面一次。這天又稱為「七夕」，主要是未婚女子的節日，並有人稱為「中國情人節」，善信以七姐盆、七種水果對天拜祭。這天不妨到大三巴牌坊側的戀愛巷碰碰姻緣。
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	農曆七月十四（20/8）「盂蘭節」相傳地獄之門大開的日子，不少人在自家門前或路邊擺放米飯、生果等祭品予遊魂野鬼享用，以求平安，這個習俗至今仍在澳門流行。
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	財帛星君是民間的文財神，主要保佑善信財運亨通，農曆七月廿二（28/8）是財帛星君寶誕，蓮溪廟前地於舉行「財帛星君誕」酬神儀式（約下午5時至6時30分，詳情請向主辦單位查詢），包括舞獅和武術表演等。蓮溪廟始建於清道光十年（1830年），廟內供奉財帛星君、華光、觀音、關公等各類神衹，並有六十太歲和十八羅漢的塑像形態各異，生動有趣。
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	康公誕
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	查詢：(853) 2892 1409
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	主辦：十月初五街區坊眾互助會、海傍海邊街區坊眾互助會、爐石塘街區坊眾互助會
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	<br />
+	
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	財帛星君寶誕
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	查詢：(853) 2832 4622
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	主辦：新橋區坊眾互助會
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	廟宇節慶文化網：http://www.temple.mo
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	<br />
+	
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	第十三屆澳門美食節
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	第十三屆澳門美食節將於2013年11月8日至24日一連17天假澳門西灣湖廣場(旅遊塔前)再度開鑼！更多各地美食悉心為您搜羅，還有精彩節目表演助慶，務求為市民及旅客營造一個與別不同、精彩無限的美食嘉年華。
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	地點：西灣湖廣場
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	日 期：11月8至24日
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	<br />
+	
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	<br />
+	
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	澳門科學館 - 「征空勇士」與「凱撒大帝」
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	由世界著名美籍華裔建築師貝聿銘設計的澳門科學館，呈斜錐體的展覽中心外型別樹一幟。最新立體球幕節目「征空勇士3D」，帶觀眾參與太空人的各種訓練，包括潛入水中進行模擬太空的訓練、跳上飛機體驗無重狀態、闖進巨型離心機感受巨大重力等。此外，「凱撒大帝的輝煌時代 - 羅馬共和國軍事及科技展覽」（1/6-31/8）重現當時的科學技術、精巧的機械、文物及建築工藝。
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	時間：上午10時至下午6時 (5時30分後停止售票 / 公眾假期照常開放)
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	地址：孫逸仙大馬路
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	票價：展覽中心 - $25
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	天文館 (球幕 / 天象節目) - $50
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	天文館 (3D球幕 / 3D天象節目) - $65
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	查詢：(853) 2888 0822
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	征空勇士3D：以廣東話播放，觀眾亦可透過耳機收聽普通話或英語旁述。
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	http://www.msc.org.mo
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	<br />
+	
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	澳門管樂藝術節2013
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	「澳門管樂繽紛大匯演」踏入第14屆，今年開始更名為「澳門管樂藝術節」，匯聚澳門管樂精英進行共11場音樂會，送上獨奏、重奏及大型管樂合奏。這個月，觀眾可欣賞「室內音樂會」（1-3/8晚上8時，澳門文化中心，憑票入場）、「戶外音樂會」（4/8下午3時，氹仔嘉模墟，免費入場），而壓軸「與大師有約 - 世遺音樂會」（14/8晚上8時，崗頂劇院，$100）邀請世界著名小號演奏家Joe Burgstaller獨奏，並舉行「小號大師班」（13/8下午2時30分至5時30分，提督馬路139-145號南益工業大廈一樓C座澳門管樂協會會址，20-25分鐘演奏及指導$300、旁聽$50，需以電話報名）。
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	查詢：(853) 2825 2825
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	主辦：澳門管樂協會
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	http://www.mbda.org.mo
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	<br />
+	
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	<br />
+	
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	氹仔市集
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	不少旅客到訪澳門，都會到氹仔的手信街購物，而「氹仔市集」正位於官也街和地堡街之間，每逢週日，這裡售賣傳統美食、各式紀念品及精品攤檔，吸引遊人選購，並於下午4時至5時30分送上音樂及舞蹈等不同表演，吸引眾多遊人駐足欣賞。
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	時間：上午11時至晚上8時 (逢週日)
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	地點：氹仔消防局前地
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	查詢：(853) 2833 7676 / 8988 4000
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	主辦：民政總署
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	http://www.iacm.gov.mo
+</p>
+<div>
+	<br />
+	
+</div>
+<div>
+	<span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';"><br />
+	</span>
+</div>
+    </div>
+</body>
+</html>

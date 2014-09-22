@@ -1,0 +1,220 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文章页</title>
+
+<!-- 滚动插件 -->
+<link href="custom-scrollbar-plugin/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+<script>
+	/* 滚动条插件 */
+    (function($){
+        $(window).load(function(){
+            $("#text-content").mCustomScrollbar({
+				autoHideScrollbar:true,
+                scrollButtons:{
+					theme:"light-thin"
+                }
+            });
+        });
+    })(jQuery);
+
+</script>
+     
+<!-- 返回首页 -->
+<script type="text/javascript">
+	$(function(){
+		//var $parent = $(window.parent);	
+		$("#backToIndex").children().click(function(){
+			//$parent[0].backToIndex();
+			parent.location.reload();
+		});
+	})
+	
+	/* Animation */	
+	$(function(){
+		$("#backToIndex").hover(function(){
+			$(this).find("span").css({
+				"animation-play-state":"running",
+				"-moz-animation-play-state":"running",
+				"-webkit-animation-play-state":"running",
+				"-o-animation-play-state":"running"
+			});   
+			//alert("in");
+		 },function(){
+			$(this).find("span").css({
+				"animation-play-state":"paused",
+				"-moz-animation-play-state":"paused",
+				"-webkit-animation-play-state":"paused",
+				"-o-animation-play-state":"paused"
+			});   
+			//alert("out");
+		 });
+	});
+
+	
+</script>
+    
+<style type="text/css">
+body {color:white;font-size:13px;background-color:transparent}
+#title {width:auto;height:40px;}
+#title span{font-size: 15pt;position: relative;left: 25px;top: 20px;font-weight:bold}
+#backToIndex {width:90px;height:30px;position:absolute;top:30px;right:20px}
+#backToIndex strong {position: relative;top: 3px;cursor:pointer}
+#backToIndex span{background:url(images/back.png) no-repeat;width:23px;height:23px;display:block;cursor:pointer;float:right}
+#text-content {padding: 20px 20px;height: 420px;;width: 97%;}
+hr {width:95%;}
+#share {height:20px;width:70%;float:right;padding:11px 0;margin-right:25px}
+#share span {width:17px;height:17px;display:block;cursor:pointer;float:right;margin:0px 3px}
+#twitter {background:url(images/twitter.png) no-repeat}
+
+/* 返回首页旋转动画CSS3 */
+#backToIndex span{
+	position:relative;
+	animation-name:myfirst;
+	animation-duration:3s;
+	animation-timing-function:linear;       /* 动画从头到尾的速度是相同的。*/
+	animation-delay:0s;
+	animation-iteration-count:infinite;		/* 规定动画应该无限次播放。*/
+	animation-direction:normal;
+	animation-play-state:paused;
+	/* Firefox: */
+	-moz-animation-name:myfirst;
+	-moz-animation-duration:3s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-delay:0s;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:normal;
+	-moz-animation-play-state:paused;
+	/* Safari and Chrome: */
+	-webkit-animation-name:myfirst;
+	-webkit-animation-duration:3s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-delay:0s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:normal;
+	-webkit-animation-play-state:paused;
+	/* Opera: */
+	-o-animation-name:myfirst;
+	-o-animation-duration:3s;
+	-o-animation-timing-function:linear;
+	-o-animation-delay:0s;
+	-o-animation-iteration-count:infinite;
+	-o-animation-direction:normal;
+	-o-animation-play-state:paused;
+}
+@keyframes myfirst
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+</style>
+
+
+</head>
+
+<body>
+	<div id="title">
+    	<span>澳门历史</span>
+    </div>
+    <div id="backToIndex">
+    	<strong>返回首页</strong>
+        <span></span>
+    </div>
+    <div id="text-content" class="content">
+        <p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 1.5em;">
+	<span style="font-size: 14px; font-family: 黑体, SimHei;"></span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; text-align: justify; line-height: 19px;">
+	<span style="font-size: 11px; line-height: 18px; font-family: 黑体;">&nbsp;</span><span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';">&nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';">澳门（葡萄牙语：Macau），简称澳，通称濠江丶赌城丶梳打埠，或作海镜丶镜海，是中华人民共和国的两个特别行政区之一，也是世界第一赌城。其位於南中国海北岸，地处珠江口以西，东面与香港相距63公里。澳门全境由澳门半岛丶氹仔丶路环以及路氹城四大部份（区域）所组成：澳门半岛是澳门发展的核心，其东北面一小部份陆地与中国大陆连接；氹仔和路环本是两个分离的离岛，但现已透过填海工程相连起来，而填海後的新生地建设成为路氹城。澳门亦是世界上人口密度最高的地区，每平方公里人口达二万。</span><span style="line-height: 24px; font-size: 16px;">&nbsp;</span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; text-align: justify; line-height: 19px;">
+	<br />
+	
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; text-align: justify; line-height: 19px;">
+	<img src="text_img/fe245cfa-a576-4d6d-bb99-04ecf979f50e.PNG" style="line-height: 24px; font-size: 16px;" alt="" />
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; text-align: justify; line-height: 19px;">
+	<span style="font-size: 11px; line-height: 18px; font-family: 黑体;"><br />
+	</span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; text-align: justify; line-height: 19px;">
+	<span style="font-size: 11px; line-height: 18px; font-family: 黑体;">&nbsp;</span><span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';">&nbsp; &nbsp; &nbsp; &nbsp;</span><span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';">澳门自秦朝起成为中国领土，成为华夏民族一部份，从明朝1557年开始被葡萄牙人租借。直至1887年，葡萄牙政府与清朝政府签订了有效期为40年的《中葡和好通商条约》（至1928年期满失效）後，澳门成为葡萄牙“永居管理”之地[18]，也是欧洲国家在东亚的第一块领地。</span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; text-align: justify; line-height: 19px;">
+	<span style="font-size: 11px; line-height: 18px; font-family: 黑体;"><br />
+	</span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; text-align: justify; line-height: 19px;">
+	<span style="font-size: 11px; line-height: 18px; font-family: 黑体;"><img src="text_img/06b1010f-2580-47cf-9e47-744c5c8776ad.png" width="102" height="150" border="0" hspace="0" vspace="0" title="" style="width: 102px; height: 150px;" alt="" />&nbsp;&nbsp;&nbsp;<img src="text_img/c6b52d5d-9909-4368-95fa-185b662aedbf.jpg" width="225" height="150" border="0" hspace="0" vspace="0" title="" style="width: 225px; height: 150px;" alt="" /></span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; text-align: justify; line-height: 19px;">
+	<span style="font-size: 11px; line-height: 18px; font-family: 黑体;"><br />
+	</span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; text-align: justify; line-height: 19px;">
+	<span style="font-size: 11px; line-height: 18px; font-family: 黑体;">&nbsp;</span><span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';">&nbsp; &nbsp; &nbsp; &nbsp;1980</span><span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';">年代，中葡两国共同探讨澳门前途问题，其後於1987年正式签了《中葡联合声明》。根据《声明》，葡萄牙於1999年12月20日结束了对澳门的统治，澳门主权移交中国，澳门实行一国两制，澳门人可享有“高度自治丶澳人治澳”的权利。在“一国两制”政策的指引下，澳门实行高度自治，享有行政管理权丶立法权丶独立的司法权和终审权，而澳门的社会和经济方面的特色会予以保留并得以延续。</span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; text-align: justify; line-height: 19px;">
+	<span style="font-size: 11px; line-height: 18px; font-family: 黑体;"><br />
+	</span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; text-align: justify; line-height: 19px;">
+	<span style="font-size: 11px; line-height: 18px; font-family: 黑体;"><img src="text_img/d2d95575-487a-4d3f-b677-aaaf3ac36b6f.jpg" alt="" /></span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; text-align: justify; line-height: 19px;">
+	<span style="font-size: 11px; line-height: 18px; font-family: 黑体;">&nbsp;</span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; text-align: justify; line-height: 19px;">
+	<span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';">&nbsp; &nbsp; &nbsp;&nbsp;</span><span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';">十六世纪中叶，第一批葡萄牙人抵澳时，询问居民当地的名称，居民误以为指庙宇，答称“妈阁”。葡萄牙人以其音而译成“MACAU”，成为澳门葡文名称的由来。在後来的四百多年时间里，东西文化一直在此地相互交融，留下了许多历史文化遗产，使澳门成为一个独特的城市。</span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; text-align: justify; line-height: 19px;">
+	<span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';"><br />
+	</span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; text-align: justify; line-height: 19px;">
+	<span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';"><img src="text_img/9c9b4155-f895-484e-847b-4d8c1257137d.jpg" width="200" height="150" border="0" hspace="0" vspace="0" title="" style="width: 200px; height: 150px;" alt="" />&nbsp;&nbsp;<img src="text_img/52d0e35e-8fc8-435f-89cc-5f75d29fcea2.jpg" width="200" height="150" border="0" hspace="0" vspace="0" title="" style="width: 200px; height: 150px;" alt="" /></span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; text-align: justify; line-height: 19px;">
+	<span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';"><br />
+	</span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; text-align: justify; line-height: 19px;">
+	<span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';">&nbsp; &nbsp; &nbsp; &nbsp; 澳门的面积很小，是世界上人口最稠密的地方之一，也是亚洲人均收入比较高的地区。</span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; text-align: justify; line-height: 19px;">
+	<span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';">&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;</span><span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';">澳门是一个国际化的都市，几百年来，一直是中西文化融和共存的地方。</span>
+</p>
+<div>
+	<span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';"><br />
+	</span>
+</div>
+<div>
+	<span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';"><br />
+	</span>
+</div>
+    </div>
+    
+</body>
+</html>

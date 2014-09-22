@@ -1,0 +1,572 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文章页</title>
+
+<!-- 滚动插件 -->
+<link href="custom-scrollbar-plugin/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+<script>
+	/* 滚动条插件 */
+    (function($){
+        $(window).load(function(){
+            $("#text-content").mCustomScrollbar({
+				autoHideScrollbar:true,
+                scrollButtons:{
+					theme:"light-thin"
+                }
+            });
+        });
+    })(jQuery);
+
+</script>
+     
+<!-- 返回首页 -->
+<script type="text/javascript">
+	$(function(){
+		//var $parent = $(window.parent);	
+		$("#backToIndex").children().click(function(){
+			//$parent[0].backToIndex();
+			parent.location.reload();
+		});
+	})
+	
+	/* Animation */	
+	$(function(){
+		$("#backToIndex").hover(function(){
+			$(this).find("span").css({
+				"animation-play-state":"running",
+				"-moz-animation-play-state":"running",
+				"-webkit-animation-play-state":"running",
+				"-o-animation-play-state":"running"
+			});   
+			//alert("in");
+		 },function(){
+			$(this).find("span").css({
+				"animation-play-state":"paused",
+				"-moz-animation-play-state":"paused",
+				"-webkit-animation-play-state":"paused",
+				"-o-animation-play-state":"paused"
+			});   
+			//alert("out");
+		 });
+	});
+
+	
+</script>
+    
+<style type="text/css">
+body {color:white;font-size:13px;background-color:transparent}
+#title {width:auto;height:40px;}
+#title span{font-size: 15pt;position: relative;left: 25px;top: 20px;font-weight:bold}
+#backToIndex {width:90px;height:30px;position:absolute;top:30px;right:20px}
+#backToIndex strong {position: relative;top: 3px;cursor:pointer}
+#backToIndex span{background:url(images/back.png) no-repeat;width:23px;height:23px;display:block;cursor:pointer;float:right}
+#text-content {padding: 20px 20px;height: 420px;;width: 97%;}
+hr {width:95%;}
+#share {height:20px;width:70%;float:right;padding:11px 0;margin-right:25px}
+#share span {width:17px;height:17px;display:block;cursor:pointer;float:right;margin:0px 3px}
+#twitter {background:url(images/twitter.png) no-repeat}
+
+/* 返回首页旋转动画CSS3 */
+#backToIndex span{
+	position:relative;
+	animation-name:myfirst;
+	animation-duration:3s;
+	animation-timing-function:linear;       /* 动画从头到尾的速度是相同的。*/
+	animation-delay:0s;
+	animation-iteration-count:infinite;		/* 规定动画应该无限次播放。*/
+	animation-direction:normal;
+	animation-play-state:paused;
+	/* Firefox: */
+	-moz-animation-name:myfirst;
+	-moz-animation-duration:3s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-delay:0s;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:normal;
+	-moz-animation-play-state:paused;
+	/* Safari and Chrome: */
+	-webkit-animation-name:myfirst;
+	-webkit-animation-duration:3s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-delay:0s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:normal;
+	-webkit-animation-play-state:paused;
+	/* Opera: */
+	-o-animation-name:myfirst;
+	-o-animation-duration:3s;
+	-o-animation-timing-function:linear;
+	-o-animation-delay:0s;
+	-o-animation-iteration-count:infinite;
+	-o-animation-direction:normal;
+	-o-animation-play-state:paused;
+}
+@keyframes myfirst
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+</style>
+
+
+</head>
+
+<body>
+	<div id="title">
+    	<span>文创产业区</span>
+    </div>
+    <div id="backToIndex">
+    	<strong>返回首页</strong>
+        <span></span>
+    </div>
+    <div id="text-content" class="content">
+        <p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 1.5em;">
+	<span style="font-size: 14px; font-family: 黑体, SimHei;"></span>
+</p>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; margin-bottom: 50px;">
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/9bdeec00-b1bd-4aeb-85b7-04ad1cae3cd4.jpg" src="text_img/9bdeec00-b1bd-4aeb-85b7-04ad1cae3cd4.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">瘋堂十號創意園</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">若对澳门本土的创意艺术感兴趣的话，不妨莅临澳门望德堂区疯堂的疯堂十号创意园，欣赏当地艺术家的创意。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">疯堂十号创意园与仁慈堂婆仔屋相邻，面积逾 650 平方米，前身分别为廉政公署和环境委员会的办事处，其后改建成艺术中心，旨在推动澳门文化发展，并设多个展览厅展示澳门艺术的魅力。此外，创意园划设多个课室以开办工作坊、讲座和座谈会等，令澳门的艺术文化能有所传承创新。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">创意园内的花园、墙壁、各个小房间的艺术品之主题形式各异，可谓琳瑯满目，恍若艺术百宝箱。创意园更逢双数月的第二个周末举办「疯堂天地」活动，既设露天酒吧，又邀请不同本土艺术家前来表演摆卖，令望德堂区更富文化气息。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">聞說藝術家都有股旁人猜不透的傻勁，忠於自己的風格我行我素，所以他們聚集的地方就叫「瘋堂」嗎？</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">其實瘋堂斜巷之所以叫瘋堂斜巷，只是因為那裏曾經有一間麻瘋病院，與瘋狂、瘋癲是沒有關係的。為了推動本地創意及讓澳門當地的文化產業有發揮空間，望德堂區創意產業促進會打造了一座全新的綜合藝術場所。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">位於瘋堂斜巷十號的美珊枝街3號大樓，是一座有近百年歷史的古典建築，曾作為澳門廉政公署和環境委員會的辦公大樓，剛剛於2008年9月翻新為創意園地，於三層高的大樓內，劃分多間工作室，分租給當地藝術家作為工作室及進行展覽。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">創意園的入口位於瘋堂斜巷的頂端，一進門先是一個綠樹林蔭的小花園，鋪滿碎石子的小路上，放了不同設計不同顏色的圓形小豬雕塑。進入大樓後，只見牆上掛滿畫作，扶著園拱形樓梯走到上層，一間又一間的小房間，每間都有不同的藝術家進駐，每間都有不同的類形的藝術品，感覺就像進入了一個百寶箱。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">創意園亦會定期舉行大型展覽及工作坊，若想多了解澳門當地藝術家，就要密切留意了。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+					</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">地址：瘋堂斜巷10號</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">開放時間：上午10時30分至下午6時30分 (逢週一休息)</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">免費入場</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">查詢：+853 2835 4582</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">網址：</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei; overflow: hidden;"></span><span style="overflow: hidden;">http://10fantasia.blogspot.com</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 11px; font-family: 黑体, SimHei;"></span><br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/98d283e1-6037-4d8f-aaa0-98350f55a5cb.jpg" src="text_img/98d283e1-6037-4d8f-aaa0-98350f55a5cb.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">藝竹苑（仁慈堂婆仔屋）</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">仁慈堂婆仔屋在二次大戰日本侵華期間收留窮人和難民，曾是「貧窮者之家」。亦有說這裡曾是老人院，且住院者大多都是婆婆，婆仔屋因而得名。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">仁慈堂婆仔屋，前稱為婆仔屋，是澳門的文化創意空間。婆仔屋坐落於瘋堂斜巷，是逾百年的外觀為黃色的葡式建築，前有一小庭院，植有兩棵巨大的百年老樟樹，環境清幽美麗。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳門仁慈堂神聖的文化領域使命在這個良好的文化創意空間裡得以體現，不同文化實體和社團在這裡開辦了豐富多樣的文化活動。現時仁慈堂婆仔屋內的文化創意空間，是藝術表演、展覽的場地，也是培訓本地創意人才、展銷本土創意產品的基地，政府有意將望德堂區打造為創意產業區，而婆仔屋就是其主軸之一，是澳門的創意基地，反映出澳門本土藝術的特色，以活化區內至周邊的藝文氣息，推動本澳的創意產業發展。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳門仁慈堂婆仔屋文化及創意產業空間於2009年1月正式成立，主要朝著四個方面發展：發揚澳門本土特色文化、溝通族群、推動視覺藝術及發展創意產業，為這個歷史悠久的建築注入了生機和活力。現在，澳門仁慈堂婆仔屋文化及創意產業空間已積極準備舉辦更多有質素的活動，繼續回饋社會和服務大眾，同時為本地的創業產業人士和藝術工作者開拓更多空間和搭建橋樑。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">藝竹苑內設有展覽空間，不定期舉辦藝術及原創產品設計展覽，並舉辦講座和文化藝術課程等，推動澳門本土文化、藝術及創意產業發展。這裡還開設了一所葡國餐廳，富有情調。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+					</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">地址：澳門瘋堂斜巷8號</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">電話： 853 2852 2550 / +853 2852 3205</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/383a3c92-a3a4-4cca-bc23-fe1a1fb819cf.JPG" src="text_img/383a3c92-a3a4-4cca-bc23-fe1a1fb819cf.JPG" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">全藝社</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><strong>全藝社（Art For All Society），為二零零七年在澳門成立的非牟利藝術工作組織，宗旨為推動澳門本地藝術家創作及發展，協助澳門特區政府發展本土文化事業及推動文化創意產業發展。目前澳門總部位於黑沙環馬路廣耀工業大廈三樓，澳門全藝社除了擁有自己的展示空間外還設有六間藝術家工作室，總面積約為五百平方米，除了每月的澳門藝術家個人作品展外，更展示超過四十位最具代表性及活躍的澳門當代藝術家、超過一千件包括繪畫、攝影、雕塑、版畫及錄像等不同媒材之作品。希望能鼓勵更多澳門藝術家全身心投入到創作中，並能以穩定的藝術工作实膭撟鳝h境，配合相關的個人作品展，進行對外宣傳推廣與作品出售。</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><strong>澳門以外，全藝社亦順應國際藝術發展的大趨勢，二零零八年初於北京設立北京全藝社，為大陸瞭解澳門藝術的發展以及澳門與北京之間的溝通搭建了一個良好的交流平臺。北京全藝社位於798藝術區內，樓高三層，除了展示空間外，更設有出售澳門創意產品的專區。此外，為了鼓勵澳門及海外的藝術家到北京進行藝術交流和創作，北京全藝社設有駐場藝術家計劃。全藝社同時亦組織本地藝術家作品參加海內外大型國際展覽及藝術博覽會，包括日本、美國、台灣、馬來西亞、新加坡及中國北京、上海等地國際藝術博覽會，二零一一年四月更於葡國里斯本東方博物鹋e辨澳門當代藝術展覽，展出二十位澳門藝術家三十件最新創作。成立至今全藝社於澳門、北京及海外各地合共舉辦了八十餘個澳門藝術家作品展。</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><strong>展望未來，全藝社將繼續以推動當代藝術發展為主，包括繪畫、裝置、攝影、雕塑及多媒體等藝術形式，策劃優秀澳門藝術家的個人展覽及與國內藝術家合作的聯展，以配合澳門政府銳意發展文化產業的方向。</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><strong>地址：黑沙環馬路52號廣耀工業大廈10樓</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><strong>開放時間：中午12時至晚上7時 (逢週日及公眾假期休息)</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><strong>免費入場</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><strong>查詢：+853 2836 6064</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="overflow: hidden; word-wrap: break-word; font-size: 12px; font-family: 黑体, SimHei;"><strong>網址：</strong></span><span style="overflow: hidden; word-wrap: break-word; text-decoration: none; color: white; "><strong>http://www.afamacau.com</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/d1e2f364-39d4-4d53-8604-c8533a561c96.jpg" src="text_img/d1e2f364-39d4-4d53-8604-c8533a561c96.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">創意空間</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em; text-align: justify;">
+					<span style="font-size: 11px; font-family: 黑体, SimHei;"><strong>澳門非牟利組織創意產業中心是由澳門歐洲研究學會發展和管理，主要功能是協助創意產業，提升藝術家的藝術發展空間。通過位於澳門文化中心地下的創意空間，提供展示平臺予12個創意產業領域的人才展出作品，包括廣告、建築藝術、工藝、設計、時裝設計、電影及錄影、互動休閒軟體、音樂、表演藝術、出版、電腦軟體及應用發展、視覺藝術等領域。</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em; text-align: justify;">
+					<span style="font-size: 11px; font-family: 黑体, SimHei;"><strong><br />
+					</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em; text-align: justify;">
+					<span style="font-size: 11px; font-family: 黑体, SimHei;"><strong>地址：冼星海大馬路澳門文化中心地下</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em; text-align: justify;">
+					<span style="font-size: 11px; font-family: 黑体, SimHei;"><strong>時間：下午2時至晚上7時 (逢週日休息)</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em; text-align: justify;">
+					<span style="font-size: 11px; font-family: 黑体, SimHei;"><strong>免費入場</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em; text-align: justify;">
+					<span style="font-size: 11px; font-family: 黑体, SimHei;"><strong>查詢：+853 2875 3282</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em; text-align: justify;">
+					<span style="font-family: 黑体, SimHei; font-size: 11px;">網址：</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em; text-align: justify;">
+					<span style="font-family: 黑体, SimHei; font-size: 11px; overflow: hidden; font-size: 11px;"></span><span style="overflow: hidden; word-wrap: break-word; text-decoration: none; color: white; font-family: 黑体, SimHei; font-size: 11px; "><strong>http://www.creativemacau.org.mo/CH/index.html</strong></span><br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/ce7df3da-93b3-4488-b7a7-d0121a198132.jpg" src="text_img/ce7df3da-93b3-4488-b7a7-d0121a198132.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">澳門佳作</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei; font-size: 12px;">澳門最大規模的自資創意品牌，旗艦店座落在澳門地標大三巴牌坊側，現有30多位本地藝術家售賣藝術和創意設計品，出售具個性化的本土設計，如攝影作品、限量版複印畫、設計海報，並有相當實用的精品包括T恤、杯、環保產品、文具等。當您進來購物，把產品帶回家或送給朋友，等同把澳門的藝術世界延伸出去。</span><br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><strong>另一專門店是位於氹仔官也街、樓高四層的「官也墟」。從外牆到室內設計，處處呈現六、七十年代澳門小城生活情懷，當中不乏兒童遊戲康樂棋、以昔日街頭為題的壁畫等。到頂層悠然自得地品嘗咖啡，俯瞰熙來攘往的官也街，可說是賞心樂事。</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><strong>澳門佳作(旗艦店)<br />
+					<br />
+					</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><strong>地址：大三巴右街5號A座地下</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><strong>查詢：+853 2835 2954</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><strong>網址：</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei; overflow: hidden;"></span><span style="overflow: hidden; word-wrap: break-word; text-decoration: none; color: white; "><strong>http://www.macaucreations.com</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/9bcadde8-758a-48d6-b5ed-d66f3d7666c4.jpg" src="text_img/9bcadde8-758a-48d6-b5ed-d66f3d7666c4.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">貓空間</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<span style="line-height: 1.5em; font-family: 黑体, SimHei; font-size: 12px;">位於澳門南灣區的貓空間，於2007年11月成立，前身是一間設計公司，因為經常義務照顧無家可歸的貓兒，故發展成今天的貓空間。貓空間是一間自力義務照顧流浪貓的小店，並以售賣自家設計產品及以貓作題材的藝術精品，用作照顧貓兒的經費。</span><br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><strong><br />
+					</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><strong>地址：和平斜巷14號興泰樓地下G</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><strong>開放時間：上午11時至晚上7時 (公眾假期照常開放)</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><strong>免費入場</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><strong>查詢電話：+853 2893 2927</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><strong>網址：</strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="overflow: hidden; word-wrap: break-word; font-size: 12px; font-family: 黑体, SimHei;"><strong></strong></span><span style="overflow: hidden; word-wrap: break-word; "><strong><span style="overflow: hidden;">http://meowspace.mysinablog.com/</span></strong></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/b7438001-e495-4c6d-9128-1dc8756c0a13.jpg" src="text_img/b7438001-e495-4c6d-9128-1dc8756c0a13.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">牛房倉庫</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei; font-size: 12px; line-height: 1.5em; text-align: justify;">牛房倉庫前稱「婆仔屋藝術空間」成立於2002年，為本澳一非牟利民間藝術組織。牛房倉庫定期舉辦繪畫、雕塑、海報、裝置和多媒體等不同的藝術展覽，為本地的當代藝術創作提供實驗交流平臺。牛房倉庫還設有戲劇圖書室、藝術資料室、書房、CD專區及咖啡座；週末有兒童繪畫、手工藝、成人陶藝、青少年音樂等藝術工作坊，啟發個人創意及實驗精神。</span><br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">地址：美副將大馬路與提督馬路交界(市政狗房側)</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">時間：下午12時至晚上7時 (逢週二休息)</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">免費入場</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">查詢：+853 2853 0026</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">網址：</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei; overflow: hidden;"></span><span style="overflow: hidden;">http://oxwarehouse.blogspot.com/</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/a6250f83-f8f1-48de-a928-fcc00e08fc41.jpg" src="text_img/a6250f83-f8f1-48de-a928-fcc00e08fc41.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">卡萨布兰卡酒吧</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="overflow: hidden; word-wrap: break-word; font-size: 12px; font-family: 黑体, SimHei;">地址:</span><span style="overflow: hidden;">半岛<span style="overflow: hidden;">宋玉生广场9-51号帝景苑地下R铺</span></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">28751281&nbsp;</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">标签:<span style="overflow: hidden;">酒吧</span>&nbsp;&nbsp;&nbsp;<span style="overflow: hidden;">宋玉生广场</span></span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="page" style="color: white; font-family: Simsun; font-size: 13px; line-height: 20px; margin-bottom: 30px; height: 20px;">
+</div>
+<div>
+	<span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';"><br />
+	</span>
+</div>
+    </div>
+</body>
+</html>

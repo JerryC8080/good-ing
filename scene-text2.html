@@ -1,0 +1,721 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文章页</title>
+
+<!-- 滚动插件 -->
+<link href="custom-scrollbar-plugin/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+<script>
+	/* 滚动条插件 */
+    (function($){
+        $(window).load(function(){
+            $("#text-content").mCustomScrollbar({
+				autoHideScrollbar:true,
+                scrollButtons:{
+					theme:"light-thin"
+                }
+            });
+        });
+    })(jQuery);
+
+</script>
+     
+<!-- 返回首页 -->
+<script type="text/javascript">
+	$(function(){
+		//var $parent = $(window.parent);	
+		$("#backToIndex").children().click(function(){
+			//$parent[0].backToIndex();
+			parent.location.reload();
+		});
+	})
+	
+	/* Animation */	
+	$(function(){
+		$("#backToIndex").hover(function(){
+			$(this).find("span").css({
+				"animation-play-state":"running",
+				"-moz-animation-play-state":"running",
+				"-webkit-animation-play-state":"running",
+				"-o-animation-play-state":"running"
+			});   
+			//alert("in");
+		 },function(){
+			$(this).find("span").css({
+				"animation-play-state":"paused",
+				"-moz-animation-play-state":"paused",
+				"-webkit-animation-play-state":"paused",
+				"-o-animation-play-state":"paused"
+			});   
+			//alert("out");
+		 });
+	});
+
+	
+</script>
+    
+<style type="text/css">
+body {color:white;font-size:13px;background-color:transparent}
+#title {width:auto;height:40px;}
+#title span{font-size: 15pt;position: relative;left: 25px;top: 20px;font-weight:bold}
+#backToIndex {width:90px;height:30px;position:absolute;top:30px;right:20px}
+#backToIndex strong {position: relative;top: 3px;cursor:pointer}
+#backToIndex span{background:url(images/back.png) no-repeat;width:23px;height:23px;display:block;cursor:pointer;float:right}
+#text-content {padding: 20px 20px;height: 420px;;width: 97%;}
+hr {width:95%;}
+#share {height:20px;width:70%;float:right;padding:11px 0;margin-right:25px}
+#share span {width:17px;height:17px;display:block;cursor:pointer;float:right;margin:0px 3px}
+#twitter {background:url(images/twitter.png) no-repeat}
+
+/* 返回首页旋转动画CSS3 */
+#backToIndex span{
+	position:relative;
+	animation-name:myfirst;
+	animation-duration:3s;
+	animation-timing-function:linear;       /* 动画从头到尾的速度是相同的。*/
+	animation-delay:0s;
+	animation-iteration-count:infinite;		/* 规定动画应该无限次播放。*/
+	animation-direction:normal;
+	animation-play-state:paused;
+	/* Firefox: */
+	-moz-animation-name:myfirst;
+	-moz-animation-duration:3s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-delay:0s;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:normal;
+	-moz-animation-play-state:paused;
+	/* Safari and Chrome: */
+	-webkit-animation-name:myfirst;
+	-webkit-animation-duration:3s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-delay:0s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:normal;
+	-webkit-animation-play-state:paused;
+	/* Opera: */
+	-o-animation-name:myfirst;
+	-o-animation-duration:3s;
+	-o-animation-timing-function:linear;
+	-o-animation-delay:0s;
+	-o-animation-iteration-count:infinite;
+	-o-animation-direction:normal;
+	-o-animation-play-state:paused;
+}
+@keyframes myfirst
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+</style>
+
+
+</head>
+
+<body>
+	<div id="title">
+    	<span>博物馆及展览厅</span>
+    </div>
+    <div id="backToIndex">
+    	<strong>返回首页</strong>
+        <span></span>
+    </div>
+    <div id="text-content" class="content">
+ 			<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 1.5em;">
+	<span style="font-size: 14px; font-family: 黑体, SimHei;"></span>
+</p>
+<table data-sort="sortDisabled" style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px;">
+	<tbody>
+		<tr>
+			<td valign="top" width="259" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<span style="font-family: 黑体, SimHei; color: rgb(251, 213, 181); font-size: 14px;">海事博物馆</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<img src="text_img/19c4b92d-00fc-43af-9545-81cd4f1d9bbd.jpeg" alt="" />
+				</p>
+			</td>
+			<td valign="top" rowspan="1" colspan="4" width="336" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei; line-height: 24px; font-size: 14px;"><br />
+					</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei; line-height: 24px;">景区类别 ：展馆<br />
+					</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">门票价格 : &nbsp;10-17岁，MOP5元（一/六）3元（日）；</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">18-64岁，MOP10元（一/六）5元（日），</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">10岁以下、65岁或以上免费</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;"><br />
+					</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">开放时间 : 10：00－17：30，逢星期二休馆</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">地 &nbsp; &nbsp; 址: &nbsp;妈阁庙前地1号</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">电 &nbsp; &nbsp; 话: &nbsp;(+853)2859 5481</span>
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="259" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei; font-size: 14px; color: rgb(251, 213, 181);">澳门博物馆</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<span style="font-size: 10px; font-family: 黑体, SimHei;"><strong><span style="font-size: 18px; font-family: 隶书, SimLi; color: rgb(251, 213, 181);"><img src="text_img/4595637b-da16-4121-bdbe-c1352618c84b.jpg" style="float: none;" alt="" /><br />
+					</span></strong></span>
+				</p>
+			</td>
+			<td valign="top" rowspan="1" colspan="4" width="336" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<span style="font-family: 黑体, SimHei; line-height: 24px;">景区类别 : &nbsp;展馆<br />
+					</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">门票价格 : &nbsp;MOP15元</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">开放时间 : &nbsp;10:00~18:00</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">地 &nbsp; &nbsp;址 : &nbsp;澳门博物馆前地112</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">电 &nbsp; &nbsp;话 : &nbsp;(+853)2835 7911</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="259" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<span style="color: rgb(251, 213, 181); font-size: 14px; font-family: 黑体, SimHei;">葡萄酒博物馆</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<img src="text_img/7c2b2438-9c76-49f7-a687-0bc3fa24dad9.jpg" style="float: none;" alt="" />
+				</p>
+			</td>
+			<td valign="top" rowspan="1" colspan="4" width="336" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<span style="font-family: 黑体, SimHei;">景区类别 : &nbsp;展馆</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<span style="font-family: 黑体, SimHei;">门票价格 : &nbsp;免费</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<span style="font-family: 黑体, SimHei;">开放时间 : &nbsp;10:00~21:00</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<span style="font-family: 黑体, SimHei;">地 &nbsp; &nbsp;址 : &nbsp;高美士街431</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<span style="font-family: 黑体, SimHei;">电 &nbsp; &nbsp;话 : &nbsp;(+853)8798 4188</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" width="259" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<span style="color: rgb(251, 213, 181); font-size: 14px; font-family: 黑体, SimHei;">大赛车博物馆</span><span style="font-size: 18px; font-family: 隶书, SimLi; color: rgb(251, 213, 181);"><br />
+					</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<img src="text_img/e91bf1f0-126d-4887-a6fa-41cc9d7080ea.jpg" style="float: none;" alt="" />
+				</p>
+			</td>
+			<td valign="top" rowspan="1" colspan="4" width="336" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">景区类别 : &nbsp;展馆</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">地 &nbsp; &nbsp;址 : &nbsp;半岛高美士街431号旅游活动中心内(近红酒博物馆)</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">电 &nbsp; &nbsp;话 : &nbsp;(+853)8798 4108</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" height="17" width="259" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<span style="color: rgb(251, 213, 181); font-size: 14px; font-family: 黑体, SimHei;">澳门艺术博物馆</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<img src="text_img/c594fee8-1dac-46de-9a21-576d7a31bf19.jpg" style="float: none;" alt="" />
+				</p>
+			</td>
+			<td valign="top" rowspan="1" colspan="4" height="17" width="336" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">景区类别 : &nbsp;展馆</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">门票价格 : &nbsp;MOP5元</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">开放时间 : &nbsp;10:00~19:00</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">地 &nbsp; &nbsp;址 : &nbsp;冼星海大马路</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">电 &nbsp; &nbsp;话 : &nbsp;(+853)8791 9814</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="1" rowspan="1" width="259" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<span style="font-family: 黑体, SimHei; font-size: 14px; color: rgb(251, 213, 181);">天主教艺术博物馆</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<img src="text_img/be947bef-8384-4c3c-bda5-530ccabfc6fb.jpg" style="float: none;" alt="" />
+				</p>
+			</td>
+			<td valign="top" colspan="4" rowspan="1" width="336" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">景区类别 : &nbsp;展馆</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">门票价格 : &nbsp;免费</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">开放时间 : &nbsp;9:00~18:00</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">地 &nbsp; &nbsp;址 : &nbsp;耶稣会纪念广场</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="1" rowspan="1" width="259" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<span style="font-family: 黑体, SimHei; font-size: 14px; color: rgb(251, 213, 181);">土地暨自然博物馆</span><span style="font-size: 10px; font-family: 黑体, SimHei;"><strong><span style="font-size: 18px; font-family: 隶书, SimLi; color: rgb(251, 213, 181);"></span></strong><br />
+					</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<img src="text_img/3fcbdeab-baf6-4cb4-8f7c-473ee2b28099.jpg" style="float: none;" alt="" />
+				</p>
+			</td>
+			<td valign="top" colspan="4" rowspan="1" width="336" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">景区类别 : &nbsp;展馆</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">门票价格 : &nbsp;免费</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">开放时间 : &nbsp;10:00~18:00</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">地 &nbsp; &nbsp;址 : &nbsp;路环石排湾郊野公园内</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">电 &nbsp; &nbsp;话 : &nbsp;（+853）2887 0277</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="1" rowspan="1" width="259" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<span style="color: rgb(251, 213, 181); font-size: 14px; font-family: 黑体, SimHei;">通讯博物馆</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<img src="text_img/92ebe299-1c49-4f06-bfd6-3d5ca92d52af.jpg" style="float: none;" alt="" />
+				</p>
+			</td>
+			<td valign="top" colspan="4" rowspan="1" width="336" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<span style="font-family: 黑体, SimHei; line-height: 24px;">景区类别 : &nbsp;展馆</span><br />
+					
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">门票价格 : &nbsp;MOP10元</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">开放时间 : &nbsp;9:30 ~ 17:30</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">地 &nbsp; &nbsp;址 : &nbsp;半岛马交石炮台马路7号(港澳码头北侧)</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">电 &nbsp; &nbsp;话 : &nbsp;(+853)2871 8063</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="1" rowspan="1" width="259" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<span style="color: rgb(251, 213, 181); font-size: 14px; font-family: 黑体, SimHei;">龙环葡韵住宅式博物馆</span><span style="font-size: 10px; font-family: 黑体, SimHei;"><strong><span style="font-size: 18px; font-family: 隶书, SimLi; color: rgb(251, 213, 181);"></span></strong><br />
+					</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<img src="text_img/19da3602-1642-4783-8824-6787b1a96551.jpeg" style="float: none;" alt="" />
+				</p>
+			</td>
+			<td valign="top" colspan="4" rowspan="1" width="336" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">景区类别 : &nbsp;展馆</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">门票价格 : &nbsp;MOP5元（成人），MOP3元（學生）</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">开放时间 : &nbsp;10:00-18:00</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">地 &nbsp; &nbsp;址 : 市政分园对落</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">电 &nbsp; &nbsp;话 : &nbsp;(+853)2882 7103</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="1" rowspan="1" width="259" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<span style="color: rgb(251, 213, 181); font-size: 14px; font-family: 黑体, SimHei;">澳门保安部队博物馆&nbsp;</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<img src="text_img/8efccde9-b195-4d9d-a43a-d1e4ea7a40df.jpg" alt="" />
+				</p>
+			</td>
+			<td valign="top" colspan="4" rowspan="1" width="336" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">景区类别 ：展馆</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">地 &nbsp; &nbsp;址 : 澳门特别行政区澳门半岛</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="1" rowspan="1" width="259" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<span style="font-size: 14px; font-family: 黑体, SimHei;"><span style="color: rgb(251, 213, 181);">留声岁月音响博物馆</span>&nbsp;</span><img src="text_img/94046e68-cb95-489e-9190-a755d0774b2d.jpg" style="float: none;" alt="" />
+				</p>
+			</td>
+			<td valign="top" colspan="4" rowspan="1" width="336" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">景区类别 : &nbsp;展馆</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">门票价格 : &nbsp;MOP30元</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">开放时间 : &nbsp;需提前一天预约参观，逢星期六、日休馆</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">地 &nbsp; &nbsp;址 : &nbsp;澳门草堆街13-15号太平电器广场三楼</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">电 &nbsp; &nbsp;话 : &nbsp;(+853)2892 1389</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="1" rowspan="1" width="259" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<span style="color: rgb(251, 213, 181); font-size: 14px; font-family: 黑体, SimHei;">仁慈堂博物馆</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<img src="text_img/83068bb6-5761-451a-af1d-e7f682fb6d10.jpg" style="float: none;" alt="" />
+				</p>
+			</td>
+			<td valign="top" colspan="4" rowspan="1" width="336" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">景区类别 : &nbsp;展馆</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">门票价格 : &nbsp;MOP5元</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">开放时间 : &nbsp;10:00~13:00；14:30~17:30</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">地 &nbsp; &nbsp;址 : &nbsp;仁慈堂右巷</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">电 &nbsp; &nbsp;话 : &nbsp;(+853)2833 7503</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="1" rowspan="1" width="259" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<span style="color: rgb(251, 213, 181); font-size: 14px; font-family: 黑体, SimHei;">消防局博物馆</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<img src="text_img/a51885bc-b32d-4c59-864e-43e8f14f46a5.jpg" style="float: none;" alt="" />
+				</p>
+			</td>
+			<td valign="top" colspan="4" rowspan="1" width="336" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">景区类别 : &nbsp;展馆</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">门票价格 : &nbsp;免费</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">开放时间 : &nbsp;10:00~18:00</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">地 &nbsp; &nbsp;址 : &nbsp;半岛连胜马路2-6号(近镜湖医院)</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">电 &nbsp; &nbsp;话 : &nbsp;(+853)2827 2222</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="1" rowspan="1" width="259" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<span style="color: rgb(251, 213, 181); font-size: 14px; font-family: 黑体, SimHei;">留声机博物馆</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<img src="text_img/190a324e-288f-4299-ac39-0d7dbbf9469c.jpg" style="float: none;" alt="" />
+				</p>
+			</td>
+			<td valign="top" colspan="4" rowspan="1" width="336" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">景区类别 : 展馆</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">地 &nbsp; &nbsp;址 ：半岛草堆街13-15号3楼</span>
+				</p>
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei;">电 &nbsp; &nbsp;话 : &nbsp;(+853)2892 1389</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 10px; font-family: 黑体, SimHei;"><br />
+					</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+			</td>
+		</tr>
+		<tr>
+			<td valign="top" colspan="1" rowspan="1" width="259" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				<p style="margin-top: 5px; margin-bottom: 5px; padding-top: 0px; padding-bottom: 0px;">
+					<br />
+					
+				</p>
+			</td>
+			<td valign="top" colspan="4" rowspan="1" width="336" style="padding: 5px 10px; border-width: 1px; border-style: solid; word-break: break-all;">
+				&nbsp;
+			</td>
+		</tr>
+	</tbody>
+</table>
+<div>
+	<span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';"><br />
+	</span>
+</div>
+    </div>
+</body>
+</html>

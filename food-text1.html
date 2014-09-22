@@ -1,0 +1,397 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文章页</title>
+
+<!-- 滚动插件 -->
+<link href="custom-scrollbar-plugin/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+<script>
+	/* 滚动条插件 */
+    (function($){
+        $(window).load(function(){
+            $("#text-content").mCustomScrollbar({
+				autoHideScrollbar:true,
+                scrollButtons:{
+					theme:"light-thin"
+                }
+            });
+        });
+    })(jQuery);
+
+</script>
+     
+<!-- 返回首页 -->
+<script type="text/javascript">
+	$(function(){
+		//var $parent = $(window.parent);	
+		$("#backToIndex").children().click(function(){
+			//$parent[0].backToIndex();
+			parent.location.reload();
+		});
+	})
+	
+	/* Animation */	
+	$(function(){
+		$("#backToIndex").hover(function(){
+			$(this).find("span").css({
+				"animation-play-state":"running",
+				"-moz-animation-play-state":"running",
+				"-webkit-animation-play-state":"running",
+				"-o-animation-play-state":"running"
+			});   
+			//alert("in");
+		 },function(){
+			$(this).find("span").css({
+				"animation-play-state":"paused",
+				"-moz-animation-play-state":"paused",
+				"-webkit-animation-play-state":"paused",
+				"-o-animation-play-state":"paused"
+			});   
+			//alert("out");
+		 });
+	});
+
+	
+</script>
+    
+<style type="text/css">
+body {color:white;font-size:13px;background-color:transparent}
+#title {width:auto;height:40px;}
+#title span{font-size: 15pt;position: relative;left: 25px;top: 20px;font-weight:bold}
+#backToIndex {width:90px;height:30px;position:absolute;top:30px;right:20px}
+#backToIndex strong {position: relative;top: 3px;cursor:pointer}
+#backToIndex span{background:url(images/back.png) no-repeat;width:23px;height:23px;display:block;cursor:pointer;float:right}
+#text-content {padding: 20px 20px;height: 420px;;width: 97%;}
+hr {width:95%;}
+#share {height:20px;width:70%;float:right;padding:11px 0;margin-right:25px}
+#share span {width:17px;height:17px;display:block;cursor:pointer;float:right;margin:0px 3px}
+#twitter {background:url(images/twitter.png) no-repeat}
+/* 返回首页旋转动画CSS3 */
+#backToIndex span{
+	position:relative;
+	animation-name:myfirst;
+	animation-duration:3s;
+	animation-timing-function:linear;       /* 动画从头到尾的速度是相同的。*/
+	animation-delay:0s;
+	animation-iteration-count:infinite;		/* 规定动画应该无限次播放。*/
+	animation-direction:normal;
+	animation-play-state:paused;
+	/* Firefox: */
+	-moz-animation-name:myfirst;
+	-moz-animation-duration:3s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-delay:0s;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:normal;
+	-moz-animation-play-state:paused;
+	/* Safari and Chrome: */
+	-webkit-animation-name:myfirst;
+	-webkit-animation-duration:3s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-delay:0s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:normal;
+	-webkit-animation-play-state:paused;
+	/* Opera: */
+	-o-animation-name:myfirst;
+	-o-animation-duration:3s;
+	-o-animation-timing-function:linear;
+	-o-animation-delay:0s;
+	-o-animation-iteration-count:infinite;
+	-o-animation-direction:normal;
+	-o-animation-play-state:paused;
+}
+@keyframes myfirst
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+</style>
+
+
+</head>
+
+<body>
+	<div id="title">
+    	<span>澳门小食手信</span>
+    </div>
+    <div id="backToIndex">
+    	<strong>返回首页</strong>
+        <span></span>
+    </div>
+    <div id="text-content" class="content">
+        <p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 1.5em;">
+	<span style="font-size: 14px; font-family: 黑体, SimHei;"></span>
+</p>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; width: 649px; height: 160px; margin-bottom: 30px;">
+	<div style="width: 260px; float: left;">
+		<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/7d2327f6-fa78-43b5-b842-b8fb6be8b204.JPG" src="text_img/7d2327f6-fa78-43b5-b842-b8fb6be8b204.JPG" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+	</div>
+	<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+		<div>
+			<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">咀香園餅家</span></span>
+		</div>
+		<div style="width: 260px; height: 100px; overflow: hidden;">
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">氹仔地堡街嘉業閣A-D舖<br />
+				</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">(853)2882-7388</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">HKD100以下</span><br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+			</p>
+		</div>
+	</div>
+</div>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; width: 649px; height: 160px; margin-bottom: 30px;">
+	<div style="width: 260px; float: left;">
+		<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/4bc89e05-5368-484a-acb8-02e47fa22919.JPG" src="text_img/4bc89e05-5368-484a-acb8-02e47fa22919.JPG" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+	</div>
+	<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+		<div>
+			<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">鉅記手信</span></span>
+		</div>
+		<div style="width: 260px; height: 100px; overflow: hidden;">
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">新馬路福隆新街</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">70-72號地下</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">(853)2893-8102</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="color: rgb(0, 0, 255); font-family: 新細明體;"></span><span style="font-family: 黑体, SimHei; font-size: 12px;">HKD100以下</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+			</p>
+		</div>
+	</div>
+</div>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; width: 649px; height: 160px; margin-bottom: 30px;">
+	<div style="width: 260px; float: left;">
+		<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/b6d11f59-b339-4ad1-b5b4-a7071b53a548.JPG" src="text_img/b6d11f59-b339-4ad1-b5b4-a7071b53a548.JPG" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+	</div>
+	<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+		<div>
+			<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">榮記荳腐麵食</span></span>
+		</div>
+		<div style="width: 260px; height: 100px; overflow: hidden;">
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-family: 黑体, SimHei; font-size: 12px;">新馬路果欄街47號地下</span><br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">(853)2892-1152</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="color: rgb(0, 0, 255); font-family: 新細明體;"><span style="font-size: 12px; font-family: 黑体, SimHei;">&nbsp;</span></span><span style="font-family: 黑体, SimHei; font-size: 12px;">HKD100以下</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+			</p>
+		</div>
+	</div>
+</div>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; width: 649px; height: 160px; margin-bottom: 30px;">
+	<div style="width: 260px; float: left;">
+		<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/eade586c-8bca-4fd3-9957-c91b8c5af376.JPG" src="text_img/eade586c-8bca-4fd3-9957-c91b8c5af376.JPG" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+	</div>
+	<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+		<div>
+			<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">大三巴餅家</span></span>
+		</div>
+		<div style="width: 260px; height: 100px; overflow: hidden;">
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<span style="font-size: 16px; font-family: 新細明體;"></span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">大三巴街17A地下</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">(853) 2836-5600</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="color: rgb(0, 0, 255); font-family: 新細明體;"><span style="font-size: 12px;">&nbsp;</span></span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">HKD100以下</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<span style="font-size: 16px; font-family: 新細明體;"></span><br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+			</p>
+		</div>
+	</div>
+</div>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; width: 649px; height: 160px; margin-bottom: 30px;">
+	<div style="width: 260px; float: left;">
+		<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/6601e4e5-897c-48d3-aa38-3fc4a36df410.JPG" src="text_img/6601e4e5-897c-48d3-aa38-3fc4a36df410.JPG" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+	</div>
+	<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+		<div>
+			<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">祐記龍鬚糖</span></span>
+		</div>
+		<div style="width: 260px; height: 100px; overflow: hidden;">
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">新橋三盞燈高士德大馬路紅街市匯豐銀行門口</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">(853)6633-1599</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+				</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">HKD100以下</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+			</p>
+		</div>
+	</div>
+</div>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; width: 649px; height: 160px; margin-bottom: 30px;">
+</div>
+<div>
+	<span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';"><br />
+	</span>
+</div>
+    </div>
+    
+</body>
+</html>

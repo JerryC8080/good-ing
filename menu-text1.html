@@ -1,0 +1,470 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文章页</title>
+
+<!-- 滚动插件 -->
+<link href="custom-scrollbar-plugin/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+<script>
+	/* 滚动条插件 */
+    (function($){
+        $(window).load(function(){
+            $("#text-content").mCustomScrollbar({
+				autoHideScrollbar:true,
+                scrollButtons:{
+					theme:"light-thin"
+                }
+            });
+        });
+    })(jQuery);
+
+</script>
+     
+<!-- 返回首页 -->
+<script type="text/javascript">
+	$(function(){
+		//var $parent = $(window.parent);	
+		$("#backToIndex").children().click(function(){
+			//$parent[0].backToIndex();
+			parent.location.reload();
+		});
+	})
+	
+	/* Animation */	
+	$(function(){
+		$("#backToIndex").hover(function(){
+			$(this).find("span").css({
+				"animation-play-state":"running",
+				"-moz-animation-play-state":"running",
+				"-webkit-animation-play-state":"running",
+				"-o-animation-play-state":"running"
+			});   
+			//alert("in");
+		 },function(){
+			$(this).find("span").css({
+				"animation-play-state":"paused",
+				"-moz-animation-play-state":"paused",
+				"-webkit-animation-play-state":"paused",
+				"-o-animation-play-state":"paused"
+			});   
+			//alert("out");
+		 });
+	});
+
+	
+</script>
+    
+<style type="text/css">
+body {color:white;font-size:13px;background-color:transparent}
+#title {width:auto;height:40px;}
+#title span{font-size: 15pt;position: relative;left: 25px;top: 20px;font-weight:bold}
+#backToIndex {width:90px;height:30px;position:absolute;top:30px;right:20px}
+#backToIndex strong {position: relative;top: 3px;cursor:pointer}
+#backToIndex span{background:url(images/back.png) no-repeat;width:23px;height:23px;display:block;cursor:pointer;float:right}
+#text-content {padding: 20px 20px;height: 420px;;width: 97%;}
+hr {width:95%;}
+#share {height:20px;width:70%;float:right;padding:11px 0;margin-right:25px}
+#share span {width:17px;height:17px;display:block;cursor:pointer;float:right;margin:0px 3px}
+#twitter {background:url(images/twitter.png) no-repeat}
+/* 返回首页旋转动画CSS3 */
+#backToIndex span{
+	position:relative;
+	animation-name:myfirst;
+	animation-duration:3s;
+	animation-timing-function:linear;       /* 动画从头到尾的速度是相同的。*/
+	animation-delay:0s;
+	animation-iteration-count:infinite;		/* 规定动画应该无限次播放。*/
+	animation-direction:normal;
+	animation-play-state:paused;
+	/* Firefox: */
+	-moz-animation-name:myfirst;
+	-moz-animation-duration:3s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-delay:0s;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:normal;
+	-moz-animation-play-state:paused;
+	/* Safari and Chrome: */
+	-webkit-animation-name:myfirst;
+	-webkit-animation-duration:3s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-delay:0s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:normal;
+	-webkit-animation-play-state:paused;
+	/* Opera: */
+	-o-animation-name:myfirst;
+	-o-animation-duration:3s;
+	-o-animation-timing-function:linear;
+	-o-animation-delay:0s;
+	-o-animation-iteration-count:infinite;
+	-o-animation-direction:normal;
+	-o-animation-play-state:paused;
+}
+@keyframes myfirst
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+</style>
+
+
+</head>
+
+<body>
+	<div id="title">
+    	<span>文娱宴会</span>
+    </div>
+    <div id="backToIndex">
+    	<strong>返回首页</strong>
+        <span></span>
+    </div>
+    <div id="text-content" class="content">
+        <p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 1.5em;">
+	<span style="font-size: 14px; font-family: 黑体, SimHei;"></span>
+</p>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; margin-bottom: 50px;">
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/6c576379-c27d-4916-a4de-777b937f0b4a.jpg" src="text_img/6c576379-c27d-4916-a4de-777b937f0b4a.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">水舞间</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei; font-size: 12px; text-align: justify; line-height: 1.5em;">新濠天地呈獻並由佛朗哥德拉戈(Franco Dragone)娛樂集團製作之大型水上匯演《水舞間》，耗資2.5億美元，是一個震撼人心、超越時空的史詩式愛情故事。創作靈感源自中國儒家思想的「七情」之說，以特技、舞蹈等表現方法，配合以水為主題，把東方智慧的意象發揮得淋漓盡致。整個匯演將會帶領觀眾進入一個魔幻無邊的奇妙國度，經歷截然不同的情感之旅，從哀、怒的深淵出發，直達欲望的頂尖至喜悅的高峰，徘回在恐懼的邊緣，最終以愛衝破怨恨。</span><br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">由來自多於全球25個國家約80個國際匯演演員、以及約160個製作和技術人員組成的表演團隊，將配以令人耳目一新的服飾及無可比擬的視聽效果，並於由貝氏建築事務所度身訂造的Dancing Water Theater隆重公演。這個大型劇院內設全球最壯觀宏偉的商用泳池，容量達約370萬加侖，多於五個奧林匹克標準泳池的容量，氣勢磅礡，將會是史上最大型的以水為題的劇院之一。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">也是來澳門觀光遊玩不可錯過的表演節目之一。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+					</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">地址:澳門路氹連貫公路，新濠天地水舞間劇院</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">表演時間：17:00及20:00，約85分鐘</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">電話：+853 88686688</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">網頁：</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: arial, helvetica, sans-serif; overflow: hidden;"></span><span style="overflow: hidden;">www.thehouseofdancingwater.co</span><span style="overflow: hidden; word-wrap: break-word; font-size: 12px; font-family: arial, helvetica, sans-serif;">m</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/7499b3ef-16b1-44c2-9706-307a62b1387b.jpg" src="text_img/7499b3ef-16b1-44c2-9706-307a62b1387b.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">龍騰</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei; font-size: 12px; line-height: 1.5em;">360度的媒體視覺享受，感受龍珠的神秘力量。「龍騰」置身在新濠天地全新的多媒體視覺娛樂天幕之中，故事描述龍珠和它賜給四大龍王神秘力量的故事，以特技視覺、千變萬化的舞臺燈光、獨特樂章及多種感官效果，為觀眾帶來疑幻疑真的震撼娛樂享受。</span><br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+					</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">地址<strong>:</strong>澳門路氹連貫公路，新濠天地</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">表演時間：約15分鐘</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">時間表：每日中午12時至下午6時：每30分鐘一場 /&nbsp;晚上7時至10時：每小時一場。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">電話：+853 88686688</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="overflow: hidden; word-wrap: break-word; font-size: 12px; font-family: 黑体, SimHei;">詳情請流覽網頁：</span><span style="overflow: hidden;">http://www.cityofdreamsmacau.com/tc/attraction/dragons-treasure</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/57d7ea11-dbf1-4aec-aacd-dbf7b5f6070f.jpg" src="text_img/57d7ea11-dbf1-4aec-aacd-dbf7b5f6070f.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">永利表演湖</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei; font-size: 12px; line-height: 1.5em;">從早上11點到午夜12點，直徑達70公尺的永利表演湖每隔15分鐘就會有一場精彩的音樂水舞表演，每次聲光效果皆不同，80萬加侖的湖水與200多個噴嘴，偶而點綴的金色火花，再加上時而古典、時而動感的音樂搭配，使得這水花隨著節奏飛舞在澳門豪華酒店群間的景象非常壯麗。入夜後觀看更加精彩，夜晚周圍高聳的富麗建築搖身一變成為五光十色的立體布幕，湖水倒映著繁華的賭城夜色成為最引人注目的舞臺，奔騰的水柱隨著璀璨燈光起舞，忽又化身為浪漫的水霧，轉眼又見熱情的火焰，緊湊而精緻的安排總是讓駐足的遊客們不禁讚歎。</span><br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">地址：永利澳門, 澳門外港填海區仙德麗街</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">表演時間：每日上午11時至晚上12時，每隔15分鐘表演一次。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">電話：+853 28889966</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="overflow: hidden; word-wrap: break-word; font-size: 12px; font-family: 黑体, SimHei;">詳情請流覽網頁：</span><span style="overflow: hidden;">http://www.wynnmacau.com/tc/entertainment/performance_lake.html</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/44c70c04-2749-4f45-a79b-d3709d6e0271.jpg" src="text_img/44c70c04-2749-4f45-a79b-d3709d6e0271.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">吉祥樹</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei; font-size: 12px; line-height: 1.5em;">永利富貴龍和吉祥樹的表演時間為早上10:00到淩晨2:00，每隔30分鐘輪番展現。富貴龍的表演全長約三分半鐘，龍體由美國的Michael Curry Design工作室花費5,000個小時手工細琢而成，成為一條重達12,000磅，精雕細緻、氣勢逼人的金龍，象徵著富貴康樂，並嵌入15,000顆LED燈來散射出翡翠般的光芒，緩緩從地底綻放的蓮花瓣中騰雲駕霧至28呎的高空，搭配自龍鼻噴出的煙霧以及燈光效果，160個的部件設計，使得龍身能靈活的展現各樣威猛的動作，在磅礡的音響效果下特別令人震懾。影像與燈光效果，吉祥樹隨音樂節奏緩緩升起，極盡視聽之娛。高11米的吉祥樹，共有60枝主枝、超過2,000枝分枝及98,000塊由24K純金及黃銅薄片組成的葉子，配合七彩的燈光照耀下，營造出四季千變萬化的景象。</span><br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+					</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">地址:永利澳門, 澳門外港填海區仙德麗街</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">表演時間：約7分鐘，每日上午10時30分至淩晨1時30分，每小時表演一次</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">電話：+853 28889966</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="overflow: hidden; word-wrap: break-word; font-size: 12px; font-family: 黑体, SimHei;">詳情請流覽網頁：</span><span style="overflow: hidden;">http://www.wynnmacau.com/tc/entertainment/tree_of_prosperity.html</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/27504295-bc80-471d-98c3-84e9adacaba4.jpg" src="text_img/27504295-bc80-471d-98c3-84e9adacaba4.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">富貴龍</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">富貴龍置身在永利澳門酒店內，由一條威猛的金龍，盤繞著瑰麗盛放的蓮花，騰雲駕霧般從中庭的地底緩緩躍升至28呎的高度，顯現蒼勁矯捷的氣勢。金龍的雙目閃爍耀眼，加上龍鼻噴出的煙霧及燈光效果，令富貴龍更添懾人神韻。位於中央的蓮花悄然綻放，營造出水晶燈般的閃耀效果，璀璨奪目。開始時天幕隨著華麗的管絃樂向周圍推開，出現的是魔幻七彩光芒流動在LED顯示背板上，巨型銀白色水晶吊燈順勢落下，而金色吉祥樹在鼓動中由地面的金色球體中升起，隨著燈光與音樂做顏色的變換，Bling Bling的令遊客驚呼連連，此時也有許多人會向吉祥樹丟擲錢幣許願，希望能帶來好運。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">吉祥樹和富貴龍兩個精彩的表演彷彿都在預祝賓客在這澳門賭城之旅中能夠滿載而歸、富貴吉祥！</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+					</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">地址:永利澳門, 澳門外港填海區仙德麗街</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">表演時間：約4分鐘，每日上午10時至淩晨2時，每小時表演一次</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">電話：+853 28889966</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="overflow: hidden; word-wrap: break-word; font-size: 12px; font-family: 黑体, SimHei;">詳情請流覽網頁：</span><span style="overflow: hidden;">http://www.wynnmacau.com/tc/entertainment/dragon_of_fortune.html</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/257ccc87-45d5-4f20-9261-6e24f21814df.jpg" src="text_img/257ccc87-45d5-4f20-9261-6e24f21814df.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">樂映天幕</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">位於澳門美高梅酒店大堂的天幕廣場。廣場周圍是動人心魄的瑰麗建築和優雅的餐廳酒吧，散發著葡萄牙及歐陸情懷。每天黃昏時分，在開闊的圓頂日光天幕下，「樂映天幕」千變萬化的幻彩影像投射于歐陸建築外牆，為遊人帶來賞心悅目的表演。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+					</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">地址:澳門美高梅 澳門外港新填海區孫逸仙大馬路</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">表演時間：每日晚上7時至11時</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">電話：+853 88028888</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="overflow: hidden; word-wrap: break-word; font-size: 12px; font-family: 黑体, SimHei;">網址：</span><span style="overflow: hidden;">http://www.mgmmacau.com/zh-hant/</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/7cf40a6c-819c-4bb3-aaff-a1f9b4718e5a.jpg" src="text_img/7cf40a6c-819c-4bb3-aaff-a1f9b4718e5a.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">運財銀鑽</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; line-height: 1.5em;">以孔雀羽毛為設計靈感的「澳門銀河」酒店大堂中央，有一個巨大的「運財銀鑽」。高達3米的璀璨巨鑽在水幕中央緩緩旋轉，隨即落在仿輪盤設計的噴水池中，寓意財來運轉。</span><br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px;"><br />
+					</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px;">地址：澳門路氹城澳門銀河綜合渡假城</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px;">表演時間：週日至週四 - 上午10時至晚上11時59分，每隔30分鐘表演一次 / 週五、週六及公眾假期 - 上午10時至淩晨2時，每隔30分鐘表演一次</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px;">電話：+853 2888 0888</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px;">詳情請流覽網頁：</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="overflow: hidden; word-wrap: break-word; font-size: 12px;"><span style="font-size: 11px;"></span></span><span style="overflow: hidden;">http://www.galaxymacau.com/zh-hant/wow</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="page" style="color: white; font-family: Simsun; font-size: 13px; line-height: 20px; margin-bottom: 30px; height: 20px;">
+</div>
+<div>
+	<span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';"><br />
+	</span>
+</div>
+    </div>
+    
+</body>
+</html>

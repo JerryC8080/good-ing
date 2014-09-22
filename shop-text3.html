@@ -1,0 +1,342 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文章页</title>
+
+<!-- 滚动插件 -->
+<link href="custom-scrollbar-plugin/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+<script>
+	/* 滚动条插件 */
+    (function($){
+        $(window).load(function(){
+            $("#text-content").mCustomScrollbar({
+				autoHideScrollbar:true,
+                scrollButtons:{
+					theme:"light-thin"
+                }
+            });
+        });
+    })(jQuery);
+
+</script>
+     
+<!-- 返回首页 -->
+<script type="text/javascript">
+	$(function(){
+		//var $parent = $(window.parent);	
+		$("#backToIndex").children().click(function(){
+			//$parent[0].backToIndex();
+			parent.location.reload();
+		});
+	})
+	
+	/* Animation */	
+	$(function(){
+		$("#backToIndex").hover(function(){
+			$(this).find("span").css({
+				"animation-play-state":"running",
+				"-moz-animation-play-state":"running",
+				"-webkit-animation-play-state":"running",
+				"-o-animation-play-state":"running"
+			});   
+			//alert("in");
+		 },function(){
+			$(this).find("span").css({
+				"animation-play-state":"paused",
+				"-moz-animation-play-state":"paused",
+				"-webkit-animation-play-state":"paused",
+				"-o-animation-play-state":"paused"
+			});   
+			//alert("out");
+		 });
+	});
+
+	
+</script>
+    
+<style type="text/css">
+body {color:white;font-size:13px;background-color:transparent}
+#title {width:auto;height:40px;}
+#title span{font-size: 15pt;position: relative;left: 25px;top: 20px;font-weight:bold}
+#backToIndex {width:90px;height:30px;position:absolute;top:30px;right:20px}
+#backToIndex strong {position: relative;top: 3px;cursor:pointer}
+#backToIndex span{background:url(images/back.png) no-repeat;width:23px;height:23px;display:block;cursor:pointer;float:right}
+#text-content {padding: 20px 20px;height: 420px;;width: 97%;}
+hr {width:95%;}
+#share {height:20px;width:70%;float:right;padding:11px 0;margin-right:25px}
+#share span {width:17px;height:17px;display:block;cursor:pointer;float:right;margin:0px 3px}
+#twitter {background:url(images/twitter.png) no-repeat}
+/* 返回首页旋转动画CSS3 */
+#backToIndex span{
+	position:relative;
+	animation-name:myfirst;
+	animation-duration:3s;
+	animation-timing-function:linear;       /* 动画从头到尾的速度是相同的。*/
+	animation-delay:0s;
+	animation-iteration-count:infinite;		/* 规定动画应该无限次播放。*/
+	animation-direction:normal;
+	animation-play-state:paused;
+	/* Firefox: */
+	-moz-animation-name:myfirst;
+	-moz-animation-duration:3s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-delay:0s;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:normal;
+	-moz-animation-play-state:paused;
+	/* Safari and Chrome: */
+	-webkit-animation-name:myfirst;
+	-webkit-animation-duration:3s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-delay:0s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:normal;
+	-webkit-animation-play-state:paused;
+	/* Opera: */
+	-o-animation-name:myfirst;
+	-o-animation-duration:3s;
+	-o-animation-timing-function:linear;
+	-o-animation-delay:0s;
+	-o-animation-iteration-count:infinite;
+	-o-animation-direction:normal;
+	-o-animation-play-state:paused;
+}
+@keyframes myfirst
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+</style>
+
+
+</head>
+
+<body>
+	<div id="title">
+    	<span>澳门世界遗产</span>
+    </div>
+    <div id="backToIndex">
+    	<strong>返回首页</strong>
+        <span></span>
+    </div>
+    <div id="text-content" class="content">
+       <p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 1.5em;">
+	<span style="font-size: 14px; font-family: 黑体, SimHei;"></span>
+</p>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; margin-bottom: 50px;">
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/562944a4-2ca0-45da-9f1f-79efc7da508c.jpg" src="text_img/562944a4-2ca0-45da-9f1f-79efc7da508c.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">免稅店及名牌精品店</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳門漁人碼頭、新八佰伴百貨公司、置地廣場、葡京酒店、金麗華酒店、永利名店街、大運河購物中心、四季?名店、金沙廣場、澳門壹號廣塲、澳門銀河購物大道、新濠大道內設有多家高級商店，出售世界名牌服裝及貨品。免稅店也可於外港客運碼頭及澳門國際機場找到。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/7a745777-b3c5-4b82-9a26-1641997a90f6.jpg" src="text_img/7a745777-b3c5-4b82-9a26-1641997a90f6.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">服裝厂货直销 平价转销 名牌廉销</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳門的制衣工廠產品主要銷往歐洲、美國及澳洲市場。主要產品是牛仔褲、童裝和運動服。在標有「出口成衣」的商店裡，可以買到價廉物美的服裝。許多廉價成衣店賣的成衣是不能試穿的，購買時要小心挑選合適的尺寸，因為這些商店賣出的衣服是不能退換的。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">此外，中式服裝無論是便服還是禮服，都很受歡迎。在民政總署附近的營地街市一帶和紅街市附近的三盞燈一帶的成衣店或者攤位上，都可以買到不同布料和不同價錢的中式服裝。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/4f650418-af28-4c62-a747-b209af7eebe4.JPG" src="text_img/4f650418-af28-4c62-a747-b209af7eebe4.JPG" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">家具及古玩</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-family: 黑体, SimHei; font-size: 12px; line-height: 1.5em; text-align: justify;">在澳門半島和路環市區有不少商店出售古玩真品及精美的仿製品。大部分這類商店都集中在議事亭前地至大三巴一帶的大三巴街、草堆街、花王堂街、關前正街和果欄街。不少古董傢俱來自中國內地，然後翻新。另外，也有用優質木材製成的仿古新傢俱。大部分商店都提供貨運服務，可將貨品運到世界各地，而且收費合理。</span><br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/95fe8e7b-fb39-45d8-8445-bc31b63a57bb.jpg" src="text_img/95fe8e7b-fb39-45d8-8445-bc31b63a57bb.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">珠宝首饰</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em; text-align: justify;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">在澳門可買到不同等級的金器首飾，由於免稅，所以價格較相宜。也有大量珍珠和半寶石（水晶、海藍寶、松石等）出售，商品選擇視乎顧客預算而定。若想購買名貴首飾，請光顧有信譽的商店。在葡京酒店、新馬路及高士德大馬路附近，以至酒店的高級商場內，有很多信譽卓越的珠寶店。購買高價商品時，建議您多走幾家商店，比較一下價格。請勿忘記索取保證卡以及保存收據。</span>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/56943c49-158e-4819-8765-ef4abadfd799.jpg" src="text_img/56943c49-158e-4819-8765-ef4abadfd799.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">葡国葡萄酒</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">葡萄牙出產的葡萄酒美味香醇，品嘗美酒是一門學問。若想對葡萄酒加深瞭解，可參觀設於旅遊活動中心的葡萄酒博物館，學懂區分不同產地的葡萄酒並品嘗品質上乘的波爾圖甜酒。在葡萄酒博物館、澳門各大超級市場甚至較小的店舖，皆有售各款葡萄酒。葡萄酒的價錢不等，有價值澳門幣五十元的普通餐桌酒，也有價值澳門幣數百元的波爾圖上乘陳年老釀。在碼頭、機場以及邊境的免稅店內均有售各式葡萄酒，供離境旅客購買。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/3cd677f7-a9eb-4934-a8dc-22f4c8663c0c.jpg" src="text_img/3cd677f7-a9eb-4934-a8dc-22f4c8663c0c.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">传统食品</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p class="p0" style="margin-top: 0pt; margin-bottom: 0pt;">
+					<span style="font-family: 黑体, SimHei; font-size: 12px; line-height: 1.5em; text-align: justify;">幾乎全澳各區都有店舖出售海味(乾貨) &nbsp;、香料及其他傳統中國食品和藥材。這些店舖業務興旺，有不少本地顧客及遊客光顧。大規模的海味(乾貨)店一般都集中在新馬路及高士德大馬路等熱鬧購物區。</span><br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/caf2bd51-18c2-4555-8d4a-817dab8dce27.JPG" src="text_img/caf2bd51-18c2-4555-8d4a-817dab8dce27.JPG" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">澳门纪念品</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">若想買澳門紀念品，可前往博物館內的紀念品售賣處。澳門博物館有各種澳門紀念品出售，其中不少是精緻的手工藝品。海事博物館內售賣圖文並茂的航海書籍和精美的航海紀念品，如獨特的帆船模型，這類帆船昔日遍佈澳門周圍的水域。澳門大賽車博物館有出售澳門世界三級方程式大賽的書籍、錄影帶和其他紀念品。毗鄰典當業展示館的文化會館，內設「精點廊」和「藝品廣場」，售賣特色手信食品、裝飾品、紀念品、名信片、書籤和衣飾等，豐富多樣。</span>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/76d6f45c-f447-438f-a4ba-4f9759b7a6f8.jpg" src="text_img/76d6f45c-f447-438f-a4ba-4f9759b7a6f8.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">艺术画廊及书店</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳門有不少本地和來自不同國家的藝術家，他們的作品經常在本地的畫廊展出。畫展一般在民政總署畫廊、盧廉若公園春草堂及澳門茶文化館、澳門藝術博物館、塔石藝文館、旅遊活動中心等場地舉行，而邊度有書、葡文書局及文化廣場等書店亦不定期舉行展覽，部份展品可供購買。傳統的中國畫於中國工藝品店有售。如果對古畫有興趣，可到花王堂街的商店逛一逛。</span>
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/1bc90c64-8427-48ed-a31a-1814aefdd497.JPG" src="text_img/1bc90c64-8427-48ed-a31a-1814aefdd497.JPG" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">跳蚤市场</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳門特色的跳蚤露天市場位於大三巴牌坊附近，離開熱鬧的旅遊景點，沿大三巴街轉往草堆街，再向下走至下一條窄巷，沿途經過一些古玩店、裁縫店及其他小店舖後，便到達一個岔口。由岔口開始，小販將他們的貨物擺放在碎石鋪成的路面售賣，別具特色。在這裡可找到各種陶器、小雕像、歷史紀念品及其他懷舊二手物品。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">此外，氹仔亦有富特色且有趣的氹仔市集，逢星期日上午11時至晚上8時在氹仔舊城區的消防局前地舉行，售賣傳統美食、各式紀念品及飾物攤檔，吸引遊人選購，並於下午4時至5時30分送上各類表演，吸引眾多遊人駐足欣賞。這一帶的古舊建築物經修復，重新散發迷人風采，其中北帝廟更顯得古色古香，份外出眾。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="page" style="color: white; font-family: Simsun; font-size: 13px; line-height: 20px; margin-bottom: 30px; height: 20px;">
+</div>
+<div>
+	<span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';"><br />
+	</span>
+</div>
+    </div>  
+</body>
+</html>

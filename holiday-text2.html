@@ -1,0 +1,543 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文章页</title>
+
+<!-- 滚动插件 -->
+<link href="custom-scrollbar-plugin/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+<script>
+	/* 滚动条插件 */
+    (function($){
+        $(window).load(function(){
+            $("#text-content").mCustomScrollbar({
+				autoHideScrollbar:true,
+                scrollButtons:{
+					theme:"light-thin"
+                }
+            });
+        });
+    })(jQuery);
+
+</script>
+     
+<!-- 返回首页 -->
+<script type="text/javascript">
+	$(function(){
+		//var $parent = $(window.parent);	
+		$("#backToIndex").children().click(function(){
+			//$parent[0].backToIndex();
+			parent.location.reload();
+		});
+	})
+	
+	/* Animation */	
+	$(function(){
+		$("#backToIndex").hover(function(){
+			$(this).find("span").css({
+				"animation-play-state":"running",
+				"-moz-animation-play-state":"running",
+				"-webkit-animation-play-state":"running",
+				"-o-animation-play-state":"running"
+			});   
+			//alert("in");
+		 },function(){
+			$(this).find("span").css({
+				"animation-play-state":"paused",
+				"-moz-animation-play-state":"paused",
+				"-webkit-animation-play-state":"paused",
+				"-o-animation-play-state":"paused"
+			});   
+			//alert("out");
+		 });
+	});
+
+	
+</script>
+    
+<style type="text/css">
+body {color:white;font-size:13px;background-color:transparent}
+#title {width:auto;height:40px;}
+#title span{font-size: 15pt;position: relative;left: 25px;top: 20px;font-weight:bold}
+#backToIndex {width:90px;height:30px;position:absolute;top:30px;right:20px}
+#backToIndex strong {position: relative;top: 3px;cursor:pointer}
+#backToIndex span{background:url(images/back.png) no-repeat;width:23px;height:23px;display:block;cursor:pointer;float:right}
+#text-content {padding: 20px 20px;height: 420px;;width: 97%;}
+hr {width:95%;}
+#share {height:20px;width:70%;float:right;padding:11px 0;margin-right:25px}
+#share span {width:17px;height:17px;display:block;cursor:pointer;float:right;margin:0px 3px}
+#twitter {background:url(images/twitter.png) no-repeat}
+
+/* 返回首页旋转动画CSS3 */
+#backToIndex span{
+	position:relative;
+	animation-name:myfirst;
+	animation-duration:3s;
+	animation-timing-function:linear;       /* 动画从头到尾的速度是相同的。*/
+	animation-delay:0s;
+	animation-iteration-count:infinite;		/* 规定动画应该无限次播放。*/
+	animation-direction:normal;
+	animation-play-state:paused;
+	/* Firefox: */
+	-moz-animation-name:myfirst;
+	-moz-animation-duration:3s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-delay:0s;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:normal;
+	-moz-animation-play-state:paused;
+	/* Safari and Chrome: */
+	-webkit-animation-name:myfirst;
+	-webkit-animation-duration:3s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-delay:0s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:normal;
+	-webkit-animation-play-state:paused;
+	/* Opera: */
+	-o-animation-name:myfirst;
+	-o-animation-duration:3s;
+	-o-animation-timing-function:linear;
+	-o-animation-delay:0s;
+	-o-animation-iteration-count:infinite;
+	-o-animation-direction:normal;
+	-o-animation-play-state:paused;
+}
+@keyframes myfirst
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+</style>
+
+
+</head>
+
+<body>
+	<div id="title">
+    	<span>旅游快讯</span>
+    </div>
+    <div id="backToIndex">
+    	<strong>返回首页</strong>
+        <span></span>
+    </div>
+    <div id="text-content" class="content">
+        <p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 1.5em;">
+	<span style="font-size: 14px; font-family: 黑体, SimHei;"></span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	旅游热线:28333000
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	&nbsp;
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	旅游热线好帮手，旅游澳门更优悠，请即拨打28 333 000
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	澳门特别行政区政府旅游局的旅游热线：28 333 000
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	内容丰富，主要的谘询项目有：美食、酒店、观光、景点、博物馆、娱乐项目、购物、交通等。旅游热线提供全天候24小时的专人接听服务，并提供旅游 资讯的电话录音，为旅客及本澳市民提供协助、谘询及接收意见和投诉。热线服务提供粤语、普通话、英语、葡语和日语选择。
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	* 如在澳门以外请拨打 +853 28 333 000
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	<br />
+	
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	<br />
+	
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	紧急电话
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	紧急求助热线<span style="white-space: pre;"></span>999 / 110 / 112
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	仁伯爵综合医院<span style="white-space: pre;"></span>28313731
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	镜湖医院<span style="white-space: pre;"></span>28371333
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	科大医院<span style="white-space: pre;"></span>28821838
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	<br />
+	
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	<br />
+	
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	巴士资讯
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	<br />
+	
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	澳门市区
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	路线目的地及主要途经地点
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	1 &nbsp; &nbsp; &nbsp; 妈阁?河边新街丶司打口丶内港码头丶十六浦丶提督马路丶红街市丶跑狗场丶台山 ? 关闸
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	1A &nbsp; &nbsp; &nbsp;筷子基 ? 台山街市丶三角花园/莲峰庙丶慕拉士丶外港码头(皇朝方向)丶金沙/渔人码头 → 科英布拉街(皇朝区/星际)
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	2 &nbsp; &nbsp; &nbsp; 顺景广场?佑汉街市丶慕拉士丶澳电丶塔石广场丶水坑尾丶南湾丶新马路丶内港码头丶司打口丶河边新街 ? 妈阁
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	2A &nbsp; &nbsp; &nbsp;东方明珠?东北区丶澳电丶塔石广场丶水坑尾? 亚马喇前地(葡京)
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	3 &nbsp; &nbsp; &nbsp; 关闸? 台山丶提督马路丶红街市丶十六浦丶新马路丶葡京丶新口岸(假日丶理工丶金沙/渔人码头) → 外港码头
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	3A &nbsp; &nbsp; &nbsp;司打口? 内港码头丶新马路丶南湾丶新葡京/永利丶星际/凯旋门丶观音像丶文化中心丶科学馆丶金沙/渔人码头丶外港码头丶东北区? 关闸
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	3X &nbsp; &nbsp; &nbsp;关闸马路 → 提督马路丶红街市丶十六浦丶新马路 → 亚马喇前地(葡京) (假日不设服务)
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	4 &nbsp; &nbsp; &nbsp; 筷子基 → 雅廉访丶塔石广场丶水坑尾丶南湾丶新马路丶十六浦丶红街市丶跑狗场 → 筷子基
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	5 &nbsp; &nbsp; &nbsp; 关闸 → 台山丶美副将丶罗理基(妈阁方向)丶水坑尾丶荷兰园(关闸方向)丶南湾丶新马路丶内港客运码头丶河边新街 → 妈阁
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	5X &nbsp; &nbsp; &nbsp;市政狗房 → 美副将丶罗理基丶南湾 → 亚马喇前地(葡京)
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	6 &nbsp; &nbsp; &nbsp; 顺景广场 → 慕拉士丶澳电丶高士德丶红街市丶提督马路丶十六浦丶内港客运码头丶司打口丶河边新街丶妈阁庙丶西湾丶南湾丶葡京丶山顶医院丶加思栏丶罗理基丶南湾丶新马路丶十六浦丶红街市丶高士德丶美副将丶澳电丶慕拉士丶佑汉 → 顺景广场
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	7 &nbsp; &nbsp; &nbsp; 佑汉第二街 → 俾利喇街丶三盏灯丶沙嘉都喇街丶塔石广场丶水坑尾丶南湾丶新马路丶内港客运码头丶司打口丶河边新街 → 妈阁 → 新马路丶水坑尾丶镜湖医院丶连胜马路丶筷子基丶台山丶三角花园 → 佑汉第二街
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	7A &nbsp; &nbsp; &nbsp;东方明珠? 东北区丶新桥区丶三盏灯丶塔石广场丶水坑尾?亚马喇前地(葡京)
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	8 &nbsp; &nbsp; &nbsp; 青洲 → 三盏灯丶沙嘉都喇街丶塔石广场丶水坑尾丶葡京丶美高梅丶观音像丶文化中心丶科学馆丶金沙/渔人码头 → 回力/海立方 → 科学馆丶皇朝区丶永利丶财神丶水坑尾丶塔石广场 → 镜湖医院丶新桥区丶俾利喇街丶黑沙环丶莲峰庙 → 青洲
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	8A &nbsp; &nbsp; &nbsp;青洲 → 雅廉访丶卢廉若花园丶塔石广场丶水坑尾丶南湾丶新马路丶十六浦丶白鸽巢丶镜湖医院 丶新桥区丶俾利喇街丶黑沙环丶莲峰庙 → 青洲
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	9 &nbsp; &nbsp; &nbsp; 关闸 → 高士德丶塔石广场丶水坑尾丶葡京丶南湾丶西湾 → 妈阁 → 下环街市丶风顺堂区丶濠璟酒店丶西湾丶新葡京丶水坑尾丶高士德丶筷子基丶台山 → 关闸
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	9A &nbsp; &nbsp; &nbsp;关闸 → 高士德丶塔石广场丶水坑尾丶葡京丶南湾 → 旅游塔 → 新葡京丶水坑尾丶高士德丶筷子基丶台山 → 关闸
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	10 &nbsp; &nbsp; &nbsp;关闸 ?台山丶慕拉士丶金沙/渔人码头丶澳门理工丶假日丶新葡京丶南湾丶新马路丶内港码头丶司打口丶河边新街 ?妈阁
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	10A &nbsp; &nbsp; 外港码头 ?金沙/渔人码头丶科学馆丶文化中心丶皇朝区丶永利/新葡京丶南湾丶新马路丶内港客运码头丶司打口丶河边新街 ? 妈阁
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	10B &nbsp; &nbsp; 关闸? 佑汉街市丶东北区丶外澳码头丶金沙/渔人码头丶澳门理工丶假日 ? 新葡京
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	10X &nbsp; &nbsp; 关闸 → 慕拉士丶外澳码头丶金沙/渔人码头丶澳门理工 → 亚马喇前地(葡京) (假日不设服务)
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	12 &nbsp; &nbsp; &nbsp;顺景广场? 望厦丶澳广视丶塔石广场丶水坑尾丶新葡京/永利丶星际/凯旋门丶观音像丶文化中心丶科学馆丶金沙/渔人码头丶海立方 ? 外港码头
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	12X &nbsp; &nbsp; 亚马喇前地? 外港码头 (祗限每年大赛车期间提供服务)
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	16 &nbsp; &nbsp; &nbsp;菜园涌边街 → 关闸丶红街市丶提督马路丶十六浦丶内港客运码头丶司打口丶下环街市丶风顺堂区丶濠璟酒店丶西湾丶南湾丶水坑尾丶塔石广场丶雅廉访丶白朗古 → 菜园涌边街
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	17 &nbsp; &nbsp; &nbsp;白鸽巢 → 观音堂丶二龙喉丶永援/粤华丶东望洋新街(山顶医院)丶葡京丶皇朝区丶观音像丶文化中心丶金沙丶海立方丶东北区丶关闸丶雅廉访丶贾伯乐提督街 → 白鸽巢
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	18 &nbsp; &nbsp; &nbsp;关闸 → 佑汉街市丶东北区丶澳电丶塔石广场丶水坑尾丶南湾丶旅游塔丶风顺堂区 → 妈阁 → 内港客运码头丶营地大街丶十月初五街丶白鸽巢丶镜湖医院丶观音堂丶东北区 → 关闸
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	18A &nbsp; &nbsp; 东方明珠 → 东北区丶澳电丶塔石丶水坑尾丶南湾丶新马路丶十六浦丶白鸽巢丶镜湖医院丶俾利喇街丶慕拉士 → 东方明珠
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	19 &nbsp; &nbsp; &nbsp;顺景广场 → 望厦丶澳广视丶塔石丶水坑尾丶南湾丶新马路丶十六浦丶白鸽巢丶镜湖医院丶俾利喇街丶佑汉 → 顺景广场
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	23 &nbsp; &nbsp; &nbsp;青洲 → 跑狗场丶美副将丶二龙喉丶松山隧道丶皇朝丶美高梅/永利丶南湾丶立法会丶旅游塔丶新葡京丶星际/凯旋门丶皇朝丶高士德丶运顺新邨 → 青洲
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	27 &nbsp; &nbsp; &nbsp;青洲 → 台山丶关闸丶黑沙环丶东北大马路/保利达丶君悦湾丶关闸丶台山丶跨境工业区 ? 青洲
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	28B &nbsp; &nbsp; 青洲 → 三角花园丶慕拉士丶外港码头丶金沙/渔人码头丶澳门理工丶假日丶南湾丶风顺堂区丶妈阁丶西湾丶南湾丶葡京丶假日丶澳门理工丶回力/海立方丶慕拉士丶莲峰庙 → 青洲
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	28BX &nbsp; &nbsp;青洲 → 三角花园丶慕拉士丶外港码头丶金沙/渔人码头丶葡京丶假日丶澳门理工丶慕拉士丶莲峰庙 → 青洲
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	28C &nbsp; &nbsp; 关闸 → 美副将丶二龙喉丶永援/粤华丶葡京/永利丶假日丶利澳酒店丶澳门理工 → 回力/海立方 → 东方拱门丶葡京丶山顶医院丶高士德丶观音堂丶黑沙环丶佑汉 → 关闸
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	28CX &nbsp; &nbsp;回力/海立方? 外港码头 (祗限每年大赛车期间提供服务)
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	31 &nbsp; &nbsp; &nbsp;综艺馆 ? 外港码头 (祗限每年大赛车期间提供服务)
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	32 &nbsp; &nbsp; &nbsp;筷子基 → 高士德丶外港码头丶金沙/渔人码头丶澳门理工丶新葡京丶南湾丶立法会 → 旅游塔 → 新葡京丶假日丶利澳丶澳门理工丶二龙喉丶高士德丶运顺新邨丶筷子基社屋 → 筷子基
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	H1 &nbsp; &nbsp; &nbsp;山顶医院 → 华士古花园丶水坑尾丶亚马喇前地(葡京)丶加思栏 → 山顶医院
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	离岛路线
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	路线目的地及主要途经地点
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	11 &nbsp; &nbsp; &nbsp;妈阁 → 新马路丶新葡京丶海洋花园丶南新花园丶亚威罗街丶濠景花园/氹仔中央公园丶新世纪丶氹仔旧城区丶运动场/华宝花园丶花城丶湖畔大厦丶海湾花园丶海湾花园丶澳门大学丶新世纪丶新葡京丶新马路丶司打口丶下环 → 妈阁
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	15
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	海洋花园? 赛马会丶运动场丶雍景湾丶嘉乐庇马路丶威尼斯人/新濠天地/金沙城中心丶路氹边检大楼丶驾驶学习暨考试中心丶石排湾社区丶熊猫馆丶路环市区丶竹湾海滩丶黑沙海滩丶威斯汀酒店 ? 九澳
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	21A
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	妈阁 ? 新马路丶新葡京丶新世纪丶花城丶运动场丶威尼斯人/新濠天地/金沙城中心丶科技大学 丶路氹边检大楼丶驾驶学习暨考试中心丶小型赛车场丶石排湾丶熊猫馆丶路环市区 ? 黑沙海滩
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	22
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	佑汉第二街 ? 澳广视丶 美副将丶塔石广场丶水坑尾丶新葡京丶新世纪丶氹仔旧城区丶运动场/华宝花园 ? 赛马会
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	22F
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	亚马喇前地(葡京)? 银河 / 金都丶横琴河隧(澳门大学横琴校园) → 石排湾社区
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	25
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	关闸 ?台山丶美副将(离岛方向)丶高士德(关闸方向)丶水坑尾丶南湾丶新葡京丶新世纪丶花城丶运动场/华宝花园丶威尼斯人/银河/新濠天地/金沙城中心丶科技大学丶路氹边检大楼丶驾驶学习暨考试中心丶石排湾社区丶熊猫馆丶路环市区 ? 黑沙海滩
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	25F
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	关闸 ? 科大医院丶轻轨车厂 ? 石排湾社区
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	25X
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	关闸 ? 白朗古丶美副将(离岛方向) / 高士德(关闸方向)丶水坑尾丶南湾丶新葡京丶新世纪丶花城丶运动场/华宝花园丶科技大学丶新濠天地/威尼斯人/银河丶路氹新城 ? 莲花圆形地
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	26
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	筷子基北湾 → 台山街市丶红街市丶提督马路丶沙梨头 丶十六浦丶司打口丶下环丶妈阁丶旅游塔 → 西湾大桥丶海洋花园丶赛马会丶运动场/华宝花园丶花城丶湖畔大厦丶海湾花园丶北安丶氹仔临时客运码头丶机场丶科大医院丶科技大学丶路氹边检大楼丶威尼斯人/新濠天地/金沙城中心丶驾驶学习暨考试中心丶石排湾社区丶熊猫馆 → 路环市区 → 熊猫馆丶石排湾社区丶路氹边检大楼丶威尼斯人/新濠天地/金沙城中心丶科技大学丶氹仔码头丶机场丶北安丶海湾花园丶湖畔大厦丶花城丶运动场/华宝花园丶赛马会丶海洋花园丶西湾大桥 → 旅游塔丶妈阁丶下环丶司打口丶十六浦 丶白鸽巢丶镜湖医院丶新桥区丶运顺新邨 → 筷子基北湾
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	26A
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	筷子基北湾 ? 台山街市丶红街市丶提督马路丶沙梨头丶十六浦丶新马路 丶南湾丶新葡京丶新世纪丶花城丶运动场/华宝花园丶威尼斯人/银河/新濠天地/金沙城中心丶科技大学丶路氹边检大楼丶考车场丶石排湾社区丶熊猫馆丶路环市区 ? 黑沙海滩
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	28A
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	外港码头 ? 金沙/渔人码头丶澳门理工丶假日丶葡京丶新世纪丶氹仔旧城区丶运动场/华宝花园? 赛马会
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	30
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	李宝椿街 ? 黑沙环丶东北区丶湖畔大厦丶海湾花园丶氹仔旧城区丶运动场/华宝花园丶赛马会丶濠景花园/氹仔中央公园? 新世纪/鸿发
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	33
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	筷子基 ? 跑狗场丶红街市 丶提督马路丶沙梨头丶新马路丶南湾丶新葡京丶新世纪丶氹仔旧城区丶运动场 ? 赛马会
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	34
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	菜园涌边街 ? 关闸丶佑汉丶慕拉士丶东北区丶湖畔大厦丶海湾花园丶氹仔旧城区丶运动场丶赛马会 ?　海洋花园
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	35
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	苏利安圆形地 → 新世纪丶泉亮丶湖畔大厦 → 运动场 → 威尼斯人/银河/新濠天地 → 驾驶学习暨考试中心 → 威尼斯人/银河/新濠天地 → 运动场 → 濠景花园/氹仔中央公园丶鸿发 → 菩提园丶葡京花园 → 赛马会 → 海洋花园 → 苏利安圆形地
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	36
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	苏利安圆形地 → 海洋花园 → 赛马会 → 氹仔中央公园丶濠庭都会 → 湖畔大厦 → 氹仔客运码头丶澳门机场 → 科大医院丶科技大学 → 雍景湾 → 湖畔大厦 → 氹仔中央公园丶濠景花园 → 赛马会 → 海洋花园 → 苏利安圆形地
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	37
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	拉哥斯街 → 聚龙明珠 → 澳门大学 → 新世纪酒店 → 拉哥斯街
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	清明 / 重阳节接驳线
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	湖畔大厦 ? 鸡颈马路(坊众坟场丶孝思墓园)丶泉悦花园 (祗限清明节及重阳节当日服务)
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	39
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	湖畔大厦 → 徐日升寅公大马路 → 聚龙明珠 → 亚马喇前地(葡京) → 湖畔大厦
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	50
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	亚马喇前地(葡京)?大中华/宝龙丶泉悦丶科技大学/新濠天地丶保龄球中心/东亚运动会体育馆丶路氹边检大楼丶驾驶学习暨考试中心丶石排湾社区丶熊猫馆 ? 路环市区
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	50X
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	亚马喇前地(葡京) ? 大中华/宝龙丶泉悦 ?驾驶学习暨考试中心
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	E01
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	湖畔大厦 ? 运动场/华宝花园丶威尼斯人/新濠天地/金沙城中心 ? 莲花圆形地
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	AP1
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	关闸 → 黑沙环 → 外港码头丶金沙/渔人码头 → 北安 → 氹仔临时客运码头 → 澳门机场丶科大医院丶科技大学 → 泉悦丶湖畔大厦丶海湾花园 → 外港码头丶金沙/渔人码头 → 黑沙环 →关闸
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	MT1
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	城市日前地(永利/美高梅) → 葡京 → 新世纪丶花城丶运动场/华宝花园 → 威尼斯人/银河/新濠天地 → 氹仔临时客运码头 → 澳门机场 → 科大医院丶科技大学 → 威尼斯人/银河/新濠天地丶运动场 → 赛马会 → 海洋花园 → 亚马喇前地(葡京) → 城市日前地(永利/美高梅)
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	MT2
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	城市日前地(永利/美高梅) → 亚马喇前地(葡京) → 海洋花园 → 赛马会 → 威尼斯人/银河/新濠天地 → 氹仔客运码头 → 澳门机场 → 科大医院丶科技大学 → 威尼斯人/银河/新濠天地丶 运动场 → 雍景湾丶宝龙花园丶泉亮 → 亚马喇前地(葡京) → 城市日前地(永利/美高梅)
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	MT3
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	高利亚海军上将马路 → 海滨丶保利达丶海湾花园丶湖畔大厦丶花城丶运动场/华宝花园 → 威尼斯人/银河/新濠天地→ 运动场/华宝花园丶湖畔大厦丶海湾花园丶黑沙环卫生中心丶建华 → 高利亚海军上将马路
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	MT4
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	凯泉湾? 司打口丶妈阁丶旅游塔丶西湾大桥丶海洋花园丶赛马会丶运动场/华宝花园丶银河丶威尼斯人/金光会展丶路氹边检大楼丶科技大学 ?凯泉湾
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	通宵路线
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	路线目的地及主要途经地点
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	N1A
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	筷子基北湾 → 青州丶台山 → 佑汉 → 黑沙环 → 外港码头 → 金沙 → 皇朝区/星际 → 城市日前地(永利/美高梅) → 亚马喇前地(葡京) → 中区丶新马路→ 提督马路丶沙梨头丶红街市 → 筷子基北湾
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	N1B
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	筷子基北湾 → 青州丶台山→ 提督马路丶红街市丶沙梨头 → 新马路丶中区 → 亚马喇前地(葡京) → 永利/星际/总统 →金沙 → 黑沙环 → 佑 汉 → 台山 → 筷子基北湾
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	N2
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	筷子基北湾 → 高士德 → 文化中心 → 皇朝区/星际 → 城市日前地(永利/美高梅) → 永利/总统 → 亚马喇前地(葡京) → 新世纪酒店 / 大中华 → 氹仔花城/中央公园丶华宝 → 湖畔大厦丶海湾花园丶北安 → 氹仔客运码头 → 机场 → 科大医院 → 科技大学 → 泉悦 → 新世纪酒店 → 亚马喇前地→ 葡京/永利 → 水坑尾 → 高士德 → 筷子基社屋 → 筷子基北湾
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	N3
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	妈阁 ?内港码头丶司打口丶河边新街? 新马路丶中区? 亚马喇前地(葡京) ? 泉亮丶泉悦丶威尼斯人/新濠天地/金沙城中心丶科技大学丶路氹边检大楼丶石排湾 ? 路环市区 (每年6月至8月延长至黑沙海滩)
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	机场直通快线
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	港澳码头
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	外港码头禁区 ?澳门机场(南停机坪)
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	氹仔码头
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	氹仔临时客运码头禁区?澳门机场(南停机坪)
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	长者使用长者澳门通卡乘坐各条路线(不包括莲花口岸线)，车费只需澳门币0.3圆
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px;">
+	持澳门通个人学生卡人士乘坐各条路线(不包括莲花口岸线)，车费为1.0圆
+</p>
+<div>
+	<span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';"><br />
+	</span>
+</div>
+    </div>
+</body>
+</html>

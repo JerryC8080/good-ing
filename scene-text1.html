@@ -1,0 +1,228 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文章页</title>
+
+<!-- 滚动插件 -->
+<link href="custom-scrollbar-plugin/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+<script>
+	/* 滚动条插件 */
+    (function($){
+        $(window).load(function(){
+            $("#text-content").mCustomScrollbar({
+				autoHideScrollbar:true,
+                scrollButtons:{
+					theme:"light-thin"
+                }
+            });
+        });
+    })(jQuery);
+
+</script>
+     
+<!-- 返回首页 -->
+<script type="text/javascript">
+	$(function(){
+		//var $parent = $(window.parent);	
+		$("#backToIndex").children().click(function(){
+			//$parent[0].backToIndex();
+			parent.location.reload();
+		});
+	})
+	
+	/* Animation */	
+	$(function(){
+		$("#backToIndex").hover(function(){
+			$(this).find("span").css({
+				"animation-play-state":"running",
+				"-moz-animation-play-state":"running",
+				"-webkit-animation-play-state":"running",
+				"-o-animation-play-state":"running"
+			});   
+			//alert("in");
+		 },function(){
+			$(this).find("span").css({
+				"animation-play-state":"paused",
+				"-moz-animation-play-state":"paused",
+				"-webkit-animation-play-state":"paused",
+				"-o-animation-play-state":"paused"
+			});   
+			//alert("out");
+		 });
+	});
+
+	
+</script>
+    
+<style type="text/css">
+body {color:white;font-size:13px;background-color:transparent}
+#title {width:auto;height:40px;}
+#title span{font-size: 15pt;position: relative;left: 25px;top: 20px;font-weight:bold}
+#backToIndex {width:90px;height:30px;position:absolute;top:30px;right:20px}
+#backToIndex strong {position: relative;top: 3px;cursor:pointer}
+#backToIndex span{background:url(images/back.png) no-repeat;width:23px;height:23px;display:block;cursor:pointer;float:right}
+#text-content {padding: 20px 20px;height: 420px;;width: 97%;}
+hr {width:95%;}
+#share {height:20px;width:70%;float:right;padding:11px 0;margin-right:25px}
+#share span {width:17px;height:17px;display:block;cursor:pointer;float:right;margin:0px 3px}
+#twitter {background:url(images/twitter.png) no-repeat}
+
+/* 返回首页旋转动画CSS3 */
+#backToIndex span{
+	position:relative;
+	animation-name:myfirst;
+	animation-duration:3s;
+	animation-timing-function:linear;       /* 动画从头到尾的速度是相同的。*/
+	animation-delay:0s;
+	animation-iteration-count:infinite;		/* 规定动画应该无限次播放。*/
+	animation-direction:normal;
+	animation-play-state:paused;
+	/* Firefox: */
+	-moz-animation-name:myfirst;
+	-moz-animation-duration:3s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-delay:0s;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:normal;
+	-moz-animation-play-state:paused;
+	/* Safari and Chrome: */
+	-webkit-animation-name:myfirst;
+	-webkit-animation-duration:3s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-delay:0s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:normal;
+	-webkit-animation-play-state:paused;
+	/* Opera: */
+	-o-animation-name:myfirst;
+	-o-animation-duration:3s;
+	-o-animation-timing-function:linear;
+	-o-animation-delay:0s;
+	-o-animation-iteration-count:infinite;
+	-o-animation-direction:normal;
+	-o-animation-play-state:paused;
+}
+@keyframes myfirst
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+</style>
+
+
+</head>
+
+<body>
+	<div id="title">
+    	<span>澳门世界遗产</span>
+    </div>
+    <div id="backToIndex">
+    	<strong>返回首页</strong>
+        <span></span>
+    </div>
+    <div id="text-content" class="content">
+        <p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 1.5em;">
+	<span style="font-size: 14px; font-family: 黑体, SimHei;"><img src="text_img/f66bcf1c-1bb7-4be6-b189-733ba1ce5352.jpg" alt="" /></span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 1.5em;">
+	<span style="color: rgb(192, 0, 0); font-family: 黑体, SimHei; font-size: 14px;">_______________________________________________________________________</span><br />
+	
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 1.5em;">
+	<span style="color: rgb(192, 0, 0); font-family: 黑体, SimHei; font-size: 14px;"><br />
+	</span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 1.5em;">
+	<span style="font-size: 14px; font-family: 黑体, SimHei;"></span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;">
+	<span style="font-size: 12px;"><span style="line-height: 18px; font-family: 黑体;">&nbsp; &nbsp; &nbsp; &nbsp;</span><span style="line-height: 18px; font-family: 黑体, SimHei;">“2005年7月15日,在联合国教科文组织(UNESCO)召开的世界遗产委员会第29次会议上,澳门历史城区被成功列为世界遗产,成为中国第31处获此殊荣的景区”(澳门政府旅游局2006)</span><span style="line-height: 18px; font-family: 'Heiti SC Light';">。</span></span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; text-align: justify; line-height: 19px;">
+	<br />
+	
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;">
+	&nbsp; &nbsp; &nbsp;<img src="text_img/32257fa9-9e7e-4082-8b58-8f33dee3f3a3.jpg" width="228" height="150" border="0" hspace="0" vspace="0" title="" style="line-height: 24px; font-size: 16px; width: 228px; height: 150px;" alt="" /><span style="line-height: 24px; font-size: 16px;">&nbsp;&nbsp;</span><img src="text_img/045dec6c-50a3-4247-ada7-3f1ea04b96e9.jpg" width="225" height="150" border="0" hspace="0" vspace="0" title="" style="line-height: 24px; font-size: 16px; width: 225px; height: 150px;" alt="" /><span style="line-height: 24px; font-size: 16px;">&nbsp;&nbsp;</span><br />
+	
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;">
+	&nbsp; &nbsp; &nbsp;<img src="text_img/e7be4674-dc13-4ceb-99e0-a311dc0c37b7.jpg" width="225" height="150" border="0" hspace="0" vspace="0" title="" style="line-height: 24px; font-size: 16px; width: 225px; height: 150px;" alt="" />&nbsp; &nbsp;<img src="text_img/5c39ae08-dee5-4ca3-bc27-75921a121238.jpg" width="225" height="150" border="0" hspace="0" vspace="0" title="" style="width: 225px; height: 150px;" alt="" />
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;">
+	<span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';"><br />
+	</span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;">
+	<span style="font-family: 黑体, SimHei; font-size: 12px; line-height: 18px;">&nbsp; &nbsp; 澳门历史城区是四百多年来中西文化交融的结晶,区内的建筑遗产星罗棋布,与街道、广场等原始的市区结构相互交织,凸现其特别的风采。澳门历史城区既展现了座落在中国境内的最古老、最完整的欧洲建筑遗产,也保持着典型的中国传统建筑。自16世纪中叶葡萄牙航海家登陆这片中国土地之后,澳门逐渐发展为一个多元文化并存的国际贸易城市,成为欧亚文化交流之典范</span><span style="font-family: 黑体, SimHei; font-size: 11px; line-height: 18px;">。&nbsp;<br />
+	</span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;">
+	<span style="font-size: 12px; line-height: 18px; font-family: 黑体, SimHei;"><br />
+	</span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;">
+	<span style="font-size: 12px; font-family: 黑体, SimHei;"><span style="font-family: 黑体; line-height: 18px;">&nbsp;</span><span style="font-family: 'Heiti SC Light'; line-height: 18px;">&nbsp; &nbsp; &nbsp;&nbsp;<span style="font-family: 黑体, SimHei;">“明末清初,大量天主教传教士以澳门为传教基地,积极从事远东地区的传教工作,并由此创造出中西文化交流的辉煌篇章。这些传教士来自不同的修会,他们为中国带来了西方近代的科学技术及人文艺术,又向西方介绍了中国的文化成就”</span></span></span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;">
+	<span style="font-size: 11px; line-height: 18px; font-family: 黑体;">&nbsp; &nbsp; &nbsp;</span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;">
+	<span style="font-size: 11px; line-height: 18px; font-family: 黑体;">&nbsp; &nbsp; &nbsp; &nbsp;<img src="text_img/43f88022-a739-4dd0-9780-f13cca73709d.png" width="198" height="250" border="0" hspace="0" vspace="0" title="" style="width: 198px; height: 250px;" alt="" />&nbsp;&nbsp;<img src="text_img/d11b51d7-5eb6-4cf1-a7b8-675d2601b0e0.jpg" width="188" height="250" border="0" hspace="0" vspace="0" title="" style="width: 188px; height: 250px;" alt="" /></span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;">
+	<span style="font-size: 11px; line-height: 18px; font-family: 黑体;"><br />
+	</span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; text-align: justify; line-height: 1.5em;">
+	<span style="font-size: 11px; line-height: 18px; font-family: 黑体;">&nbsp;&nbsp; &nbsp; &nbsp;</span><span style="font-size: 12px;"><span style="line-height: 18px; font-family: 黑体;">&nbsp;</span><span style="line-height: 18px; font-family: 黑体, SimHei;">西方宗教对澳门的影响几乎随处可见,特别是在历史建筑的名称上,如“CompanyofJesusSquare”(耶稣会纪念广场)、“Cathedral”(大堂/主教座堂))、“St.Augustine’sChurch”(圣奥斯定教堂)、“the ProtestantCemetery”(基督教坟场)、“St.Dominic’sSquare”(板樟堂前地)、“RuinsofSt.Paul’s”(大三巴牌坊)“Dom Pedro V Theatre”(岗顶剧院)等。但这些西式的历史建筑并非孤单矗立,而是共处于中式的传统建筑之中,如妈阁庙、郑家大屋、三街会馆(关帝庙)、哪吒庙等。两种风格迥异的建筑遗产在澳门形成了强烈的对比,使这个弹丸之地的城市成为世界各地众多游客流连忘返的国际旅游胜地。</span></span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;">
+	<span style="font-size: 11px; line-height: 18px; font-family: 黑体;"><br />
+	</span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;">
+	<span style="font-size: 11px; line-height: 18px; font-family: 黑体;"><img src="text_img/ad51cf83-78e1-47eb-b66d-fb47ca3adbc0.jpg" width="224" height="150" border="0" hspace="0" vspace="0" title="" style="width: 224px; height: 150px;" alt="" /><img src="text_img/8ebb17e1-a71e-4aa4-b0aa-a12c649b6441.jpg" width="98" height="150" border="0" hspace="0" vspace="0" title="" style="width: 98px; height: 150px;" alt="" /></span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;">
+	<img src="text_img/ea09e8cc-9fc6-4917-bdd8-79a7c46028f6.jpg" width="225" height="150" border="0" hspace="0" vspace="0" title="" style="font-family: 'Heiti SC Light'; font-size: 10.909090995788574px; line-height: 16.363636016845703px; width: 225px; height: 150px;" alt="" /><img src="text_img/6a6ef875-f166-442b-adf1-87a117042106.png" width="228" height="150" border="0" hspace="0" vspace="0" title="" style="font-size: 16px; width: 228px; height: 150px;" alt="" /><img src="text_img/c6b52d5d-9909-4368-95fa-185b662aedbf.jpg" width="225" height="150" border="0" hspace="0" vspace="0" title="" style="width: 225px; height: 150px;" alt="" /><img src="text_img/706d60b4-ae33-4a75-b4bd-d4c7ee802995.png" width="111" height="150" border="0" hspace="0" vspace="0" title="" style="font-size: 16px; width: 111px; height: 150px;" alt="" />
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;">
+	<span style="font-size: 11px; line-height: 18px; font-family: 黑体;"><br />
+	</span>
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; margin-top: 5px; margin-bottom: 5px; line-height: 1.5em;">
+	<span style="font-size: 12px;"><span style="line-height: 18px; font-family: 黑体;">&nbsp;&nbsp; &nbsp; &nbsp; &nbsp;&nbsp;</span><span style="line-height: 18px; font-family: 黑体, SimHei;">澳门在过去十年间取得的所有成就中,最令人瞩目的莫过于本文开篇提到的2005年申报世界遗产的成功。随着澳门历史城区成为世遗景点,澳门政府旅游局通过印发宣传小册子、树立公共牌示等各种形式宣传历史城区的景点和历史建筑。因此,对如今的游客来说,阅读这些宣传材料是他们了解澳门文化的一条重要途径。</span></span><br />
+	
+</p>
+<p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 1.5em;">
+	<span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';">&nbsp;</span>
+</p>
+<div>
+	<span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';"><br />
+	</span>
+</div>
+    </div>
+</body>
+</html>

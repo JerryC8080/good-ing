@@ -1,0 +1,423 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文章页</title>
+
+<!-- 滚动插件 -->
+<link href="custom-scrollbar-plugin/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+<script>
+	/* 滚动条插件 */
+    (function($){
+        $(window).load(function(){
+            $("#text-content").mCustomScrollbar({
+				autoHideScrollbar:true,
+                scrollButtons:{
+					theme:"light-thin"
+                }
+            });
+        });
+    })(jQuery);
+
+</script>
+     
+<!-- 返回首页 -->
+<script type="text/javascript">
+	$(function(){
+		//var $parent = $(window.parent);	
+		$("#backToIndex").children().click(function(){
+			//$parent[0].backToIndex();
+			parent.location.reload();
+		});
+	})
+	
+	/* Animation */	
+	$(function(){
+		$("#backToIndex").hover(function(){
+			$(this).find("span").css({
+				"animation-play-state":"running",
+				"-moz-animation-play-state":"running",
+				"-webkit-animation-play-state":"running",
+				"-o-animation-play-state":"running"
+			});   
+			//alert("in");
+		 },function(){
+			$(this).find("span").css({
+				"animation-play-state":"paused",
+				"-moz-animation-play-state":"paused",
+				"-webkit-animation-play-state":"paused",
+				"-o-animation-play-state":"paused"
+			});   
+			//alert("out");
+		 });
+	});
+
+	
+</script>
+    
+<style type="text/css">
+body {color:white;font-size:13px;background-color:transparent}
+#title {width:auto;height:40px;}
+#title span{font-size: 15pt;position: relative;left: 25px;top: 20px;font-weight:bold}
+#backToIndex {width:90px;height:30px;position:absolute;top:30px;right:20px}
+#backToIndex strong {position: relative;top: 3px;cursor:pointer}
+#backToIndex span{background:url(images/back.png) no-repeat;width:23px;height:23px;display:block;cursor:pointer;float:right}
+#text-content {padding: 20px 20px;height: 420px;;width: 97%;}
+hr {width:95%;}
+#share {height:20px;width:70%;float:right;padding:11px 0;margin-right:25px}
+#share span {width:17px;height:17px;display:block;cursor:pointer;float:right;margin:0px 3px}
+#twitter {background:url(images/twitter.png) no-repeat}
+
+/* 返回首页旋转动画CSS3 */
+#backToIndex span{
+	position:relative;
+	animation-name:myfirst;
+	animation-duration:3s;
+	animation-timing-function:linear;       /* 动画从头到尾的速度是相同的。*/
+	animation-delay:0s;
+	animation-iteration-count:infinite;		/* 规定动画应该无限次播放。*/
+	animation-direction:normal;
+	animation-play-state:paused;
+	/* Firefox: */
+	-moz-animation-name:myfirst;
+	-moz-animation-duration:3s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-delay:0s;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:normal;
+	-moz-animation-play-state:paused;
+	/* Safari and Chrome: */
+	-webkit-animation-name:myfirst;
+	-webkit-animation-duration:3s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-delay:0s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:normal;
+	-webkit-animation-play-state:paused;
+	/* Opera: */
+	-o-animation-name:myfirst;
+	-o-animation-duration:3s;
+	-o-animation-timing-function:linear;
+	-o-animation-delay:0s;
+	-o-animation-iteration-count:infinite;
+	-o-animation-direction:normal;
+	-o-animation-play-state:paused;
+}
+@keyframes myfirst
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+</style>
+
+
+</head>
+
+<body>
+	<div id="title">
+    	<span>大型购物商场</span>
+    </div>
+    <div id="backToIndex">
+    	<strong>返回首页</strong>
+        <span></span>
+    </div>
+    <div id="text-content" class="content">
+        <p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 1.5em;">
+	<span style="font-size: 14px; font-family: 黑体, SimHei;"></span>
+</p>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; margin-bottom: 50px;">
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/cd8bd8b9-0b7a-4485-ac19-e8126aace5b1.JPG" src="text_img/cd8bd8b9-0b7a-4485-ac19-e8126aace5b1.JPG" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">澳门一号广场</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em; text-align: justify;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳門壹號廣塲是市中心旗艦級購物地標，商場總面積達20萬平方尺，雲集全球最頂級訯計品牌，個別品牌在此更設有亞洲區內最大的旗艦店及專門店。購物商場樓高三層，建築風格獨特；配合各多層及複式旗艦店的特色外牆及櫥窗裝潢，令商場的外觀別具匠心。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">地址：澳門外港新填海區沙格斯大馬路</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify;">
+					<span style="font-size: 11px; font-family: 黑体, SimHei;"></span><br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/8b10008d-fcf7-4707-ac5e-ee8ebc0efe03.JPG" src="text_img/8b10008d-fcf7-4707-ac5e-ee8ebc0efe03.JPG" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">永利名店街</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em; text-align: justify;">
+					<span style="font-family: 黑体, SimHei; font-size: 12px;">遊永利名店街，您會發現超過20家國際頂尖品牌名店，氣派顯赫，在此購物可滿足您獨特的流行品味。</span><br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em; text-align: justify;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">地址：澳門外港填海區仙德麗街</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/1b8cbfa3-c413-4e1e-8568-1a4c563bf369.jpg" src="text_img/1b8cbfa3-c413-4e1e-8568-1a4c563bf369.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">大运河购物中心</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em; text-align: justify;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">大運河購物中心設有超過330間國際名店，提供流行時裝、珠寶、飾物、禮品、運動用品以至餐飲服務。享受購物同時，可漫步運河兩旁的小石路，欣賞廣場上別具特色的街頭表演；乘坐貢朵拉船泛舟河上，在船夫優美的歌聲下，感受威尼斯古舊的浪漫風情。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em; text-align: justify;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">地址：澳門氹仔望德聖母灣大馬路 - 澳門威尼斯人度假村酒店</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/251949e5-5c2f-447f-a921-64e369d317e3.jpg" src="text_img/251949e5-5c2f-447f-a921-64e369d317e3.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">四季名店</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+					<span style="font-size: 11px; font-family: 黑体, SimHei;">四季名店帶給您無與倫比的奢華購物體驗。四季名店是澳門首座奢華購物中心，網羅超過160款世界知名品牌，令人目不暇給。<br />
+					</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">地址：澳門氹仔望德聖母灣大馬路路氹金光大道 - 四季酒店</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/2ecada9d-c621-4301-ae63-8997befdf424.jpg" src="text_img/2ecada9d-c621-4301-ae63-8997befdf424.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">金沙广场</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em; text-align: justify;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">金沙廣場有近百間零售商鋪，連同旗下的大運河購物中心和四季?名店，客人可在約600間店鋪盡情購物，享受一站式的購物樂趣。與此同時，金沙廣場還引入一些首次登陸澳門的知名品牌，為旅客帶來更多的購物選擇。金沙廣場以自然採光為設計重點，還有潺潺流水的瀑布景致，為客人營造悠閒而獨特的購物環境。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em; text-align: justify;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">地址：澳門氹仔望德聖母灣大馬路 - 澳門金沙城中心</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/07682a51-dff6-4f42-aa8a-8bc252eb0c3d.jpg" src="text_img/07682a51-dff6-4f42-aa8a-8bc252eb0c3d.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">新濠大道</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">新濠大道集美食、購物及娛樂於一身，匯聚每季最新款的時尚服飾、高級化妝品牌、精美珠寶首飾、名牌鐘錶等。第一層為時裝及飾物專區，第二層則為名錶珠寶購物區。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">地址：澳門路氹連貫公路 - 新濠天地</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/017d316b-f778-4f6f-9d13-7c77edaaaa70.jpg" src="text_img/017d316b-f778-4f6f-9d13-7c77edaaaa70.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">澳门银河购物大道</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">澳門銀河購物大道雲集亞洲及國際著名品牌店鋪，客人可選購時尚服飾，同時品嘗世界各地美食。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">地址：澳門路氹城「澳門銀河」綜合渡假城</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/486eef84-3502-4830-92c1-d1c8fbb71f54.jpg" src="text_img/486eef84-3502-4830-92c1-d1c8fbb71f54.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">澳门渔人码头</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<span style="font-family: 黑体, SimHei; font-size: 12px; line-height: 1.5em; text-align: justify;">澳門漁人碼頭是澳門首間主題公園和仿歐美漁人碼頭的購物中心，這裡有各式餐廳及商店，貨品種類包括流行服飾、珠寶首飾及精美紀念品。</span><br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em; text-align: justify;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">地址：澳門新口岸友誼大馬路及孫逸仙大馬路</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+	<div style="width: 649px; height: 160px; margin-bottom: 30px;">
+		<div style="width: 260px; float: left;">
+			<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/cc3d9a1b-6b26-4f97-82db-88986f50effb.jpg" src="text_img/cc3d9a1b-6b26-4f97-82db-88986f50effb.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+		</div>
+		<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+			<div>
+				<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">新八佰伴百货公司</span></span>
+			</div>
+			<div style="width: 260px; height: 100px; overflow: hidden;">
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">新八佰伴百貨公司樓高八層，貨品種類除日本產品外，更擴展至世界各地之產品，提供不同種類的男女服裝、化妝用品、兒童及嬰兒用品、運動服裝及用品、寢室用品、家居用品及電器等等，是本地人及遊客購物的主要地點之一。</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+					<span style="font-size: 12px; font-family: 黑体, SimHei;">地址：澳門商業大馬路</span>
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+					<br />
+					
+				</p>
+				<p style="margin-top: 0px; margin-bottom: 0px;">
+				</p>
+			</div>
+		</div>
+	</div>
+</div>
+<div id="page" style="color: white; font-family: Simsun; font-size: 13px; line-height: 20px; margin-bottom: 30px; height: 20px;">
+</div>
+<div>
+	<span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';"><br />
+	</span>
+</div>
+    </div>
+</body>
+</html>

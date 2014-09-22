@@ -1,0 +1,508 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文章页</title>
+
+<!-- 滚动插件 -->
+<link href="custom-scrollbar-plugin/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+<script>
+	/* 滚动条插件 */
+    (function($){
+        $(window).load(function(){
+            $("#text-content").mCustomScrollbar({
+				autoHideScrollbar:true,
+                scrollButtons:{
+					theme:"light-thin"
+                }
+            });
+        });
+    })(jQuery);
+
+</script>
+     
+<!-- 返回首页 -->
+<script type="text/javascript">
+	$(function(){
+		//var $parent = $(window.parent);	
+		$("#backToIndex").children().click(function(){
+			//$parent[0].backToIndex();
+			parent.location.reload();
+		});
+	})
+	
+	/* Animation */	
+	$(function(){
+		$("#backToIndex").hover(function(){
+			$(this).find("span").css({
+				"animation-play-state":"running",
+				"-moz-animation-play-state":"running",
+				"-webkit-animation-play-state":"running",
+				"-o-animation-play-state":"running"
+			});   
+			//alert("in");
+		 },function(){
+			$(this).find("span").css({
+				"animation-play-state":"paused",
+				"-moz-animation-play-state":"paused",
+				"-webkit-animation-play-state":"paused",
+				"-o-animation-play-state":"paused"
+			});   
+			//alert("out");
+		 });
+	});
+
+	
+</script>
+    
+<style type="text/css">
+body {color:white;font-size:13px;background-color:transparent}
+#title {width:auto;height:40px;}
+#title span{font-size: 15pt;position: relative;left: 25px;top: 20px;font-weight:bold}
+#backToIndex {width:90px;height:30px;position:absolute;top:30px;right:20px}
+#backToIndex strong {position: relative;top: 3px;cursor:pointer}
+#backToIndex span{background:url(images/back.png) no-repeat;width:23px;height:23px;display:block;cursor:pointer;float:right}
+#text-content {padding: 20px 20px;height: 420px;;width: 97%;}
+hr {width:95%;}
+#share {height:20px;width:70%;float:right;padding:11px 0;margin-right:25px}
+#share span {width:17px;height:17px;display:block;cursor:pointer;float:right;margin:0px 3px}
+#twitter {background:url(images/twitter.png) no-repeat}
+
+/* 返回首页旋转动画CSS3 */
+#backToIndex span{
+	position:relative;
+	animation-name:myfirst;
+	animation-duration:3s;
+	animation-timing-function:linear;       /* 动画从头到尾的速度是相同的。*/
+	animation-delay:0s;
+	animation-iteration-count:infinite;		/* 规定动画应该无限次播放。*/
+	animation-direction:normal;
+	animation-play-state:paused;
+	/* Firefox: */
+	-moz-animation-name:myfirst;
+	-moz-animation-duration:3s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-delay:0s;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:normal;
+	-moz-animation-play-state:paused;
+	/* Safari and Chrome: */
+	-webkit-animation-name:myfirst;
+	-webkit-animation-duration:3s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-delay:0s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:normal;
+	-webkit-animation-play-state:paused;
+	/* Opera: */
+	-o-animation-name:myfirst;
+	-o-animation-duration:3s;
+	-o-animation-timing-function:linear;
+	-o-animation-delay:0s;
+	-o-animation-iteration-count:infinite;
+	-o-animation-direction:normal;
+	-o-animation-play-state:paused;
+}
+@keyframes myfirst
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+</style>
+
+
+</head>
+
+<body>
+	<div id="title">
+    	<span>家庭乐缤纷</span>
+    </div>
+    <div id="backToIndex">
+    	<strong>返回首页</strong>
+        <span></span>
+    </div>
+    <div id="text-content" class="content">
+        <p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 1.5em;">
+	<span style="font-size: 14px; font-family: 黑体, SimHei;"></span>
+</p>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; width: 649px; height: 160px; margin-bottom: 30px;">
+	<div style="width: 260px; float: left;">
+		<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/c20ed976-d6b5-41ae-9447-b9bc500e56a4.jpg" src="text_img/c20ed976-d6b5-41ae-9447-b9bc500e56a4.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+	</div>
+	<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+		<div>
+			<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">澳門大熊貓館</span></span>
+		</div>
+		<div style="width: 260px; height: 100px; overflow: hidden;">
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">澳門大熊貓館位於路環石排灣郊野公園內，建築占地約3000平方米，整個建築利用現有的地形結合建築的特性進行設計，依山而建，呈扇形的分佈。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">大熊貓館的外觀造型設計以仿自然為主，活動場的圍牆以仿山石包裹，營造一個自然山水環繞的大熊貓的活動場地。館內設有兩個面積各約330平方米的室內活動區和一個面積約600平方米的室外活動場，以供大熊貓活動之用。而為了大熊貓的生活需要，館內還設有大熊貓的後勤中心，包括獸舍、竹子清洗區、竹子儲存庫、飼料準備室、飼料儲存庫、監控區和醫療室等。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">在你看厭了賭場的浮華喧囂,受夠了擁擠的旅遊景點後,這個大熊貓館會帶給你一陣清風般的享受。<br />
+				進入鳥舍能近距離觀賞到一隻犀鳥,五隻孔雀和一隻鸚鵡。除了鳥類之外,還有猴子和一隻小鹿。我認為最吸引人的還是大熊貓。整個熊貓館用兩個小時參觀足矣。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">開放時間：上午10時至下午1時；下午2時至5時(最後進館時間為下午4時45分)。每日分6個場次，每場次分批進館；逢星期一休館，若為公眾假期，則順延至翌日休館。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">入場人數有限，建議旅客預先購票。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+				</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">地點：澳門大熊貓館 / 路環石排灣郊野公園</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">門票：$10</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">查詢： (853) 2833 7676</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei; overflow: hidden;"></span><span style="overflow: hidden;">http://www.macaupanda.org.mo</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">資料來源：民政總署</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+		</div>
+	</div>
+</div>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; width: 649px; height: 160px; margin-bottom: 30px;">
+	<div style="width: 260px; float: left;">
+		<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/9cd51a4d-51c8-4cb9-9423-9699263e4a21.jpg" src="text_img/9cd51a4d-51c8-4cb9-9423-9699263e4a21.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+	</div>
+	<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+		<div>
+			<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">澳門科學館</span></span>
+		</div>
+		<div style="width: 260px; height: 100px; overflow: hidden;">
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">由世界著名美籍華裔建築師貝聿銘設計的澳門科學館，呈斜錐體的展覽中心外型別樹一幟。館內設有14個呈螺旋上升狀分佈的展覽廳。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">繼北京和香港後，澳門是全球第三個擁有8000 x 8000圖元球幕設備的城市。安裝于天文館天象廳的高解像度立體數碼放映系統，是全球首個同時具備超高清和立體視覺效果兩項強大功能的設施，為觀眾播放高質素的3D球幕節目，配以互動控制按鈕的座椅，讓觀眾自由地穿梭於宇宙星辰之中。此外，神舟七號太空船原大模型，以及機械人展示廳都是澳門科學館最大賣點。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">對於任何年齡段的人,不管是孩子,還是任何對健康,環境保護以及教育感興趣的人士來說這裏都有很多有趣的交互式活動。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+				</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">地址：澳門孫逸仙大馬路澳門科學館</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">開放時間：上午10時至下午6時（5時30分後停止售票 / 逢星期四及農曆年除夕休館 / 公眾假期照常開放）</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">票價：展覽中心 - 澳門幣$25</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">天文館（2D球幕 / 2D天象節目）- 澳門幣$50</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">天文館（3D球幕 / 3D天象節目）- 澳門幣$65</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">兩歲以下幼童參觀所有設施均費用全免</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">電話：(853) 2888 0822</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="overflow: hidden; word-wrap: break-word; font-size: 12px; font-family: 黑体, SimHei;">網址：</span><span style="overflow: hidden;">http://www.msc.org.mo</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+		</div>
+	</div>
+</div>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; width: 649px; height: 160px; margin-bottom: 30px;">
+	<div style="width: 260px; float: left;">
+		<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/72ea1a9d-1970-44aa-bd66-6b2fadb6a853.jpg" src="text_img/72ea1a9d-1970-44aa-bd66-6b2fadb6a853.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+	</div>
+	<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+		<div>
+			<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">通訊博物館</span></span>
+		</div>
+		<div style="width: 260px; height: 100px; overflow: hidden;">
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">通訊博物館的展品充滿互動性和實驗性：包括郵政及集郵、電訊兩大範疇。這些展品帶領人們進入無窮無盡的通訊世界，大家可以參與打電報、造郵票等活動，發覺原來通訊的應用與人類生活息息相關。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+				</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">地址：馬交石炮臺馬路七號</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">開放時間：每日上午九時三十分至下午五時三十分 (關館前30分鐘停止售票)，逢星期一及農曆新年首三天休館</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">票價：成人MOP 10.00 / 學生 MOP 5.00 / 3至9人組別(每位) MOP 8.00 / 10人或以上組別(每位) MOP 7.00 / 65歲以上及3歲以下免費。關館前30分鐘停止售票。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">電話：(853) 2871 8063, 2871 8570</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="overflow: hidden; word-wrap: break-word; font-size: 12px; font-family: 黑体, SimHei;">網址：</span><span style="overflow: hidden;">http://macao.communications.museum</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+		</div>
+	</div>
+</div>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; width: 649px; height: 160px; margin-bottom: 30px;">
+	<div style="width: 260px; float: left;">
+		<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/b221b36c-4d20-4ebf-952d-bfbc93e5aa28.jpg" src="text_img/b221b36c-4d20-4ebf-952d-bfbc93e5aa28.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+	</div>
+	<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+		<div>
+			<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">歷險Q立方</span></span>
+		</div>
+		<div style="width: 260px; height: 100px; overflow: hidden;">
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">在佔地九千平方英尺的「歷險Q立方」內，主要有高達六米的復合攀爬設施，附設一座垂直滑梯、兩座小型滑梯、一座V字形繩橋、跨越及攀爬障礙物、之字形攀爬繩網等等。還設有電腦遊戲、網路連線服務、以及桌球檯供青少年玩樂。專為慶祝生日及特別節日而設的兩個主題派對遊戲間也近在咫尺，兒童可與家長在這裡舉辦歡樂派對。適合4歲至17歲的小朋友及青少年朋友前往。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">男人們在賭場裡賭的精彩，女人們在購物中心花個痛快，那麼孩子們呢？沒關係，都給您想到了，這裡就是個孩子們的樂土，還沒踏入歷險Q立方，就聽到了場內傳來了孩子們的歡笑聲。這個藏在威尼斯人酒店不太起眼角落的、封閉式的兒童天地，不但好玩而且充滿創意，讓孩子們在安全歷險的過程中快樂立方。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">整個遊樂場的整體設計不但可以讓兒童體驗遊戲的樂趣，也是一種最佳的發展工具，藉此提高兒童的能力及增強他們的自信心。除了一些孩子們鍾情的室內遊戲外，這裡還設有電腦遊戲、網路連線服務、以及桌球臺供青少年玩樂．專為慶祝生日及特別節日而設的兩個主題派對遊戲間也近在咫尺，兒童可與家長在這裡舉辦歡樂派對。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+				</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">地點：澳門威尼斯人經南翼套房電梯直達5樓</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">開放時間：每日上午十時至晚上十時</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+		</div>
+	</div>
+</div>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; width: 649px; height: 160px; margin-bottom: 30px;">
+	<div style="width: 260px; float: left;">
+		<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/ab782f0f-551e-4655-acab-32f50b4d34e5.jpg" src="text_img/ab782f0f-551e-4655-acab-32f50b4d34e5.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+	</div>
+	<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+		<div>
+			<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">童夢天地</span></span>
+		</div>
+		<div style="width: 260px; height: 100px; overflow: hidden;">
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">位於新濠天地 Hard Rock 酒店 2 樓的“童夢天地”，總面積超過 10,000 平方尺，是澳門最大型的兒童樂園。在“勇闖巔峰”及“科幻世界”內有大型攀爬組合連滑梯及電玩區，“創意坊”及“夢劇院”內則有玻璃大畫板及表演舞臺等等，讓小孩子能盡情感受玩樂的體驗，發揮創作靈感。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">四個主題區內透過互動的遊戲，刺激小孩子的想像力，而樂園內的白色充氣帳幕更是專為年較小的小孩而設，讓他們能在裡面盡情的跳躍。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">“童夢天地”称得上澳门儿童乐园，当然设有派对间，让家长们举办不同类型的主题庆祝活动，为孩子们送上快乐时光，缔造美好回忆。所有参与宾客都可享有4小时免费自助泊车。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+				</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">地點：澳門新濠天地 Hard Rock酒店2樓</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">開放時間：每日上午十時半至晚上九時半</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+		</div>
+	</div>
+</div>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; width: 649px; height: 160px; margin-bottom: 30px;">
+	<div style="width: 260px; float: left;">
+		<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/2c4e0607-d3ad-4c0e-8f9b-36165026539f.jpg" src="text_img/2c4e0607-d3ad-4c0e-8f9b-36165026539f.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+	</div>
+	<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+		<div>
+			<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">百步登天、笨豬跳、高飛跳及空中漫步X版</span></span>
+		</div>
+		<div style="width: 260px; height: 100px; overflow: hidden;">
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">百步登天是由距離塔頂100米的高度開始出發，徒手攀上338米高的旅遊塔，絕對是體能與膽量的大考驗。全世界最高的「笨豬跳」已落戶澳門旅遊塔，挑戰者從233米高空平臺躍下後將以每小時200公里的高速劃破長空，感受4至5秒自由下墜的快感！</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">有別于以自由落體型式下降的笨豬跳，高飛跳利用風機下降技術，讓跳躍者以時速75公里急速下墜，並以穩定的下降速度著陸，在無反彈動作或將身體倒轉的情況下，感受刺激的空中飛躍。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">空中漫步X版整個過程不設扶手設備，在距離地面233米高的空中繞塔而行。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+				</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">查詢及預約請電：+853 8988 8656</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="overflow: hidden; word-wrap: break-word; font-size: 12px; font-family: 黑体, SimHei;">有關詳情可流覽澳門旅遊塔會展娛樂中心網址：</span><span style="overflow: hidden;">http://www.macautower.com.mo</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+		</div>
+	</div>
+</div>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; width: 649px; height: 160px; margin-bottom: 30px;">
+	<div style="width: 260px; float: left;">
+		<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/1ac1fcec-5576-4b5c-a425-9e2cddab4320.jpg" src="text_img/1ac1fcec-5576-4b5c-a425-9e2cddab4320.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+	</div>
+	<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+		<div>
+			<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">保齡球中心 (路環)</span></span>
+		</div>
+		<div style="width: 260px; height: 100px; overflow: hidden;">
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">保齡球中心位於路氹新城區， 2005 年 10 月落成啟用，佔地面積 5,830 平方米，是現時澳門最新穎、設備最先進、唯一合乎國際賽事標準的一級保齡球場。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;"><br />
+				</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">地址：路氹體育館大馬路</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">開放時間：下午二時至晚上十一時(週一至週五)；上午九時至晚上十一時(週末及公眾假期)</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">查詢電話：+853 2886 5017</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">網頁：</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei; overflow: hidden;"></span><span style="overflow: hidden;">http://www.sport.gov.mo/zh/vbs/searchvenue/type/show/id/18<span style="overflow: hidden;">&nbsp;</span></span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+		</div>
+	</div>
+</div>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; width: 649px; height: 160px; margin-bottom: 30px;">
+	<div style="width: 260px; float: left;">
+		<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/326b4cb6-958e-4335-86ff-49f461fbe2f4.jpg" src="text_img/326b4cb6-958e-4335-86ff-49f461fbe2f4.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+	</div>
+	<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+		<div>
+			<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">纜車</span></span>
+		</div>
+		<div style="width: 260px; height: 100px; overflow: hidden;">
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">在二龍喉公園入口處有觀光纜車直達東望洋山山頂。遊客可在纜車內飽覽東望洋山一帶的景色。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;"><strong>纜車開放時間：</strong>上午八時至下午六時，逢星期一休息(如遇公眾假期，則改為翌日休息)。公眾假期照常開放。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;"><strong>纜車票價：</strong>成人單程澳門幣3元，12歲以下兒童及65歲以上長者單程澳門幣2元。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+		</div>
+	</div>
+</div>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; width: 649px; height: 160px; margin-bottom: 30px;">
+	<div style="width: 260px; float: left;">
+		<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/680810cc-f808-4f98-a46b-71642ee0bb2c.jpg" src="text_img/680810cc-f808-4f98-a46b-71642ee0bb2c.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+	</div>
+	<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+		<div>
+			<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">澳門海上游</span></span>
+		</div>
+		<div style="width: 260px; height: 100px; overflow: hidden;">
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px;">從海上或湖上欣賞一個地方的景致，讓人賞心樂事，因此不少旅遊城市都設置觀光船。澳門的海岸線極具吸引力，而內港一帶仍可見到舊的樓房和碼頭，洋溢著昔日漁港風情。澳門海上游從內港碼頭出發，途經媽閣廟、旅遊塔、西灣大橋、海事博物館、觀音蓮花苑等，讓你寫意暢遊澳門，特別是晚上在星光映照下，欣賞澳門的璀璨夜景，留下深刻的旅遊印記。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px;"><br />
+				</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px;">時間：上午11時30分、下午1時及6時 (航程1小時)</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px;">出發地點：內港12號碼頭 / 巴素打爾古街</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px;">票價：$298/$80</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px;">查詢：+853 2893 0013</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px;">主辦：澳門遊船發展有限公司</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em;">
+				<span style="font-size: 12px; overflow: hidden;"></span><span style="overflow: hidden;">http://www.cruisemacau.com</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+		</div>
+	</div>
+</div>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; width: 649px; height: 160px; margin-bottom: 30px;">
+</div>
+<div>
+	<span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';"><br />
+	</span>
+</div>
+    </div>
+    
+</body>
+</html>

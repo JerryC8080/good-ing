@@ -1,0 +1,332 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<title>文章页</title>
+
+<!-- 滚动插件 -->
+<link href="custom-scrollbar-plugin/jquery.mCustomScrollbar.css" rel="stylesheet" />
+<script src="js/jquery-1.8.0.min.js"></script>
+<script src="custom-scrollbar-plugin/jquery.mCustomScrollbar.js"></script>
+<script>
+	/* 滚动条插件 */
+    (function($){
+        $(window).load(function(){
+            $("#text-content").mCustomScrollbar({
+				autoHideScrollbar:true,
+                scrollButtons:{
+					theme:"light-thin"
+                }
+            });
+        });
+    })(jQuery);
+
+</script>
+     
+<!-- 返回首页 -->
+<script type="text/javascript">
+	$(function(){
+		//var $parent = $(window.parent);	
+		$("#backToIndex").children().click(function(){
+			//$parent[0].backToIndex();
+			parent.location.reload();
+		});
+	})
+	
+	/* Animation */	
+	$(function(){
+		$("#backToIndex").hover(function(){
+			$(this).find("span").css({
+				"animation-play-state":"running",
+				"-moz-animation-play-state":"running",
+				"-webkit-animation-play-state":"running",
+				"-o-animation-play-state":"running"
+			});   
+			//alert("in");
+		 },function(){
+			$(this).find("span").css({
+				"animation-play-state":"paused",
+				"-moz-animation-play-state":"paused",
+				"-webkit-animation-play-state":"paused",
+				"-o-animation-play-state":"paused"
+			});   
+			//alert("out");
+		 });
+	});
+
+	
+</script>
+    
+<style type="text/css">
+body {color:white;font-size:13px;background-color:transparent}
+#title {width:auto;height:40px;}
+#title span{font-size: 15pt;position: relative;left: 25px;top: 20px;font-weight:bold}
+#backToIndex {width:90px;height:30px;position:absolute;top:30px;right:20px}
+#backToIndex strong {position: relative;top: 3px;cursor:pointer}
+#backToIndex span{background:url(images/back.png) no-repeat;width:23px;height:23px;display:block;cursor:pointer;float:right}
+#text-content {padding: 20px 20px;height: 420px;;width: 97%;}
+hr {width:95%;}
+#share {height:20px;width:70%;float:right;padding:11px 0;margin-right:25px}
+#share span {width:17px;height:17px;display:block;cursor:pointer;float:right;margin:0px 3px}
+#twitter {background:url(images/twitter.png) no-repeat}
+/* 返回首页旋转动画CSS3 */
+#backToIndex span{
+	position:relative;
+	animation-name:myfirst;
+	animation-duration:3s;
+	animation-timing-function:linear;       /* 动画从头到尾的速度是相同的。*/
+	animation-delay:0s;
+	animation-iteration-count:infinite;		/* 规定动画应该无限次播放。*/
+	animation-direction:normal;
+	animation-play-state:paused;
+	/* Firefox: */
+	-moz-animation-name:myfirst;
+	-moz-animation-duration:3s;
+	-moz-animation-timing-function:linear;
+	-moz-animation-delay:0s;
+	-moz-animation-iteration-count:infinite;
+	-moz-animation-direction:normal;
+	-moz-animation-play-state:paused;
+	/* Safari and Chrome: */
+	-webkit-animation-name:myfirst;
+	-webkit-animation-duration:3s;
+	-webkit-animation-timing-function:linear;
+	-webkit-animation-delay:0s;
+	-webkit-animation-iteration-count:infinite;
+	-webkit-animation-direction:normal;
+	-webkit-animation-play-state:paused;
+	/* Opera: */
+	-o-animation-name:myfirst;
+	-o-animation-duration:3s;
+	-o-animation-timing-function:linear;
+	-o-animation-delay:0s;
+	-o-animation-iteration-count:infinite;
+	-o-animation-direction:normal;
+	-o-animation-play-state:paused;
+}
+@keyframes myfirst
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-moz-keyframes myfirst /* Firefox */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-webkit-keyframes myfirst /* Safari and Chrome */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+
+@-o-keyframes myfirst /* Opera */
+{
+from {transform: rotate(0deg)}
+to {transform: rotate(-360deg)}
+}
+</style>
+
+
+</head>
+
+<body>
+	<div id="title">
+    	<span>分区购物</span>
+    </div>
+    <div id="backToIndex">
+    	<strong>返回首页</strong>
+        <span></span>
+    </div>
+    <div id="text-content" class="content">
+       <p style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 1.5em;">
+	<span style="font-size: 14px; font-family: 黑体, SimHei;"></span>
+</p>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; width: 649px; height: 160px; margin-bottom: 30px;">
+	<div style="width: 260px; float: left;">
+		<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/a7371d64-6436-4eff-803b-2c894a3bfcbe.jpg" src="text_img/a7371d64-6436-4eff-803b-2c894a3bfcbe.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+	</div>
+	<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+		<div>
+			<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">新马路区</span></span>
+		</div>
+		<div style="width: 260px; height: 100px; overflow: hidden;">
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">新馬路區：珠寶金飾、手信 (連清平直街、福隆新街等)、海味乾貨&nbsp;</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">新馬路區是遊澳門必到的旅客區，這裡有各式各樣的店鋪，除了可以買到貨真價實的金器、華麗的珠寶手飾外，還有包羅萬有的地道手信，價廉物美的海味乾貨。保證讓熱愛購物的您滿載而歸。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+			</p>
+		</div>
+	</div>
+</div>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; width: 649px; height: 160px; margin-bottom: 30px;">
+	<div style="width: 260px; float: left;">
+		<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/9f00e4bf-f968-4bea-81b7-efd090b03863.JPG" src="text_img/9f00e4bf-f968-4bea-81b7-efd090b03863.JPG" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+	</div>
+	<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+		<div>
+			<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">大三巴区</span></span>
+		</div>
+		<div style="width: 260px; height: 100px; overflow: hidden;">
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">大三巴區：手信、本地文化創意產品</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">大三巴牌坊是澳門歷史性地標，充滿文化色彩，在大三巴區可找到本地的文化創意產品，感受本地的藝術氣息和原創精神。大三巴區的手信店林立，地道食品糕點款式多樣，美味又富澳門特色，附近的古董傢俬店讓遊客選購到古色古香的傢具精品。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+			</p>
+		</div>
+	</div>
+</div>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; width: 649px; height: 160px; margin-bottom: 30px;">
+	<div style="width: 260px; float: left;">
+		<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/2ab25bd6-45c7-4b04-9737-be76a12c4768.jpg" src="text_img/2ab25bd6-45c7-4b04-9737-be76a12c4768.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+	</div>
+	<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+		<div>
+			<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">板障堂区</span></span>
+		</div>
+		<div style="width: 260px; height: 100px; overflow: hidden;">
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">板樟堂區(連白馬行及荷蘭園一帶)：美容化粧、皮鞋、潮流服飾（澳門信達城、雅明商場及銀座廣場）、書店、體育用品、電器連鎖店</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">板樟堂區除了是遊客區，亦是本地人的熱門購物區，在澳門信達城、雅明商場及銀座廣場可選購潮流服飾，在大街找到各款名廠名鞋，亦可買到各個品牌的美容化粧品，女士、男士們必定可找到新形象的靈感。這裡還有書店、運動用品專賣店和電器連銷店，滿足不同的購物需要。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+			</p>
+		</div>
+	</div>
+</div>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; width: 649px; height: 160px; margin-bottom: 30px;">
+	<div style="width: 260px; float: left;">
+		<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/78b032a2-fd78-4a86-8d7a-80710b709670.jpg" src="text_img/78b032a2-fd78-4a86-8d7a-80710b709670.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+	</div>
+	<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+		<div>
+			<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">高士徳区</span></span>
+		</div>
+		<div style="width: 260px; height: 100px; overflow: hidden;">
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em; text-align: justify;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">高士德區：本地潮流服飾、電話電器店、出口成衣(三盞燈)&nbsp;</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; line-height: 1.5em; text-align: justify;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">高士德是澳門的住宅區，本地人都喜歡在此購物．這裡有不同風格的潮流服飾，亦有價廉物美的出口成衣店，可滿足不同的服飾喜好。此外，這裡還有琳瑯滿目的電子產品，包括各式型號的手提電話、數碼產品以及各款電器。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+			</p>
+		</div>
+	</div>
+</div>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; width: 649px; height: 160px; margin-bottom: 30px;">
+	<div style="width: 260px; float: left;">
+		<span style="overflow: hidden; width: 263px;"><img data-src="../HDX_File/sec/4ec9efe7-e69e-45b7-b5be-fcec62ed4a51.jpg" src="text_img/4ec9efe7-e69e-45b7-b5be-fcec62ed4a51.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+	</div>
+	<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+		<div>
+			<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">氹仔旧城区：手信</span></span>
+		</div>
+		<div style="width: 260px; height: 100px; overflow: hidden;">
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">氹仔舊城區是到離島旅遊必到之處，這裡雲集了各式各樣的手信店，有地道小食、傳統糕餅及精緻擺設等，遊客可在此找到合心水的手信送禮自用。</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+			</p>
+		</div>
+	</div>
+</div>
+<div style="color: rgb(255, 255, 255); font-family: Simsun; font-size: 13px; line-height: 20px; width: 649px; height: 160px; margin-bottom: 30px;">
+	<div style="width: 260px; float: left;">
+		<span style="overflow: hidden; width: 263px;"><img  src="text_img/d2a7c762-136e-4de2-b75f-10c6d35efc72.jpg" alt="加载中..." style="border: none; width: 263px; height: 160px;" /></span>
+	</div>
+	<div style="width: 260px; float: left; padding-left: 20px; padding-top: 20px;">
+		<div>
+			<span style="font-size:14px;color:#34b6e4;"><span style="overflow: hidden; width: 260px;">路氹城：大型购物商场</span></span>
+		</div>
+		<div style="width: 260px; height: 100px; overflow: hidden;">
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px;">
+				<br />
+				
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">路氹城：大型購物商場</span>
+			</p>
+			<p style="margin-top: 0px; margin-bottom: 0px; text-align: justify; line-height: 1.5em;">
+				<span style="font-size: 12px; font-family: 黑体, SimHei;">近年很多時尚店鋪進駐路氹城的各個大型購物商場，搜羅了國際品牌及本地貨品，包括潮流服飾、高級時裝、創新產品及免稅店商品，盡現眼</span>
+			</p>
+		</div>
+	</div>
+</div>
+<div>
+	<span style="font-size: 11px; line-height: 18px; font-family: 'Heiti SC Light';"><br />
+	</span>
+</div>
+    </div>
+</body>
+</html>

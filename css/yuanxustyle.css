@@ -1,0 +1,217 @@
+
+/* 全局 */
+.hidden {display:none}
+.block-bg {position:absolute;bottom:0px;z-index:-1;height:100%;width:100%;background-color:black;}
+ul {list-style-type:none}
+a {cursor:pointer}
+iframe {width:100%;height:100%;border:none;-border:none}
+
+/* 白色背景,透明度0.6 */
+.alpha-white {
+  background: rgb(255, 255, 255);
+  background: rgba(255, 255, 255, 0.6);
+  background: transparent\9;
+  zoom: 1;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff, endColorstr=#99ffffff);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#99ffffff, endColorstr=#99ffffff)";
+}
+/* 紫色背景,透明度0.6 */
+.alpha-scene {
+  background: rgb(56, 32, 96);
+  background: rgba(56, 32, 96, 0.6);
+  background: transparent\9;
+  zoom: 1;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#382060, endColorstr=#382060);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#382060, endColorstr=#382060)";
+}
+/* 橙色背景,透明度0.6 */
+.alpha-shop {
+  background: rgb(255, 95, 50);
+  background: rgba(255, 95, 50, 0.6);
+  background: transparent\9;
+  zoom: 1;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff5f32, endColorstr=#ff5f32);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ff5f32, endColorstr=#ff5f32)";
+}
+/* 蓝色背景,透明度0.6 */
+.alpha-aoMenTravel {
+  background: rgb(35, 70, 140);
+  background: rgba(35, 70, 140, 0.6);
+  background: transparent\9;
+  zoom: 1;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#23468c, endColorstr=#23468c);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#23468c, endColorstr=#23468c)";
+}
+/* 浅蓝色背景,透明度0.6 */
+.alpha-holiday {
+  background: rgb(9, 178, 177);
+  background: rgba(9, 178, 177, 0.6);
+  background: transparent\9;
+  zoom: 1;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#09b2b1, endColorstr=#09b2b1);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#09b2b1, endColorstr=#09b2b1)";
+}
+/* 天蓝色背景,透明度0.6 */
+.alpha-magazine {
+  background: rgb(0, 162, 255);
+  background: rgba(0, 162, 255, 0.6);
+  background: transparent\9;
+  zoom: 1;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#00a2ff, endColorstr=#00a2ff);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#00a2ff, endColorstr=#00a2ff)";
+}
+/* 黄色背景,透明度0.6 */
+.alpha-fun {
+  background: rgb(242, 160, 7);
+  background: rgba(242, 160, 7, 0.6);
+  background: transparent\9;
+  zoom: 1;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#f2a007, endColorstr=#f2a007);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#f2a007, endColorstr=#f2a007)";
+}
+/* 绿色背景,透明度0.6 */
+.alpha-food {
+  background: rgb(145, 206, 33);
+  background: rgba(145, 206, 33, 0.6);
+  background: transparent\9;
+  zoom: 1;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#91ce21, endColorstr=#91ce21);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#91ce21, endColorstr=#91ce21)";
+}
+/* 粉红色背景,透明度0.6 */
+.alpha-aboutMacau {
+  background: rgb(234, 24, 112);
+  background: rgba(234, 24, 112, 0.6);
+  background: transparent\9;
+  zoom: 1;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#ea1870, endColorstr=#ea1870);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#ea1870, endColorstr=#ea1870)";
+}
+/* 红色背景,透明度0.6 */
+.alpha-navMenu {
+  background: rgb(129, 22, 25);
+  background: rgba(129, 22, 25, 0.6);
+  background: transparent\9;
+  zoom: 1;
+  filter:progid:DXImageTransform.Microsoft.gradient(startColorstr=#811619, endColorstr=#811619);
+  -ms-filter: "progid:DXImageTransform.Microsoft.gradient(startColorstr=#811619, endColorstr=#811619)";
+}
+
+/*顶部广告栏*/
+#top-ad {position:absolute;height:103px;width:100%;background:black;box-shadow:5px 2px 6px #000;}
+.adclose1 {position:absolute;right:0px;bottom:0px;cursor:pointer;color:gray;}
+
+
+
+/* 广告 */
+#ad1 {position:absolute;right:68px;top:68%;height:156px;width:460px;background-color:black;filter:alpha(opacity=70);opacity:0.70;}
+.text-page-ads{display:none;position:absolute;right:83px;top:23.43%;height:430px;width:150px;}
+#ad3 {display:none;position:absolute;top:0px;height:207px;width:150px;background-color:white;}
+#ad4 {display:none;position:absolute;top:227px;height:207px;width:150px;background-color:white;}
+.adclose2 {position:absolute;right:0px;top:0px;cursor:pointer;color:gray;}
+
+/* 天气预报 */
+#weather {width:227px;height:158px;display:block;background:url(../images/weather-cn.png) no-repeat;position:absolute;top:550px;left:70px}
+
+
+/*导航条*/
+#logo {position:absolute;left:144px;top:-20px;z-index:3;height:100px;width:111px;cursor:pointer;}
+/*#nav {position:absolute;left:55px;bottom:-300px;height:428px;width:111px;}*/
+#nav {position:absolute;z-index:3;top:23.4%;height:40px;width:100%;box-shadow:5px 2px 6px #000;}
+#nav .block-bg {filter:alpha(opacity=100);opacity:1;background:url(../images/nav-bg.png) repeat-x;}
+#nav-list-slider {background:red;width:70px;height:2px;position:absolute;bottom:-3px;left:328px;display:none}
+.nav-list {height:40px;width:55%;position:absolute;left:310px;overflow:hidden}
+.nav-list li{height:80px;width:60px;margin:10px 23px;float:left;list-style-type:none;position:relative;}
+.nav-title i {background:url(../images/Dribbble-icon.png) no-repeat;height:33px;width:33px;display:block;float:left;margin:5px}
+.nav-title {background-color:#0a0a0b;filter:alpha(opacity=75);opacity:0.75;height:40px;width:100%;margin-top:44px;}
+.nav-title span {color:white;font-weight:bold;font-size:14px;position:relative;top:11px}
+.nav-list-icon {width:25px;height:40px;display:block;position:relative;left:17px;margin-bottom:20px}
+.nav-list-text {width:100%;height:40px;display:block;cursor:pointer;color:white;font-size:10.5pt;text-align:center}
+#nav-list-info .nav-list-icon{background:url(../images/info-icon.png) no-repeat}
+#nav-list-news .nav-list-icon{background:url(../images/news-icon.png) no-repeat}
+#nav-list-weather .nav-list-icon{background:url(../images/weather-icon.png) no-repeat}
+#nav-list-friendlink .nav-list-icon{background:url(../images/friendlink-icon.png) no-repeat}
+#nav-list-callus .nav-list-icon{background:url(../images/callus-icon.png) no-repeat}
+#nav-list-interact .nav-list-icon{background:url(../images/interact-icon.png) no-repeat}
+#nav-list-vip .nav-list-icon{background:url(../images/vip-icon.png) no-repeat}
+#nav-list-maps .nav-list-icon{background:url(../images/maps-icon.png) no-repeat}
+#language {color:#969696;font-weight:bold;margin:12px;height:25px;width:110px;font-size:13px;position:absolute;right:70px;}
+#language span{cursor:pointer;margin-left:10px}
+#language .lg-active {color:white;border-bottom:1px solid #d60613}
+.nav-menu ul {position: relative;text-align:left;padding:0px 0px;margin:0;max-height:162px;height:auto}
+.nav-menu li {padding:2px 10px;}
+.nav-menu .li-br {margin:1px 7px;}
+.nav-menu{z-index:2;cursor:auto ;position:absolute;top:121px;color:white;height:auto;max-height:80px;width:121px;padding:10px 0px;font-size: 8.7pt;display:none}
+.navmenu-bg {position:absolute;top:0px;z-index:-1;height:100%;width:100%;background-color:black;filter:alpha(opacity=75);opacity:0.75;}
+#nav-list-info-menu {top:27.6%;left:325px;}
+#nav-list-vip-menu {top:27.6%;left:535px;}
+
+/*背景*/
+#main {position:relative;width:1024px;min-height:768px}
+body {background-color:black;margin:0}
+HTML{overflow:hidden;}
+#bg {height:100%;width: 100%;min-height:650px;min-width:960px;overflow: hidden;overflow: hidden;position: absolute;z-index: -10;}
+#bgics {position:relative;height: 100%;width: 100%;overflow: hidden;z-index: -10;}
+#bg img {width:100%;min-width:960px;min-height:100%;position:absolute;z-index:-10;}
+
+
+/*格子*/
+.grids {height:382px;width:645px;position:absolute;top:23.43%;right:26px}
+.grid {position:absolute;height:121px;width:121px;cursor:pointer;margin:6px;box-shadow:5px 2px 6px #000;}
+/*.grid li a {box-shadow:3px 2px 2px black}*/
+.grids img{position:absolute;display:none}
+.grids .grid-menu {cursor:auto ;position:absolute;top:121px;color:white;height:auto;width:100%;padding:10px 0px;font-size: 8.7pt;display:none}
+.gridmenu-bg {position:absolute;top:0px;z-index:-1;height:100%;width:100%;background-color:black;filter:alpha(opacity=75);opacity:0.75;}
+.grid-menu-slider {position:absolute;top:15px;height:24px;width:100%;z-index:-1;background:yellow;opacity:0.5;filter:alpha(opacity=50)}
+.grid-menu ul {position: relative;text-align:left;padding:0px 0px;margin:0;max-height:147px;height:auto;overflow:hidden}
+.grid-menu li {padding:3px 10px;}
+
+#grid-scene {top:120px;left:0px}
+#grid-scene  .block-bg {background:url(../images/grid-scene.png) no-repeat;margin:0px;}
+#grid-scene .grid-menu {background:url(../images/grid-scene-shadow.png) no-repeat;}
+
+#grid-shop {top:120px;left:128px}
+#grid-shop  .block-bg {background:url(../images/grid-shop.png) no-repeat;margin:0px;}
+#grid-shop .grid-menu {background:url(../images/grid-shop-shadow.png) no-repeat;}
+
+#grid-aoMenTravel {top:120px;left:257px;width:240px;height:121px;z-index:3;background:#23468c}
+#grid-aoMenTravel .block-bg {background:url(../images/grid-aoMenTravel.png) no-repeat;margin:0px;width:100%}
+#grid-aoMenTravel .block-bg-min{background:url(../images/grid-aoMenTravel-min.png) no-repeat;margin:0px;width:100%;display:none}
+#grid-aoMenTravel .grid-menu {background:url(../images/grid-aoMenTravel-shadow.png) no-repeat;}
+
+#grid-holiday {top:120px;left:505px;}
+#grid-holiday .block-bg {background:url(../images/grid-holiday.png) no-repeat;margin:0px;}
+#grid-holiday .grid-menu {background:url(../images/grid-holiday-shadow.png) no-repeat;}
+
+#grid-aboutMacau {top:248px;left:505px;}
+#grid-aboutMacau .block-bg {background:url(../images/grid-aboutMacau.png) no-repeat;margin:0px;}
+#grid-aboutMacau .grid-menu {background:url(../images/grid-aboutMacau-shadow.png) no-repeat;}
+
+#grid-food {top:248px;left:376px;}
+#grid-food .block-bg {background:url(../images/grid-food.png) no-repeat;margin:0px;}
+#grid-food .grid-menu {background:url(../images/grid-food-shadow.png) no-repeat;}
+
+#grid-fun {background:#f2a007;top:248px;left:128px;width:240px;height:121px;z-index:3}
+#grid-fun .block-bg {background:url(../images/grid-fun.png) no-repeat;width:100%;}
+#grid-fun .block-bg-min{background:url(../images/grid-fun-min.png) no-repeat;margin:0px;width:100%;display:none}
+#grid-fun .grid-menu {background:url(../images/grid-fun-shadow.png) no-repeat;}
+
+#grid-magazine {top:248px;left:0px;}
+#grid-magazine .block-bg {background:url(../images/grid-magazine.png) no-repeat;width:100%;}
+#grid-magazine .grid-menu {background:url(../images/grid-magazine-shadow.png) no-repeat;}
+
+
+/*文章*/
+#text-main {position:absolute;left:21.48%;top:23.43%;height:510px;width:54.68%;display:none}
+#text-main .block-bg {opacity:0.75;filter:alpha(opacity=75)}
+
+/* 大屏广告 */
+.Carousel{width:100%;height:100%;background:white;float:left;box-shadow: 0px 5px 10px rgb(136, 136, 136);}
+#jnImageroll{float: left; overflow: hidden; position: relative;}
+#jnImageroll img{position: absolute; left: 0; top: 0;width:100%}
+#jnImageroll div{bottom: 5px; right:10px; overflow: hidden; position: absolute; float: left;}
+#jnImageroll div a{background-color: #444444; color: #FFFFFF; display: inline-block; float: left; height: 5px; margin-right: 1px; overflow: hidden; padding: 3px 4px; text-align: center; width: 5px;}
+#jnImageroll div a:hover{text-decoration: none;}
+#jnImageroll div a em{cursor: pointer; display: block; height: 16px; overflow: hidden; width: 79px;}
+#jnImageroll .last{margin: 0; width: 80px;}
+#jnImageroll a.chos{background: url("images/ads/adindex.gif") no-repeat center 39px #37A7D7; color: #FFFFFF;}
